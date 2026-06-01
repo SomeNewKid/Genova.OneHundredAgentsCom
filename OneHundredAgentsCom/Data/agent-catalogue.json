@@ -1,0 +1,23 @@
+{
+    "groups": [
+        {
+            "title": "Custom Agents",
+            "description": "Agents built from the ground up, without any third-party agent framework.",
+            "agents": [
+                { "name": "Customer Complaint Agent" }
+            ]
+        },
+        {
+            "title": "OpenAI Agents SDK",
+            "description": "Agents built using OpenAI's Agents SDK.",
+            "agents": []
+        },
+        {
+            "title": "IBM BeeAI Framework",
+            "description": "Agents built using IBM's open-source BeeAI framework.",
+            "agents": [
+                { "name": "Travel Landmark Agent" }
+            ]
+        }
+    ]
+}

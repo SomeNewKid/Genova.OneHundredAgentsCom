@@ -1,0 +1,81 @@
+/***** One Hundred Agents
+ */
+
+figure.hero {
+  margin:0
+}
+
+
+
+/* Back to the top */
+
+.scroll-links .layout-container {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.back-to-top {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.back-to-top .icon {
+    width: 2em;
+    height: 2em;
+    background: currentColor;
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill=\'white\' viewBox=\'0 0 24 24\'><path d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-.55 0-1-.45-1-1v-4H8.41c-.89 0-1.34-1.08-.71-1.71l3.59-3.59c.39-.39 1.02-.39 1.41 0l3.59 3.59c.63.63.19 1.71-.71 1.71H13v4c0 .55-.45 1-1 1z\'/></svg>') no-repeat center;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill=\'white\' viewBox=\'0 0 24 24\'><path d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-.55 0-1-.45-1-1v-4H8.41c-.89 0-1.34-1.08-.71-1.71l3.59-3.59c.39-.39 1.02-.39 1.41 0l3.59 3.59c.63.63.19 1.71-.71 1.71H13v4c0 .55-.45 1-1 1z\'/></svg>') no-repeat center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    background-color: currentColor;
+}
+
+.back-to-top .label {
+    font-size: 0.8889em;
+    border-bottom: 2px solid transparent;
+}
+
+.back-to-top:hover .label,
+.back-to-top:focus .label,
+.back-to-top:active .label {
+    border-bottom: none;
+}
+
+/* Theme toggle */
+
+#theme-toggle {
+    margin: 1em 0;
+}
+
+#theme-toggle-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    cursor: pointer;
+}
+
+#theme-toggle-btn::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: currentColor;
+    mask: url('data:image/svg+xml;utf8,<svg fill="none" viewBox="0 0 24 24" stroke="white" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>') no-repeat center;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg fill="none" viewBox="0 0 24 24" stroke="white" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>') no-repeat center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+}
+
+#theme-toggle-btn.theme-is-light::before {
+    mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='5'/><line x1='12' y1='1' x2='12' y2='3'/><line x1='12' y1='21' x2='12' y2='23'/><line x1='4.22' y1='4.22' x2='5.64' y2='5.64'/><line x1='18.36' y1='18.36' x2='19.78' y2='19.78'/><line x1='1' y1='12' x2='3' y2='12'/><line x1='21' y1='12' x2='23' y2='12'/><line x1='4.22' y1='19.78' x2='5.64' y2='18.36'/><line x1='18.36' y1='5.64' x2='19.78' y2='4.22'/></svg>") no-repeat center;
+    -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='5'/><line x1='12' y1='1' x2='12' y2='3'/><line x1='12' y1='21' x2='12' y2='23'/><line x1='4.22' y1='4.22' x2='5.64' y2='5.64'/><line x1='18.36' y1='18.36' x2='19.78' y2='19.78'/><line x1='1' y1='12' x2='3' y2='12'/><line x1='21' y1='12' x2='23' y2='12'/><line x1='4.22' y1='19.78' x2='5.64' y2='18.36'/><line x1='18.36' y1='5.64' x2='19.78' y2='4.22'/></svg>") no-repeat center;
+}
