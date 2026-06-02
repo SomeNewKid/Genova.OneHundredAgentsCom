@@ -68,7 +68,7 @@ jobs:
       if: github.event_name == 'push'
       run: dotnet nuget push "${{ github.workspace }}\nupkg\*.nupkg" --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --api-key ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Delete older package versions and keep latest 2
+    - name: Delete older package versions
       if: github.event_name == 'push'
       uses: actions/github-script@v7
       with:
