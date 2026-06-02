@@ -168,6 +168,8 @@ public sealed class Website : WebsiteBase
         {
             new AriaCurrentNavModifier(),
             new AgentNavigationModifier(),
+            new SidebarModifier(),
+            new WrapperModifier(),
         };
 
         return baseModifiers.Concat(websiteModifiers);
