@@ -18,6 +18,13 @@
             "agents": [
                 { "name": "Travel Landmark Agent" }
             ]
+        },
+        {
+            "title": "LangChain Ecosystem",
+            "description": "Agents built using LangChain, LangGraph, or related tools from the LangChain ecosystem.",
+            "agents": [
+                { "name": "Marcie Chatbot Agent" }
+            ]
         }
     ]
 }

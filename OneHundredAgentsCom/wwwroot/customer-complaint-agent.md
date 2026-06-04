@@ -9,8 +9,8 @@ The interesting part is the split of responsibilities. The agent proposes struct
 Language: Python
 Framework: None
 Pattern: Single agent
-Integration: OpenAI Responses API
-Model: OpenAI gpt-5.4-mini
+Integration: [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses)
+Model: [GPT-5.4 mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini)
 ---
 Repository: [GitHub](https://github.com/SomeNewKid/CustomerComplaintAgent)
 

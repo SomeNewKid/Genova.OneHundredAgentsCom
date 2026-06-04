@@ -132,7 +132,7 @@ internal sealed class SidebarModifier : IHtmlModifier
         foreach (string item in items)
         {
             IElement listItem = document.CreateElement("li");
-            listItem.TextContent = item;
+            listItem.InnerHtml = item;
             list.AppendChild(listItem);
         }
 

@@ -27,7 +27,7 @@ internal static class PageRenderer
     /// A cache buster value to append to static resource URLs, ensuring that clients fetch the latest versions
     /// when this value is changed.
     /// </summary>
-    internal const string CacheBuster = "8";
+    internal const string CacheBuster = "2";
 
     private const bool NakedPage = false;
 

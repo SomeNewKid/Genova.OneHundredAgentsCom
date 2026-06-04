@@ -141,6 +141,49 @@ public class SidebarModifier_Tests : Modifier_Tests
             "Open-Meteo Forecast API");
     }
 
+    [Fact]
+    public async Task Modify_should_preserve_inline_HTML_in_pipe_separated_list_items()
+    {
+        string html = """
+            <!DOCTYPE html>
+            <html lang="en">
+              <body>
+                <main>
+                  <article>
+                    <p>Before the sidebar.</p>
+                    <p>::: SIDEBAR :::</p>
+                    <p>Integrations: MediaWiki API | <a href="https://open-meteo.com/">Open-Meteo Geocoding API</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <a href="https://open-meteo.com/">Open-Meteo Forecast API</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+                    <p>::: /SIDEBAR :::</p>
+                    <p>After the sidebar.</p>
+                  </article>
+                </main>
+              </body>
+            </html>
+            """;
+        IDocument document = await ParseHtmlAsync(html);
+
+        Modify(document);
+
+        IElement sidebar = AssertSidebar(document);
+        IHtmlCollection<IElement> listItems = sidebar.QuerySelectorAll("dd li");
+        listItems.Should().HaveCount(3);
+        listItems[0].TextContent.Should().Be("MediaWiki API");
+
+        listItems[1].QuerySelectorAll("a").Should().HaveCount(2);
+        listItems[1].QuerySelectorAll("a")[0].GetAttribute("href").Should().Be("https://open-meteo.com/");
+        listItems[1].QuerySelectorAll("a")[0].TextContent.Should().Be("Open-Meteo Geocoding API");
+        listItems[1].QuerySelectorAll("a")[1].GetAttribute("href").Should()
+            .Be("https://creativecommons.org/licenses/by/4.0/");
+        listItems[1].QuerySelectorAll("a")[1].TextContent.Should().Be("CC BY 4.0");
+
+        listItems[2].QuerySelectorAll("a").Should().HaveCount(2);
+        listItems[2].QuerySelectorAll("a")[0].GetAttribute("href").Should().Be("https://open-meteo.com/");
+        listItems[2].QuerySelectorAll("a")[0].TextContent.Should().Be("Open-Meteo Forecast API");
+        listItems[2].QuerySelectorAll("a")[1].GetAttribute("href").Should()
+            .Be("https://creativecommons.org/licenses/by/4.0/");
+        listItems[2].QuerySelectorAll("a")[1].TextContent.Should().Be("CC BY 4.0");
+    }
+
     private static void Modify(IDocument document)
     {
         IExecutionContext executionContext = MockExecutionContextWithPathAndQuery("/travel-landmark-agent");

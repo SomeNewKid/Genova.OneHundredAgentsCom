@@ -22,7 +22,7 @@ using Microsoft.Extensions.DependencyInjection;
 namespace Genova.OneHundredAgentsCom;
 
 /// <summary>
-/// Represents the Grubenwald website, which integrates with the Engine and provides
+/// Represents the 100 Agents in 100 Days website, which integrates with the Engine and provides
 /// route and cluster configurations.
 /// </summary>
 [CodeQuality(Public = true, Justification = "Intended to be instantiated by a Host.")]
@@ -31,7 +31,7 @@ public sealed class Website : WebsiteBase
     /// <summary>
     /// The name which prefixes policy names and view names.
     /// </summary>
-    internal const string NamePrefix = "GRUBENWALDCOM";
+    internal const string NamePrefix = "100AGENTSCOM";
 
     /// <summary>
     /// The name of the cache policy used for output caching.
