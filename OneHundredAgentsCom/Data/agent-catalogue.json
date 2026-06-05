@@ -25,6 +25,14 @@
             "agents": [
                 { "name": "Marcie Chatbot Agent" }
             ]
+        },
+        {
+            "title": "Others",
+            "description": "Agents built using other tools and frameworks.",
+            "agents": [
+                { "name": "Broken Link Checker" },
+                { "name": "Security Headers Auditor" }
+            ]
         }
     ]
 }

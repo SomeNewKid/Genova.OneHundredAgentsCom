@@ -82,12 +82,14 @@
     <EmbeddedResource Include="Data\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="wwwroot\broken-link-checker.md" />
     <Content Remove="wwwroot\customer-complaint-agent.md" />
     <Content Remove="wwwroot\favicon.ico" />
     <Content Remove="wwwroot\index.md" />
     <Content Remove="wwwroot\marcie-chatbot-agent.md" />
     <Content Remove="wwwroot\notices.md" />
     <Content Remove="wwwroot\robots.txt" />
+    <Content Remove="wwwroot\security-headers-auditor.md" />
     <Content Remove="wwwroot\travel-landmark-agent.md" />
   </ItemGroup>
 </Project>
