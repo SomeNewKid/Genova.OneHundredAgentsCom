@@ -91,5 +91,6 @@
     <Content Remove="wwwroot\robots.txt" />
     <Content Remove="wwwroot\security-headers-auditor.md" />
     <Content Remove="wwwroot\travel-landmark-agent.md" />
+    <Content Remove="wwwroot\webpage-content-checker.md" />
   </ItemGroup>
 </Project>

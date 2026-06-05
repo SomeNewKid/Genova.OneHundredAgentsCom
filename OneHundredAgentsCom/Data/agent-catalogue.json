@@ -27,11 +27,12 @@
             ]
         },
         {
-            "title": "Others",
-            "description": "Agents built using other tools and frameworks.",
+            "title": "Coding agents",
+            "description": "Agents whose purpose is to assist with coding tasks.",
             "agents": [
                 { "name": "Broken Link Checker" },
-                { "name": "Security Headers Auditor" }
+                { "name": "Security Headers Auditor" },
+                { "name": "Webpage Content Checker" }
             ]
         }
     ]
