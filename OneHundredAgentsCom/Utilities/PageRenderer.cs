@@ -7,7 +7,7 @@ using Genova.Common.Html;
 using Genova.Common.Markdown;
 using Genova.Common.Utilities;
 using Genova.OneHundredAgentsCom.Endpoints;
-using Genova.PlainOldWebCom.Styles;
+using Genova.Theme.Styles;
 
 namespace Genova.OneHundredAgentsCom.Utilities;
 

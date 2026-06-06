@@ -3,8 +3,8 @@
 
 using Genova.Common.Utilities;
 using Genova.Common.Websites;
-using Genova.PlainOldWebCom.Scripts;
-using Genova.PlainOldWebCom.Styles;
+using Genova.Theme.Scripts;
+using Genova.Theme.Styles;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
