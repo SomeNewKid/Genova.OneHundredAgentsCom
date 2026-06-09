@@ -4,35 +4,58 @@
             "title": "Custom Agents",
             "description": "Agents built from the ground up, without any third-party agent framework.",
             "agents": [
-                { "name": "Customer Complaint Agent" }
+                {
+                    "name": "Customer Complaint Agent",
+                    "description": "Initial version of bespoke agent."
+                }
             ]
         },
         {
             "title": "OpenAI Agents SDK",
             "description": "Agents built using OpenAI's Agents SDK.",
-            "agents": []
+            "agents": [
+                {
+                    "name": "History Tutor Agent",
+                    "description": "First steps with the OpenAI Agents SDK"
+                }
+            ]
         },
         {
             "title": "IBM BeeAI Framework",
             "description": "Agents built using IBM's open-source BeeAI framework.",
             "agents": [
-                { "name": "Travel Landmark Agent" }
+                {
+                    "name": "Travel Landmark Agent",
+                    "description": "First steps with BeeAI"
+                }
             ]
         },
         {
             "title": "LangChain Ecosystem",
             "description": "Agents built using LangChain, LangGraph, or related tools from the LangChain ecosystem.",
             "agents": [
-                { "name": "Marcie Chatbot Agent" }
+                {
+                    "name": "Marcie Chatbot Agent",
+                    "description": "First steps with LangChain"
+                }
             ]
         },
         {
             "title": "Coding agents",
             "description": "Agents whose purpose is to assist with coding tasks.",
             "agents": [
-                { "name": "Broken Link Checker" },
-                { "name": "Security Headers Auditor" },
-                { "name": "Webpage Content Checker" }
+                {
+                    "name": "Broken Link Checker",
+                    "description": "Struggling with Cline CLI"
+                },
+                {
+                    "name": "Security Headers Auditor",
+                    "description": "Evaluating Codex CLI"
+                },
+                {
+                    "name": "Webpage Content Checker",
+                    "description": "Wrestling with Jules"
+                }
             ]
         }
     ]

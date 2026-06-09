@@ -85,6 +85,7 @@
     <Content Remove="wwwroot\broken-link-checker.md" />
     <Content Remove="wwwroot\customer-complaint-agent.md" />
     <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\history-tutor-agent.md" />
     <Content Remove="wwwroot\index.md" />
     <Content Remove="wwwroot\marcie-chatbot-agent.md" />
     <Content Remove="wwwroot\notices.md" />

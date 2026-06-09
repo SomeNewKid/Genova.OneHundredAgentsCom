@@ -9,7 +9,7 @@ This remains a proof of concept, not a claim that every larger requirement will 
 ::: SIDEBAR :::
 
 Language: Python
-Framework: [Codex CLI](https://developers.openai.com/codex/cli)
+Agent: [Codex CLI](https://developers.openai.com/codex/cli)
 Pattern: Coding agent
 Model: [GPT-5.5](https://developers.openai.com/api/docs/models/gpt-5.5)
 ---

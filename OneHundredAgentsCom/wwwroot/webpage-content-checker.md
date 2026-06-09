@@ -6,18 +6,10 @@ The interesting part is the shape of the work left open. The checker starts with
 
 This matters because Jules is not trying to be another chatty coding partner like Codex or Claude Code. It is aimed at autonomous, asynchronous work in the cloud. This project tests what that handoff might feel like in a real business task: small, bounded, reviewable changes.
 
-::: WRAPPER class="icon-area icon-info" :::
-
-**Note!**
-
-That was the plan, anyway. Jules reported that it had finished, but the expected code updates and publish button never appeared. So the experiment stopped at the handoff. The webpage checker was meant to test a small coding task; instead, it tested whether Jules could return reviewable work. This time, it could not.
-
-::: /WRAPPER :::
-
 ::: SIDEBAR :::
 
 Language: Python
-Framework: [Jules by Google](https://jules.google/)
+Agent: [Jules by Google](https://jules.google/)
 Pattern: Coding agent
 Models: [GPT-5.5](https://developers.openai.com/api/docs/models/gpt-5.5) | [Gemini 2.5](https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro)
 ---

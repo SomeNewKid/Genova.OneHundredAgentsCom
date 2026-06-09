@@ -12,7 +12,7 @@ Language: Python
 Framework: [IBM BeeAI Framework](https://framework.beeai.dev/introduction/welcome)
 Pattern: Multi-agent
 Integrations: [MediaWiki API](https://www.mediawiki.org/wiki/API:Main_page) | [Open-Meteo Geocoding API](https://open-meteo.com/) | [Open-Meteo Forecast API](https://open-meteo.com/)
-Model: [IBM Granite 3.3](https://www.ibm.com/granite)
+Model: [Granite 3.3](https://www.ibm.com/granite)
 ---
 
 Repository: [GitHub](https://github.com/SomeNewKid/TravelLandmarkAgent)

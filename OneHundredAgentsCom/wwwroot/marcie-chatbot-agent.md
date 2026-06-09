@@ -12,7 +12,7 @@ Language: Python
 Framework: [LangChain](https://www.langchain.com/)
 Pattern: Single-agent, Chatbot
 Integrations: [Open-Meteo Geocoding API](https://open-meteo.com/) | [Open-Meteo Forecast API](https://open-meteo.com/)
-Model: [IBM Granite 4.1](https://www.ibm.com/granite)
+Model: [Granite 4.1](https://www.ibm.com/granite)
 ---
 
 Repository: [GitHub](https://github.com/SomeNewKid/MarcieChatbotAgent)
