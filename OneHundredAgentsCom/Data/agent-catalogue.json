@@ -16,7 +16,11 @@
             "agents": [
                 {
                     "name": "History Tutor Agent",
-                    "description": "First steps with the OpenAI Agents SDK"
+                    "description": "First steps with the OpenAI Agents SDK."
+                },
+                {
+                    "name": "Webpage Image Repairer",
+                    "description": "Using tools with the OpenAI Agents SDK."
                 }
             ]
         },
@@ -26,7 +30,7 @@
             "agents": [
                 {
                     "name": "Travel Landmark Agent",
-                    "description": "First steps with BeeAI"
+                    "description": "First steps with BeeAI."
                 }
             ]
         },
@@ -36,7 +40,7 @@
             "agents": [
                 {
                     "name": "Marcie Chatbot Agent",
-                    "description": "First steps with LangChain"
+                    "description": "First steps with LangChain."
                 }
             ]
         },
@@ -46,15 +50,15 @@
             "agents": [
                 {
                     "name": "Broken Link Checker",
-                    "description": "Struggling with Cline CLI"
+                    "description": "Struggling with Cline CLI."
                 },
                 {
                     "name": "Security Headers Auditor",
-                    "description": "Evaluating Codex CLI"
+                    "description": "Evaluating Codex CLI."
                 },
                 {
                     "name": "Webpage Content Checker",
-                    "description": "Wrestling with Jules"
+                    "description": "Wrestling with Jules."
                 }
             ]
         }

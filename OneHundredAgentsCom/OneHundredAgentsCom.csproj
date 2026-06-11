@@ -93,5 +93,6 @@
     <Content Remove="wwwroot\security-headers-auditor.md" />
     <Content Remove="wwwroot\travel-landmark-agent.md" />
     <Content Remove="wwwroot\webpage-content-checker.md" />
+    <Content Remove="wwwroot\webpage-image-repairer.md" />
   </ItemGroup>
 </Project>
