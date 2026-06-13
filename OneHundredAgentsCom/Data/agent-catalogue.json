@@ -21,6 +21,14 @@
                 {
                     "name": "Webpage Image Repairer",
                     "description": "Using tools with the OpenAI Agents SDK."
+                },
+                {
+                    "name": "Bedtime Story Teller",
+                    "description": "Using guardrails with the OpenAI Agents SDK."
+                },
+                {
+                    "name": "Rubber Duck Debugger",
+                    "description": "Human approvals with the OpenAI Agents SDK."
                 }
             ]
         },
