@@ -90,6 +90,7 @@
     <Content Remove="wwwroot\index.md" />
     <Content Remove="wwwroot\marcie-chatbot-agent.md" />
     <Content Remove="wwwroot\notices.md" />
+    <Content Remove="wwwroot\office-fridge-labeler.md" />
     <Content Remove="wwwroot\robots.txt" />
     <Content Remove="wwwroot\rubber-duck-debugger.md" />
     <Content Remove="wwwroot\security-headers-auditor.md" />

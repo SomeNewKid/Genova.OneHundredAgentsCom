@@ -29,6 +29,10 @@
                 {
                     "name": "Rubber Duck Debugger",
                     "description": "Human approvals with the OpenAI Agents SDK."
+                },
+                {
+                    "name": "Office Fridge Labeler",
+                    "description": "Using an MCP server with the OpenAI Agents SDK."
                 }
             ]
         },
