@@ -37,6 +37,16 @@
             ]
         },
         {
+            "title": "Google's Agent Development Kit",
+            "description": "Agents built using Google's Agent Development Kit.",
+            "agents": [
+                {
+                    "name": "New York Guide",
+                    "description": "First steps with Agent Development Kit."
+                }
+            ]
+        },
+        {
             "title": "IBM BeeAI Framework",
             "description": "Agents built using IBM's open-source BeeAI framework.",
             "agents": [
