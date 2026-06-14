@@ -43,6 +43,10 @@
                 {
                     "name": "New York Guide",
                     "description": "First steps with Agent Development Kit."
+                },
+                {
+                    "name": "Greeting Card Writer",
+                    "description": "Creating an agent team with the ADK."
                 }
             ]
         },
