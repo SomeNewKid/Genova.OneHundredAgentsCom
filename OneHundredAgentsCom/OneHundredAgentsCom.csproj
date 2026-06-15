@@ -89,6 +89,7 @@
     <Content Remove="wwwroot\greeting-card-writer.md" />
     <Content Remove="wwwroot\history-tutor-agent.md" />
     <Content Remove="wwwroot\index.md" />
+    <Content Remove="wwwroot\internal-acronym-explainer.md" />
     <Content Remove="wwwroot\marcie-chatbot-agent.md" />
     <Content Remove="wwwroot\new-york-guide.md" />
     <Content Remove="wwwroot\notices.md" />

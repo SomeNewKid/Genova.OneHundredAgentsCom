@@ -42,11 +42,15 @@
             "agents": [
                 {
                     "name": "New York Guide",
-                    "description": "First steps with Agent Development Kit."
+                    "description": "First steps with Google's Agent Development Kit."
                 },
                 {
                     "name": "Greeting Card Writer",
-                    "description": "Creating an agent team with the ADK."
+                    "description": "Creating an agent team with Google's ADK."
+                },
+                {
+                    "name": "Internal Acronym Explainer",
+                    "description": "Using guardrails with Google's ADK."
                 }
             ]
         },
