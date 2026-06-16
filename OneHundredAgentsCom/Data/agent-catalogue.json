@@ -51,6 +51,10 @@
                 {
                     "name": "Internal Acronym Explainer",
                     "description": "Using guardrails with Google's ADK."
+                },
+                {
+                    "name": "Color Style Agent",
+                    "description": "Using plugins with Google's ADK."
                 }
             ]
         },
