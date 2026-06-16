@@ -64,7 +64,11 @@
             "agents": [
                 {
                     "name": "Travel Landmark Agent",
-                    "description": "First steps with BeeAI."
+                    "description": "First steps with the BeeAI framework."
+                },
+                {
+                    "name": "Document Summarizer",
+                    "description": "Using guardrails with the BeeAI framework."
                 }
             ]
         },
