@@ -69,6 +69,10 @@
                 {
                     "name": "Document Summarizer",
                     "description": "Using guardrails with the BeeAI framework."
+                },
+                {
+                    "name": "Movie Finder Agent",
+                    "description": "Retrieval-augmented generation with BeeAI."
                 }
             ]
         },
