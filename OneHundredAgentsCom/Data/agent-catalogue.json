@@ -73,6 +73,10 @@
                 {
                     "name": "Movie Finder Agent",
                     "description": "Retrieval-augmented generation with BeeAI."
+                },
+                {
+                    "name": "Gherkin Test Checker",
+                    "description": "Non-agent workflows with the BeeAI framework."
                 }
             ]
         },
