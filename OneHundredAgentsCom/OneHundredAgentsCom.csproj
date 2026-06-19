@@ -89,6 +89,7 @@
     <Content Remove="wwwroot\document-summarizer.md" />
     <Content Remove="wwwroot\favicon.ico" />
     <Content Remove="wwwroot\gherkin-test-checker.md" />
+    <Content Remove="wwwroot\gherkin-test-writer.md" />
     <Content Remove="wwwroot\greeting-card-writer.md" />
     <Content Remove="wwwroot\history-tutor-agent.md" />
     <Content Remove="wwwroot\index.md" />

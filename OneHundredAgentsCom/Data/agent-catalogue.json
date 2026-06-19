@@ -76,7 +76,11 @@
                 },
                 {
                     "name": "Gherkin Test Checker",
-                    "description": "Non-agent workflows with the BeeAI framework."
+                    "description": "Non-agent workflow with the BeeAI framework."
+                },
+                {
+                    "name": "Gherkin Test Writer",
+                    "description": "Multi-agent workflow with the BeeAI framework."
                 }
             ]
         },
