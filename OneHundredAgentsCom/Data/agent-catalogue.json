@@ -91,6 +91,10 @@
                 {
                     "name": "Marcie Chatbot Agent",
                     "description": "First steps with LangChain."
+                },
+                {
+                    "name": "Leave Request Checker",
+                    "description": "Non-agent workflow with LangChain."
                 }
             ]
         },
