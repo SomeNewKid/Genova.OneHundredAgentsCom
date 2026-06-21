@@ -95,6 +95,10 @@
                 {
                     "name": "Leave Request Checker",
                     "description": "Non-agent workflow with LangChain."
+                },
+                {
+                    "name": "Customer Note Taker",
+                    "description": "Using guardrails with LangChain."
                 }
             ]
         },

@@ -86,6 +86,7 @@
     <Content Remove="wwwroot\broken-link-checker.md" />
     <Content Remove="wwwroot\color-style-agent.md" />
     <Content Remove="wwwroot\customer-complaint-agent.md" />
+    <Content Remove="wwwroot\customer-note-taker.md" />
     <Content Remove="wwwroot\document-summarizer.md" />
     <Content Remove="wwwroot\favicon.ico" />
     <Content Remove="wwwroot\gherkin-test-checker.md" />
