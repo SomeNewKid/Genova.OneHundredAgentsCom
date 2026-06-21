@@ -99,6 +99,10 @@
                 {
                     "name": "Customer Note Taker",
                     "description": "Using guardrails with LangChain."
+                },
+                {
+                    "name": "Accessible HTML Coder",
+                    "description": "First steps with LangGraph."
                 }
             ]
         },
