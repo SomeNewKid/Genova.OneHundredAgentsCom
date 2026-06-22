@@ -106,6 +106,7 @@
     <Content Remove="wwwroot\robots.txt" />
     <Content Remove="wwwroot\rubber-duck-debugger.md" />
     <Content Remove="wwwroot\security-headers-auditor.md" />
+    <Content Remove="wwwroot\software-project-summarizer.md" />
     <Content Remove="wwwroot\travel-landmark-agent.md" />
     <Content Remove="wwwroot\webpage-content-checker.md" />
     <Content Remove="wwwroot\webpage-image-repairer.md" />

@@ -107,6 +107,10 @@
                 {
                     "name": "Meeting Room Finder",
                     "description": "Using tools with a LangGraph agent."
+                },
+                {
+                    "name": "Software Project Summarizer",
+                    "description": "First steps with DeepAgents."
                 }
             ]
         },
