@@ -98,6 +98,7 @@
     <Content Remove="wwwroot\internal-acronym-explainer.md" />
     <Content Remove="wwwroot\leave-request-checker.md" />
     <Content Remove="wwwroot\marcie-chatbot-agent.md" />
+    <Content Remove="wwwroot\meeting-room-finder.md" />
     <Content Remove="wwwroot\movie-finder-agent.md" />
     <Content Remove="wwwroot\new-york-guide.md" />
     <Content Remove="wwwroot\notices.md" />

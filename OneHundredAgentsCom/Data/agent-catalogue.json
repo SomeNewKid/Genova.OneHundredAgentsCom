@@ -103,6 +103,10 @@
                 {
                     "name": "Accessible HTML Coder",
                     "description": "First steps with LangGraph."
+                },
+                {
+                    "name": "Meeting Room Finder",
+                    "description": "Using tools with a LangGraph agent."
                 }
             ]
         },
