@@ -99,10 +99,12 @@
     <Content Remove="wwwroot\leave-request-checker.md" />
     <Content Remove="wwwroot\marcie-chatbot-agent.md" />
     <Content Remove="wwwroot\meeting-room-finder.md" />
+    <Content Remove="wwwroot\model-recommender.md" />
     <Content Remove="wwwroot\movie-finder-agent.md" />
     <Content Remove="wwwroot\new-york-guide.md" />
     <Content Remove="wwwroot\notices.md" />
     <Content Remove="wwwroot\office-fridge-labeler.md" />
+    <Content Remove="wwwroot\react-card-coder.md" />
     <Content Remove="wwwroot\refactoring-coder.md" />
     <Content Remove="wwwroot\robots.txt" />
     <Content Remove="wwwroot\rubber-duck-debugger.md" />

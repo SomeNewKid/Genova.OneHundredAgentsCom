@@ -120,7 +120,15 @@
             "agents": [
                 {
                     "name": "Refactoring Coder",
-                    "description": "First steps with Anthropic's Agent SDK."
+                    "description": "First steps with Anthropic's Python SDK."
+                },
+                {
+                    "name": "Model Recommender",
+                    "description": "First steps with the Claude Agent SDK."
+                },
+                {
+                    "name": "React Card Coder",
+                    "description": "Using screenshots with the Claude Agent SDK."
                 }
             ]
         },
