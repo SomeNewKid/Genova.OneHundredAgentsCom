@@ -53,6 +53,8 @@ internal static class HomePage
 
     private static void AppendAgentGroupsHtml(StringBuilder builder, AgentCatalogue catalogue)
     {
+        int agentCount = catalogue.Groups.Sum(g => g.Agents.Count);
+        builder.AppendLine("<p><strong><em>There are current " + agentCount + " agents in the catalogue.</em></strong></p>");
         foreach (AgentGroup group in catalogue.Groups)
         {
             if (group.Agents.Count == 0)

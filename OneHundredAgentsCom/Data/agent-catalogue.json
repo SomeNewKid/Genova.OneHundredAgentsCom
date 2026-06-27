@@ -115,6 +115,16 @@
             ]
         },
         {
+            "title": "Anthropic Agents",
+            "description": "Agents built using Anthropic's tools and frameworks.",
+            "agents": [
+                {
+                    "name": "Refactoring Coder",
+                    "description": "First steps with Anthropic's Agent SDK."
+                }
+            ]
+        },
+        {
             "title": "Coding agents",
             "description": "Agents whose purpose is to assist with coding tasks.",
             "agents": [
@@ -128,7 +138,7 @@
                 },
                 {
                     "name": "Webpage Content Checker",
-                    "description": "Wrestling with Jules."
+                    "description": "Evaluating Google's Jules."
                 }
             ]
         }
