@@ -116,4 +116,7 @@
     <Content Remove="wwwroot\webpage-image-repairer.md" />
     <Content Remove="wwwroot\white-belt-hacker.md" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\risk-classifier.md" />
+  </ItemGroup>
 </Project>

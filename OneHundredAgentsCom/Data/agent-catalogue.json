@@ -141,6 +141,16 @@
             ]
         },
         {
+            "title": "Microsoft Agents",
+            "description": "Agents built using Microsoft's tools and frameworks.",
+            "agents": [
+                {
+                    "name": "Risk Classifier",
+                    "description": "First steps with Microsoft's Agent Framework."
+                }
+            ]
+        },
+        {
             "title": "Coding agents",
             "description": "Agents whose purpose is to assist with coding tasks.",
             "agents": [
