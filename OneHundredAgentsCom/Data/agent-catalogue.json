@@ -129,6 +129,10 @@
                 {
                     "name": "React Card Coder",
                     "description": "Using screenshots with the Claude Agent SDK."
+                },
+                {
+                    "name": "White Belt Hacker",
+                    "description": "Using tool governance with the Claude Agent SDK."
                 }
             ]
         },
