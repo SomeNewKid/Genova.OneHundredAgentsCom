@@ -133,6 +133,10 @@
                 {
                     "name": "White Belt Hacker",
                     "description": "Using tool governance with the Claude Agent SDK."
+                },
+                {
+                    "name": "Web Resource Checker",
+                    "description": "Using skills with the Claude Agent SDK."
                 }
             ]
         },
