@@ -155,6 +155,20 @@
                 {
                     "name": "Postage Calculator",
                     "description": "Using skills with the Agent Framework."
+                },
+                {
+                    "name": "Slimy Car Salesman",
+                    "description": "Using guardrails with the Agent Framework."
+                }
+            ]
+        },
+        {
+            "title": "CrewAI Agents",
+            "description": "Multi-agent systems built using CrewAI.",
+            "agents": [
+                {
+                    "name": "Topic Instructor",
+                    "description": "First steps with CrewAI."
                 }
             ]
         },

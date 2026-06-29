@@ -111,7 +111,9 @@
     <Content Remove="wwwroot\rubber-duck-debugger.md" />
     <Content Remove="wwwroot\scribble-sorter.md" />
     <Content Remove="wwwroot\security-headers-auditor.md" />
+    <Content Remove="wwwroot\slimy-car-salesman.md" />
     <Content Remove="wwwroot\software-project-summarizer.md" />
+    <Content Remove="wwwroot\topic-instructor.md" />
     <Content Remove="wwwroot\travel-landmark-agent.md" />
     <Content Remove="wwwroot\web-resource-checker.md" />
     <Content Remove="wwwroot\webpage-content-checker.md" />
