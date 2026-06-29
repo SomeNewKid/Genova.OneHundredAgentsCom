@@ -108,6 +108,7 @@
     <Content Remove="wwwroot\refactoring-coder.md" />
     <Content Remove="wwwroot\robots.txt" />
     <Content Remove="wwwroot\rubber-duck-debugger.md" />
+    <Content Remove="wwwroot\scribble-sorter.md" />
     <Content Remove="wwwroot\security-headers-auditor.md" />
     <Content Remove="wwwroot\software-project-summarizer.md" />
     <Content Remove="wwwroot\travel-landmark-agent.md" />

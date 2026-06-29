@@ -147,6 +147,10 @@
                 {
                     "name": "Risk Classifier",
                     "description": "First steps with Microsoft's Agent Framework."
+                },
+                {
+                    "name": "Scribble Sorter",
+                    "description": "First steps with workflows in the Agent Framework."
                 }
             ]
         },
