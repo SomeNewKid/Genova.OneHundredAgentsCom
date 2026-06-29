@@ -151,6 +151,10 @@
                 {
                     "name": "Scribble Sorter",
                     "description": "First steps with workflows in the Agent Framework."
+                },
+                {
+                    "name": "Postage Calculator",
+                    "description": "Using skills with the Agent Framework."
                 }
             ]
         },
