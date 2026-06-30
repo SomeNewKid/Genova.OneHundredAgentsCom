@@ -169,6 +169,10 @@
                 {
                     "name": "Topic Instructor",
                     "description": "First steps with CrewAI."
+                },
+                {
+                    "name": "Price Checker",
+                    "description": "Using tools with CrewAI."
                 }
             ]
         },

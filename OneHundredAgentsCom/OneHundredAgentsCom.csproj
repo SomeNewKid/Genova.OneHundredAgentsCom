@@ -105,6 +105,7 @@
     <Content Remove="wwwroot\notices.md" />
     <Content Remove="wwwroot\office-fridge-labeler.md" />
     <Content Remove="wwwroot\postage-calculator.md" />
+    <Content Remove="wwwroot\price-checker.md" />
     <Content Remove="wwwroot\react-card-coder.md" />
     <Content Remove="wwwroot\refactoring-coder.md" />
     <Content Remove="wwwroot\robots.txt" />
