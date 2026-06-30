@@ -177,6 +177,10 @@
                 {
                     "name": "Movie Suggester",
                     "description": "Using guardrails with CrewAI."
+                },
+                {
+                    "name": "TxtSpkr",
+                    "description": "Using skills with CrewAI."
                 }
             ]
         },
