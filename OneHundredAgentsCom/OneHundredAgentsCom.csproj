@@ -118,6 +118,7 @@
     <Content Remove="wwwroot\topic-instructor.md" />
     <Content Remove="wwwroot\travel-landmark-agent.md" />
     <Content Remove="wwwroot\txtspkr.md" />
+    <Content Remove="wwwroot\vehicle-trip-analyst.md" />
     <Content Remove="wwwroot\web-resource-checker.md" />
     <Content Remove="wwwroot\webpage-content-checker.md" />
     <Content Remove="wwwroot\webpage-image-repairer.md" />

@@ -201,6 +201,16 @@
                     "description": "Evaluating Google's Jules."
                 }
             ]
+        },
+        {
+            "title": "Miscellaneous agents",
+            "description": "Agents based on other frameworks.",
+            "agents": [
+                {
+                    "name": "Vehicle Trip Analyst",
+                    "description": "First use of Hugging Face's smolagents'."
+                }
+            ]
         }
     ]
 }
