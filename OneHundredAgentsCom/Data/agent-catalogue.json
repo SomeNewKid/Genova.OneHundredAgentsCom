@@ -173,6 +173,10 @@
                 {
                     "name": "Price Checker",
                     "description": "Using tools with CrewAI."
+                },
+                {
+                    "name": "Movie Suggester",
+                    "description": "Using guardrails with CrewAI."
                 }
             ]
         },

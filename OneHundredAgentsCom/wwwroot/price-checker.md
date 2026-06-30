@@ -14,6 +14,6 @@ Pattern: Multi-agent
 Model: [GPT-4o](https://developers.openai.com/api/docs/models/gpt-4o)
 ---
 
-Repository: [GitHub](https://github.com/SomeNewKid/TopicInstructor)
+Repository: [GitHub](https://github.com/SomeNewKid/PriceChecker)
 
 ::: /SIDEBAR :::
