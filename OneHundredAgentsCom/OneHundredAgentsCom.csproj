@@ -105,6 +105,7 @@
     <Content Remove="wwwroot\movie-finder-agent.md" />
     <Content Remove="wwwroot\movie-suggester.md" />
     <Content Remove="wwwroot\new-york-guide.md" />
+    <Content Remove="wwwroot\note-router.md" />
     <Content Remove="wwwroot\notices.md" />
     <Content Remove="wwwroot\office-fridge-labeler.md" />
     <Content Remove="wwwroot\postage-calculator.md" />
