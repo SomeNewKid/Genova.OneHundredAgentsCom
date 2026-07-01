@@ -209,6 +209,10 @@
                 {
                     "name": "Vehicle Trip Analyst",
                     "description": "First use of Hugging Face's smolagents'."
+                },
+                {
+                    "name": "Bank Support Officer",
+                    "description": "First use of the Pydantic AI framework.'."
                 }
             ]
         }
