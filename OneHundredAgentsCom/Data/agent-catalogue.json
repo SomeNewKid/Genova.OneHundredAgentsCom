@@ -208,11 +208,15 @@
             "agents": [
                 {
                     "name": "Vehicle Trip Analyst",
-                    "description": "First use of Hugging Face's smolagents'."
+                    "description": "First steps with Hugging Face's smolagents'."
                 },
                 {
                     "name": "Bank Support Officer",
-                    "description": "First use of the Pydantic AI framework.'."
+                    "description": "First steps with the Pydantic AI framework.'."
+                },
+                {
+                    "name": "Contact Assistant",
+                    "description": "First steps with the Haystack AI framework.'."
                 }
             ]
         }
