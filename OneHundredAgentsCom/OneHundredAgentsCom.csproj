@@ -125,6 +125,7 @@
     <Content Remove="wwwroot\web-resource-checker.md" />
     <Content Remove="wwwroot\webpage-content-checker.md" />
     <Content Remove="wwwroot\webpage-image-repairer.md" />
+    <Content Remove="wwwroot\website-status-checker.md" />
     <Content Remove="wwwroot\white-belt-hacker.md" />
   </ItemGroup>
   <ItemGroup>

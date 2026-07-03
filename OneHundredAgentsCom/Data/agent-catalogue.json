@@ -6,7 +6,11 @@
             "agents": [
                 {
                     "name": "Customer Complaint Agent",
-                    "description": "Initial version of bespoke agent."
+                    "description": "Initial version of a bespoke agent."
+                },
+                {
+                    "name": "Website Status Checker",
+                    "description": "Introduction of a bespoke Otto agent framework."
                 }
             ]
         },
