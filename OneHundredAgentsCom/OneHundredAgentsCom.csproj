@@ -85,6 +85,7 @@
     <Content Remove="wwwroot\accessible-html-coder.md" />
     <Content Remove="wwwroot\bank-support-officer.md" />
     <Content Remove="wwwroot\bedtime-story-teller.md" />
+    <Content Remove="wwwroot\birthday-card-helper.md" />
     <Content Remove="wwwroot\broken-link-checker.md" />
     <Content Remove="wwwroot\color-style-agent.md" />
     <Content Remove="wwwroot\contact-assistant.md" />

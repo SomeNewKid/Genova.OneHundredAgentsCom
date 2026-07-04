@@ -11,6 +11,10 @@
                 {
                     "name": "Website Status Checker",
                     "description": "Introduction of a bespoke Otto agent framework."
+                },
+                {
+                    "name": "Birthday Card Helper",
+                    "description": "Improving the bespoke Otto agent framework."
                 }
             ]
         },
