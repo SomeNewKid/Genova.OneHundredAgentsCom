@@ -15,6 +15,10 @@
                 {
                     "name": "Birthday Card Helper",
                     "description": "Improving the bespoke Otto agent framework."
+                },
+                {
+                    "name": "Obsidian Vault Summarizer",
+                    "description": "Adding guardrails the bespoke Otto agent framework."
                 }
             ]
         },

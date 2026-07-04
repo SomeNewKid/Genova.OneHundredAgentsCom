@@ -108,6 +108,7 @@
     <Content Remove="wwwroot\new-york-guide.md" />
     <Content Remove="wwwroot\note-router.md" />
     <Content Remove="wwwroot\notices.md" />
+    <Content Remove="wwwroot\obsidian-vault-summarizer.md" />
     <Content Remove="wwwroot\office-fridge-labeler.md" />
     <Content Remove="wwwroot\postage-calculator.md" />
     <Content Remove="wwwroot\price-checker.md" />
