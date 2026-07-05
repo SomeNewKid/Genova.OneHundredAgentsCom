@@ -18,7 +18,7 @@
                 },
                 {
                     "name": "Obsidian Vault Summarizer",
-                    "description": "Adding guardrails the bespoke Otto agent framework."
+                    "description": "Adding guardrails to the bespoke Otto agent framework."
                 }
             ]
         },
@@ -202,7 +202,7 @@
             "agents": [
                 {
                     "name": "Broken Link Checker",
-                    "description": "Struggling with Cline CLI."
+                    "description": "Evaluating Cline CLI."
                 },
                 {
                     "name": "Security Headers Auditor",
@@ -233,6 +233,16 @@
                 {
                     "name": "Note Router",
                     "description": "First steps with OpenClaw."
+                }
+            ]
+        },
+        {
+            "title": "Sandboxed agents",
+            "description": "Agents deployed to sandboxed locations.",
+            "agents": [
+                {
+                    "name": "Sandbox Tester",
+                    "description": "Benchmark agent in a non-sandboxed location."
                 }
             ]
         }

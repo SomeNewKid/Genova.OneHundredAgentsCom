@@ -16,6 +16,11 @@ internal sealed class AgentEntry
     public string Name { get; set; } = string.Empty;
 
     /// <summary>
+    /// Gets or sets the description of the agent.
+    /// </summary>
+    public string Description { get; set; } = string.Empty;
+
+    /// <summary>
     /// Gets or sets the URL slug used for the agent page and related image assets. If no value is set, the slug is
     /// derived from the agent name.
     /// </summary>

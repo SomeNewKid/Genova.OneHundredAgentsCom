@@ -116,6 +116,7 @@
     <Content Remove="wwwroot\refactoring-coder.md" />
     <Content Remove="wwwroot\robots.txt" />
     <Content Remove="wwwroot\rubber-duck-debugger.md" />
+    <Content Remove="wwwroot\sandbox-tester.md" />
     <Content Remove="wwwroot\scribble-sorter.md" />
     <Content Remove="wwwroot\security-headers-auditor.md" />
     <Content Remove="wwwroot\slimy-car-salesman.md" />
