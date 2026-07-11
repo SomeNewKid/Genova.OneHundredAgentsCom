@@ -241,8 +241,12 @@
             "description": "Agents deployed to sandboxed locations.",
             "agents": [
                 {
-                    "name": "Sandbox Tester",
+                    "name": "Stock Local Machine",
                     "description": "Benchmark agent in a non-sandboxed location."
+                },
+                {
+                    "name": "Stock Virtual Machine",
+                    "description": "Agent running in a stock virtual machine."
                 }
             ]
         }

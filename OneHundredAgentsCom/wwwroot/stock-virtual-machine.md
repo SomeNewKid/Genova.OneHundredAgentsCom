@@ -1,4 +1,4 @@
-﻿# Sandbox Tester
+﻿# Stock Local Machine
 
 Sandbox Tester is a proof-of-concept agent built to answer an uncomfortable question: what can this agent actually do from inside its runtime? It runs through a catalogue of capabilities and reports whether each one is allowed, denied, not applicable, or failed. That includes obvious checks, like reading files, and less obvious ones, like looking at home directories, shared drives, environment details, local services, tools, and approval boundaries.
 
@@ -11,6 +11,7 @@ Built around the OpenAI Agents SDK, Sandbox Tester sketches a repeatable way to 
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 Pattern: Single agent
+Sandbox: None
 Integration: [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses)
 Model: [GPT-5.4 mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini)
 ---
@@ -18,3 +19,5 @@ Model: [GPT-5.4 mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini
 Repository: [GitHub](https://github.com/SomeNewKid/SandboxTester)
 
 ::: /SIDEBAR :::
+
+::: SANDBOX-REPORT name="sandbox-vm-stock" title="Sandbox Report - Local Virtual Machine" :::

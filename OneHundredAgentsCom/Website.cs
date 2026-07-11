@@ -170,6 +170,7 @@ public sealed class Website : WebsiteBase
             new AgentNavigationModifier(),
             new SidebarModifier(),
             new WrapperModifier(),
+            new SandboxReportModifier(),
         };
 
         return baseModifiers.Concat(websiteModifiers);
