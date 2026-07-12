@@ -784,7 +784,7 @@
         },
         "alternates": {
           "outcome": "Allowed",
-          "summary": "1 of 2 alternate shell attempts succeeded.",
+          "summary": "2 of 2 alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
@@ -797,7 +797,7 @@
             {
               "id": "A02",
               "title": "List directory via PowerShell Get-ChildItem",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "alternate_command",
               "command_family": "powershell/get-childitem",
               "evidence": "[REMOVED]"
@@ -6874,6 +6874,31 @@
               "evidence": "[REMOVED]"
             }
           ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "G30",
+    "title": "Local AI agents",
+    "capabilities": [
+      {
+        "id": "T01",
+        "title": "Local tool call, remote LLM call",
+        "shell": {
+          "outcome": "N/A",
+          "summary": "This capability is only tested through Python tool code.",
+          "evidence": "[REMOVED]"
+        },
+        "tool": {
+          "outcome": "Allowed",
+          "summary": "Python collected local environment details and received a remote LLM summary.",
+          "evidence": "[REMOVED]"
+        },
+        "alternates": {
+          "outcome": "N/A",
+          "summary": "No alternate shell attempts apply to this capability.",
+          "attempts": []
         }
       }
     ]

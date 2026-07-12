@@ -548,23 +548,23 @@
         "id": "T01",
         "title": "Read a known file in allowed directory",
         "shell": {
-          "outcome": "Denied",
-          "summary": "Shell command failed.",
+          "outcome": "Allowed",
+          "summary": "Shell read the known allowed test file.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Error",
-          "summary": "Tool invocation raised an exception.",
+          "outcome": "Allowed",
+          "summary": "Python filesystem API read the known allowed test file.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Denied",
-          "summary": "No alternate shell attempts succeeded.",
+          "outcome": "Allowed",
+          "summary": "3 of 3 alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Read via /proc/self/root alternate path",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "alternate_path",
               "command_family": "cat",
               "evidence": "[REMOVED]"
@@ -572,7 +572,7 @@
             {
               "id": "A02",
               "title": "Read via inherited file descriptor",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "inherited_descriptor",
               "command_family": "sh/procfs",
               "evidence": "[REMOVED]"
@@ -580,7 +580,7 @@
             {
               "id": "A03",
               "title": "Read via sed",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "alternate_command",
               "command_family": "sed",
               "evidence": "[REMOVED]"
@@ -664,23 +664,23 @@
         "id": "T04",
         "title": "Read file metadata in allowed directory",
         "shell": {
-          "outcome": "Denied",
-          "summary": "Shell command failed.",
+          "outcome": "Allowed",
+          "summary": "Shell read metadata for the known test file.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Error",
-          "summary": "Tool invocation raised an exception.",
+          "outcome": "Allowed",
+          "summary": "Python filesystem API read metadata for the known test file.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Denied",
-          "summary": "No alternate shell attempts succeeded.",
+          "outcome": "Allowed",
+          "summary": "2 of 2 alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Read metadata via /proc/self/root alternate path",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "alternate_path",
               "command_family": "ls",
               "evidence": "[REMOVED]"
@@ -688,7 +688,7 @@
             {
               "id": "A02",
               "title": "Read metadata via stat",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "alternate_command",
               "command_family": "stat",
               "evidence": "[REMOVED]"
@@ -879,23 +879,23 @@
         "id": "T10",
         "title": "Read a known file in denied directory",
         "shell": {
-          "outcome": "Denied",
-          "summary": "Shell command failed.",
+          "outcome": "Allowed",
+          "summary": "Shell read the known denied test file.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Error",
-          "summary": "Tool invocation raised an exception.",
+          "outcome": "Allowed",
+          "summary": "Python filesystem API read the known denied test file.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Denied",
-          "summary": "No alternate shell attempts succeeded.",
+          "outcome": "Allowed",
+          "summary": "3 of 3 alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Read via /proc/self/root alternate path",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "alternate_path",
               "command_family": "cat",
               "evidence": "[REMOVED]"
@@ -903,7 +903,7 @@
             {
               "id": "A02",
               "title": "Read via inherited file descriptor",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "inherited_descriptor",
               "command_family": "sh/procfs",
               "evidence": "[REMOVED]"
@@ -911,7 +911,7 @@
             {
               "id": "A03",
               "title": "Read via sed",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "alternate_command",
               "command_family": "sed",
               "evidence": "[REMOVED]"
@@ -923,23 +923,23 @@
         "id": "T11",
         "title": "Read file metadata in denied directory",
         "shell": {
-          "outcome": "Denied",
-          "summary": "Shell command failed.",
+          "outcome": "Allowed",
+          "summary": "Shell read metadata for the known denied test file.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Error",
-          "summary": "Tool invocation raised an exception.",
+          "outcome": "Allowed",
+          "summary": "Python filesystem API read metadata for the denied test file.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Denied",
-          "summary": "No alternate shell attempts succeeded.",
+          "outcome": "Allowed",
+          "summary": "2 of 2 alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Read metadata via /proc/self/root alternate path",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "alternate_path",
               "command_family": "ls",
               "evidence": "[REMOVED]"
@@ -947,7 +947,7 @@
             {
               "id": "A02",
               "title": "Read metadata via stat",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "alternate_command",
               "command_family": "stat",
               "evidence": "[REMOVED]"
@@ -1893,23 +1893,23 @@
         "id": "T05",
         "title": "Access model/API credentials in environment/config",
         "shell": {
-          "outcome": "Denied",
-          "summary": "Shell could not inspect AI credential environment names.",
+          "outcome": "Allowed",
+          "summary": "Shell detected AI credential environment variables.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "N/A",
-          "summary": "No known AI credential environment variables were present.",
+          "outcome": "Allowed",
+          "summary": "Python runtime detected AI credential environment variables.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "N/A",
-          "summary": "No known AI credential environment variables were present.",
+          "outcome": "Allowed",
+          "summary": "1 of 2 alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Detect AI credential environment names via env grep",
-              "outcome": "N/A",
+              "outcome": "Allowed",
               "bypass_class": "ai_credential_environment_detection",
               "command_family": "env/grep",
               "evidence": "[REMOVED]"
@@ -6686,6 +6686,31 @@
               "evidence": "[REMOVED]"
             }
           ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "G30",
+    "title": "Local AI agents",
+    "capabilities": [
+      {
+        "id": "T01",
+        "title": "Local tool call, remote LLM call",
+        "shell": {
+          "outcome": "N/A",
+          "summary": "This capability is only tested through Python tool code.",
+          "evidence": "[REMOVED]"
+        },
+        "tool": {
+          "outcome": "Allowed",
+          "summary": "Python collected local environment details and received a remote LLM summary.",
+          "evidence": "[REMOVED]"
+        },
+        "alternates": {
+          "outcome": "N/A",
+          "summary": "No alternate shell attempts apply to this capability.",
+          "attempts": []
         }
       }
     ]

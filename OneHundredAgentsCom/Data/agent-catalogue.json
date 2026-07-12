@@ -242,7 +242,7 @@
             "agents": [
                 {
                     "name": "Stock Local Machine",
-                    "description": "Benchmark agent in a non-sandboxed location."
+                    "description": "Agent running in a stock local machine."
                 },
                 {
                     "name": "Stock Virtual Machine",

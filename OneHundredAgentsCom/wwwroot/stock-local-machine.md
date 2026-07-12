@@ -1,10 +1,10 @@
 ﻿# Stock Local Machine
 
-Sandbox Tester is a proof-of-concept agent built to answer an uncomfortable question: what can this agent actually do from inside its runtime? It runs through a catalogue of capabilities and reports whether each one is allowed, denied, not applicable, or failed. That includes obvious checks, like reading files, and less obvious ones, like looking at home directories, shared drives, environment details, local services, tools, and approval boundaries.
+Sandbox Tester is a small proof of concept built to answer an uncomfortable question: what can an AI agent do when it runs on a normal local machine, with no hardening, using the user’s own identity? The answer is not soothing. It can check access to files, processes, environment variables, browser traces, credentials, network targets, installed tools, source control, hardware, scheduled tasks, logs, and more. In other words, it tests the shape of the keys the agent has been handed.
 
-The business value is not that the agent performs a glamorous task. It does something more useful before the glamour starts: it shines a light into the sandbox. If an AI agent can list a network drive, read configuration files, invoke commands, or reach local services, that matters. Those powers may be accidental. They may also be exactly where the risk lives.
+The stock local sandbox version deliberately does not add much sandbox. That is the point. It prepares a few known test areas, runs the Sandbox Tester against the current machine, and records what worked, what failed, and what was not available. This gives a business reader something more useful than a vague security claim: a report showing what an agent could actually touch when launched like any other local tool.
 
-Built around the OpenAI Agents SDK, Sandbox Tester sketches a repeatable way to compare environments. Run it on a normal machine, then run it in a hardened sandbox, and the report should change. If it does not, the sandbox may be mostly decorative. That is awkward, but useful awkward.
+The lesson is blunt. If an AI agent runs as you, it may inherit a surprising amount of you. That is useful for automation, and also a very good reason not to confuse convenience with containment.
 
 ::: SIDEBAR :::
 
@@ -13,7 +13,7 @@ Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 Pattern: Single agent
 Sandbox: None
 Integration: [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses)
-Model: [GPT-5.4 mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini)
+Model: [GPT-4.1 mini](https://developers.openai.com/api/docs/models/gpt-4.1-mini)
 ---
 
 Repository: [GitHub](https://github.com/SomeNewKid/SandboxTester)
