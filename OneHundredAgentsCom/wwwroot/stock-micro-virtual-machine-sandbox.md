@@ -1,4 +1,4 @@
-﻿# Stock Micro Virtual Machine
+﻿# Stock Micro Virtual Machine Sandbox
 
 Sandbox Tester running inside a stock QEMU micro virtual machine asks a simple, uncomfortable question: what can this agent actually touch? It probes the world around it: files, processes, network access, browser use, credentials, hardware, package installation, source control, and other capabilities that matter when an AI agent is not just chatting, but acting.
 

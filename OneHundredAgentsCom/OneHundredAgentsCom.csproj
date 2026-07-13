@@ -81,4 +81,7 @@
     <EmbeddedResource Include="wwwroot\**" />
     <EmbeddedResource Include="Data\**" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\stock-container-sandbox.md" />
+  </ItemGroup>
 </Project>

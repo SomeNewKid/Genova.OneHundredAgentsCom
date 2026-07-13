@@ -1,4 +1,4 @@
-﻿# Stock Virtual Machine
+﻿# Stock Virtual Machine Sandbox
 
 Sandbox Tester running on a virtual machine asks a more useful question than “is this safe?” It asks what the agent can actually do from inside a stock VM with no special hardening. The agent probes its surroundings and reports which capabilities are available, blocked, missing, or not relevant. That includes practical areas a business would care about: files, processes, credentials, network access, browser state, cloud tools, databases, hardware, scheduling, and logs.
 

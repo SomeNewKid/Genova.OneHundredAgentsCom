@@ -241,16 +241,20 @@
             "description": "Agents deployed to sandboxed locations.",
             "agents": [
                 {
-                    "name": "Stock Local Machine",
+                    "name": "Stock Local Machine Sandbox",
                     "description": "Agent running in a stock local machine."
                 },
                 {
-                    "name": "Stock Virtual Machine",
+                    "name": "Stock Virtual Machine Sandbox",
                     "description": "Agent running in a stock virtual machine."
                 },
                 {
-                    "name": "Stock Micro Virtual Machine",
+                    "name": "Stock Micro Virtual Machine Sandbox",
                     "description": "Agent running in a stock micro virtual machine."
+                },
+                {
+                    "name": "Stock Container Sandbox",
+                    "description": "Agent running in a stock container."
                 }
             ]
         }

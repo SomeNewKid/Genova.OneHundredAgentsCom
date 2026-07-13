@@ -1,4 +1,4 @@
-﻿# Stock Local Machine
+﻿# Stock Local Machine Sandbox
 
 Sandbox Tester is a small proof of concept built to answer an uncomfortable question: what can an AI agent do when it runs on a normal local machine, with no hardening, using the user’s own identity? The answer is not soothing. It can check access to files, processes, environment variables, browser traces, credentials, network targets, installed tools, source control, hardware, scheduled tasks, logs, and more. In other words, it tests the shape of the keys the agent has been handed.
 
