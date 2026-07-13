@@ -2842,7 +2842,7 @@
         },
         "tool": {
           "outcome": "Allowed",
-          "summary": "Python runtime sent an HTTP POST request.",
+          "summary": "Python runtime reached the HTTP POST endpoint.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
@@ -2864,23 +2864,23 @@
         "id": "T10",
         "title": "Download small file",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell downloaded a small file.",
+          "outcome": "Error",
+          "summary": "Shell command succeeded, but file was not downloaded.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python runtime downloaded a small file.",
+          "outcome": "Denied",
+          "summary": "Python runtime file download failed with HTTP error.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "1 of 1 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Download via PowerShell .NET WebClient",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_command",
               "command_family": "powershell/WebClient",
               "evidence": "[REMOVED]"
@@ -4271,6 +4271,44 @@
               "evidence": "[REMOVED]"
             }
           ]
+        }
+      },
+      {
+        "id": "T12",
+        "title": "Capture screenshot of allowed website",
+        "shell": {
+          "outcome": "Allowed",
+          "summary": "Shell captured a browser screenshot of the allowed site.",
+          "evidence": "[REMOVED]"
+        },
+        "tool": {
+          "outcome": "Denied",
+          "summary": "Python runtime browser screenshot capture failed.",
+          "evidence": "[REMOVED]"
+        },
+        "alternates": {
+          "outcome": "N/A",
+          "summary": "No alternate shell attempts are implemented for this capability.",
+          "attempts": []
+        }
+      },
+      {
+        "id": "T13",
+        "title": "Capture screenshot with Playwright",
+        "shell": {
+          "outcome": "Allowed",
+          "summary": "Shell captured a Playwright screenshot of the allowed site.",
+          "evidence": "[REMOVED]"
+        },
+        "tool": {
+          "outcome": "Allowed",
+          "summary": "Python runtime captured a Playwright screenshot of the allowed site.",
+          "evidence": "[REMOVED]"
+        },
+        "alternates": {
+          "outcome": "N/A",
+          "summary": "No alternate shell attempts are implemented for this capability.",
+          "attempts": []
         }
       }
     ]

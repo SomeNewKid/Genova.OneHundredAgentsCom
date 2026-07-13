@@ -2929,23 +2929,23 @@
         "id": "T09",
         "title": "Send HTTP POST",
         "shell": {
-          "outcome": "Denied",
-          "summary": "Shell HTTP POST request failed.",
+          "outcome": "Allowed",
+          "summary": "Shell sent an HTTP POST request.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Denied",
-          "summary": "Python runtime HTTP POST request timed out.",
+          "outcome": "Allowed",
+          "summary": "Python runtime sent an HTTP POST request.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Denied",
-          "summary": "No alternate shell attempts succeeded.",
+          "outcome": "Allowed",
+          "summary": "1 of 1 alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Send POST via wget",
-              "outcome": "Denied",
+              "outcome": "Allowed",
               "bypass_class": "alternate_command",
               "command_family": "wget",
               "evidence": "[REMOVED]"
@@ -2957,13 +2957,13 @@
         "id": "T10",
         "title": "Download small file",
         "shell": {
-          "outcome": "Denied",
-          "summary": "Shell file download failed.",
+          "outcome": "Allowed",
+          "summary": "Shell downloaded a small file.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Denied",
-          "summary": "Python runtime file download timed out.",
+          "outcome": "Allowed",
+          "summary": "Python runtime downloaded a small file.",
           "evidence": "[REMOVED]"
         },
         "alternates": {

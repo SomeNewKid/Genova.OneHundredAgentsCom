@@ -247,6 +247,10 @@
                 {
                     "name": "Stock Virtual Machine",
                     "description": "Agent running in a stock virtual machine."
+                },
+                {
+                    "name": "Stock Micro Virtual Machine",
+                    "description": "Agent running in a stock micro virtual machine."
                 }
             ]
         }

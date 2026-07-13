@@ -9,7 +9,7 @@ This proof of concept points toward a simple business habit: test the boundary, 
 ::: SIDEBAR :::
 
 Language: Python
-Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
+Framework: None
 Pattern: Single agent
 Sandbox: Ubuntu Linux, VirtualBox
 Integration: [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses)

@@ -9,7 +9,7 @@ The lesson is blunt. If an AI agent runs as you, it may inherit a surprising amo
 ::: SIDEBAR :::
 
 Language: Python
-Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
+Framework: None
 Pattern: Single agent
 Sandbox: None
 Integration: [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses)
