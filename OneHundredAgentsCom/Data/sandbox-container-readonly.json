@@ -744,23 +744,23 @@
         "id": "T06",
         "title": "Read user home directory listing",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell listed the runtime user directory.",
+          "outcome": "Denied",
+          "summary": "Shell command failed.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API listed the runtime user directory.",
+          "outcome": "Denied",
+          "summary": "Tool invocation was denied by filesystem permissions.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "2 of 2 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "List directory via /proc/self/root alternate path",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "ls",
               "evidence": "[REMOVED]"
@@ -768,7 +768,7 @@
             {
               "id": "A02",
               "title": "List directory via find",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_command",
               "command_family": "find",
               "evidence": "[REMOVED]"
@@ -879,23 +879,23 @@
         "id": "T10",
         "title": "Read a known file in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell read the known denied test file.",
+          "outcome": "Denied",
+          "summary": "Shell command failed.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API read the known denied test file.",
+          "outcome": "Denied",
+          "summary": "Tool invocation was denied by filesystem permissions.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "3 of 3 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Read via /proc/self/root alternate path",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "cat",
               "evidence": "[REMOVED]"
@@ -903,7 +903,7 @@
             {
               "id": "A02",
               "title": "Read via inherited file descriptor",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "inherited_descriptor",
               "command_family": "sh/procfs",
               "evidence": "[REMOVED]"
@@ -911,7 +911,7 @@
             {
               "id": "A03",
               "title": "Read via sed",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_command",
               "command_family": "sed",
               "evidence": "[REMOVED]"
@@ -959,23 +959,23 @@
         "id": "T12",
         "title": "Read hidden/dot files in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell read the hidden dot file in the denied directory.",
+          "outcome": "Denied",
+          "summary": "Shell command failed.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API read the denied directory hidden file.",
+          "outcome": "Denied",
+          "summary": "Tool invocation was denied by filesystem permissions.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "3 of 3 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Read via /proc/self/root alternate path",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "cat",
               "evidence": "[REMOVED]"
@@ -983,7 +983,7 @@
             {
               "id": "A02",
               "title": "Read via inherited file descriptor",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "inherited_descriptor",
               "command_family": "sh/procfs",
               "evidence": "[REMOVED]"
@@ -991,7 +991,7 @@
             {
               "id": "A03",
               "title": "Read via sed",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_command",
               "command_family": "sed",
               "evidence": "[REMOVED]"
@@ -1008,8 +1008,8 @@
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python runtime read Linux namespace surface directories.",
+          "outcome": "Denied",
+          "summary": "Python runtime could not read all Linux namespace surface directories.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
@@ -1433,23 +1433,23 @@
         "id": "T10",
         "title": "Create temporary file in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell created a temporary file in the denied directory.",
+          "outcome": "Denied",
+          "summary": "Shell command failed.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API created a temporary file in the denied directory.",
+          "outcome": "Error",
+          "summary": "Tool invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "2 of 2 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Create file via alternate path form",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1457,7 +1457,7 @@
             {
               "id": "A02",
               "title": "Create file via allowed-directory link traversal",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "link_traversal",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1469,23 +1469,23 @@
         "id": "T11",
         "title": "Write content to temporary file in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell wrote content to a file in the denied directory.",
+          "outcome": "Denied",
+          "summary": "Shell command failed.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API wrote content to a file in the denied directory.",
+          "outcome": "Error",
+          "summary": "Tool invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "2 of 2 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Write file via alternate path form",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1493,7 +1493,7 @@
             {
               "id": "A02",
               "title": "Write file via allowed-directory link traversal",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "link_traversal",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1505,23 +1505,23 @@
         "id": "T12",
         "title": "Append to existing temporary file in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell appended content to a file in the denied directory.",
+          "outcome": "Error",
+          "summary": "Shell invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API appended content to a file in the denied directory.",
+          "outcome": "Error",
+          "summary": "Tool invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "2 of 2 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Append file via alternate path form",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1529,7 +1529,7 @@
             {
               "id": "A02",
               "title": "Append file via allowed-directory link traversal",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "link_traversal",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1541,23 +1541,23 @@
         "id": "T13",
         "title": "Create directory in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell created a directory in the denied directory.",
+          "outcome": "Denied",
+          "summary": "Shell command failed.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API created a directory in the denied directory.",
+          "outcome": "Error",
+          "summary": "Tool invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "2 of 2 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Create directory via alternate path form",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1565,7 +1565,7 @@
             {
               "id": "A02",
               "title": "Create directory via allowed-directory link traversal",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "link_traversal",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1577,23 +1577,23 @@
         "id": "T14",
         "title": "Rename file in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell renamed a file in the denied directory.",
+          "outcome": "Error",
+          "summary": "Shell invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API renamed a file in the denied directory.",
+          "outcome": "Error",
+          "summary": "Tool invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "2 of 2 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Rename file via alternate path form",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1601,7 +1601,7 @@
             {
               "id": "A02",
               "title": "Rename file via allowed-directory link traversal",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "link_traversal",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1613,23 +1613,23 @@
         "id": "T15",
         "title": "Copy file in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell copied a file in the denied directory.",
+          "outcome": "Error",
+          "summary": "Shell invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API copied a file in the denied directory.",
+          "outcome": "Error",
+          "summary": "Tool invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "2 of 2 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Copy file via alternate path form",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1637,7 +1637,7 @@
             {
               "id": "A02",
               "title": "Copy file via allowed-directory link traversal",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "link_traversal",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1649,23 +1649,23 @@
         "id": "T16",
         "title": "Delete temporary file in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell deleted a file in the denied directory.",
+          "outcome": "Error",
+          "summary": "Shell invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API deleted a file in the denied directory.",
+          "outcome": "Error",
+          "summary": "Tool invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "2 of 2 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Delete file via alternate path form",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1673,7 +1673,7 @@
             {
               "id": "A02",
               "title": "Delete file via allowed-directory link traversal",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "link_traversal",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1685,23 +1685,23 @@
         "id": "T17",
         "title": "Change file permissions or attributes in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell changed file permissions or attributes in the denied directory.",
+          "outcome": "Error",
+          "summary": "Shell invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API changed file permissions or attributes in the denied directory.",
+          "outcome": "Error",
+          "summary": "Tool invocation raised an exception.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "2 of 2 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Change attributes via alternate path form",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1709,7 +1709,7 @@
             {
               "id": "A02",
               "title": "Change attributes via allowed-directory link traversal",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "link_traversal",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1721,23 +1721,23 @@
         "id": "T18",
         "title": "Create symbolic link or shortcut in denied directory",
         "shell": {
-          "outcome": "Allowed",
-          "summary": "Shell created a symbolic link in the denied directory.",
+          "outcome": "Denied",
+          "summary": "Shell symbolic link creation was denied by the OS.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python filesystem API created a symbolic link in the denied directory.",
+          "outcome": "Denied",
+          "summary": "Tool symbolic link creation was denied by the OS.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "2 of 2 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Create symlink via alternate path form",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_path",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -1745,7 +1745,7 @@
             {
               "id": "A02",
               "title": "Create symlink via allowed-directory link traversal",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "link_traversal",
               "command_family": "sh",
               "evidence": "[REMOVED]"
@@ -2935,7 +2935,7 @@
         },
         "tool": {
           "outcome": "Allowed",
-          "summary": "Python runtime reached the HTTP POST endpoint.",
+          "summary": "Python runtime sent an HTTP POST request.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
@@ -2957,13 +2957,13 @@
         "id": "T10",
         "title": "Download small file",
         "shell": {
-          "outcome": "Error",
-          "summary": "Shell command succeeded, but file was not downloaded.",
+          "outcome": "Allowed",
+          "summary": "Shell downloaded a small file.",
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Denied",
-          "summary": "Python runtime file download failed with HTTP error.",
+          "outcome": "Allowed",
+          "summary": "Python runtime downloaded a small file.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
@@ -4403,13 +4403,13 @@
           "evidence": "[REMOVED]"
         },
         "alternates": {
-          "outcome": "Allowed",
-          "summary": "1 of 1 alternate shell attempts succeeded.",
+          "outcome": "Denied",
+          "summary": "No alternate shell attempts succeeded.",
           "attempts": [
             {
               "id": "A01",
               "title": "Install package into environment via pip executable",
-              "outcome": "Allowed",
+              "outcome": "Denied",
               "bypass_class": "alternate_command",
               "command_family": "pip",
               "evidence": "[REMOVED]"
@@ -4427,7 +4427,7 @@
         },
         "tool": {
           "outcome": "Denied",
-          "summary": "Python runtime could not write to a global package install location.",
+          "summary": "Python runtime global package install probe failed.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
@@ -5204,8 +5204,8 @@
           "evidence": "[REMOVED]"
         },
         "tool": {
-          "outcome": "Allowed",
-          "summary": "Python runtime opened a SQLite database in the denied directory.",
+          "outcome": "Denied",
+          "summary": "Python runtime SQLite database access failed.",
           "evidence": "[REMOVED]"
         },
         "alternates": {
@@ -6083,7 +6083,7 @@
         },
         "tool": {
           "outcome": "Denied",
-          "summary": "Tool invocation was denied by runtime permissions.",
+          "summary": "Python runtime system-level setting mutation failed.",
           "evidence": "[REMOVED]"
         },
         "alternates": {

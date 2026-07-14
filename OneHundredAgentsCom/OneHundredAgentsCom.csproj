@@ -82,6 +82,7 @@
     <EmbeddedResource Include="Data\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="wwwroot\read-only-container-sandbox.md" />
     <Content Remove="wwwroot\stock-container-sandbox.md" />
   </ItemGroup>
 </Project>

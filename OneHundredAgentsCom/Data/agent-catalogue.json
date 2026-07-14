@@ -255,6 +255,10 @@
                 {
                     "name": "Stock Container Sandbox",
                     "description": "Agent running in a stock container."
+                },
+                {
+                    "name": "Read-only Container Sandbox",
+                    "description": "Agent running in a read-only container."
                 }
             ]
         }
