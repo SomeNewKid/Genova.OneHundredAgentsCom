@@ -259,6 +259,18 @@
                 {
                     "name": "Read-only Container Sandbox",
                     "description": "Agent running in a read-only container."
+                },
+                {
+                    "name": "Container Sandbox with Squid Sidecar",
+                    "description": "Agent running with a Squid sidecar container."
+                },
+                {
+                    "name": "Container Sandbox with Fewer Services",
+                    "description": "Agent running in a lightweight container."
+                },
+                {
+                    "name": "Container Sandbox with Fewer Commands",
+                    "description": "Agent running in a tightened container."
                 }
             ]
         }

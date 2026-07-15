@@ -82,6 +82,9 @@
     <EmbeddedResource Include="Data\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="wwwroot\container-sandbox-with-fewer-commands.md" />
+    <Content Remove="wwwroot\container-sandbox-with-fewer-services.md" />
+    <Content Remove="wwwroot\container-sandbox-with-squid-sidecar.md" />
     <Content Remove="wwwroot\read-only-container-sandbox.md" />
     <Content Remove="wwwroot\stock-container-sandbox.md" />
   </ItemGroup>
