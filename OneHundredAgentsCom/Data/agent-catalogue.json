@@ -281,8 +281,8 @@
                     "description": "Agent running in a restrained container."
                 },
                 {
-                    "name": "Container Sandbox with Browser Controls",
-                    "description": "Agent running in a container with browser controls."
+                    "name": "Container Sandbox with a Minimized Image",
+                    "description": "Agent running in a minimized container."
                 }
             ]
         }
