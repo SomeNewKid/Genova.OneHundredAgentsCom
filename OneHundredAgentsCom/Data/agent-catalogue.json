@@ -295,6 +295,10 @@
                 {
                     "name": "Container Sandbox with No Desktop Automation",
                     "description": "Agent running with no desktop automation channel."
+                },
+                {
+                    "name": "Container Sandbox with Hardware Control",
+                    "description": "Agent running with hardware control."
                 }
             ]
         }
