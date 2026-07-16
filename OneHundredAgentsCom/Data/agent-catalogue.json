@@ -283,6 +283,10 @@
                 {
                     "name": "Container Sandbox with a Minimized Image",
                     "description": "Agent running in a minimized container."
+                },
+                {
+                    "name": "Container Sandbox with Runtime Control",
+                    "description": "Agent running with runtime control."
                 }
             ]
         }

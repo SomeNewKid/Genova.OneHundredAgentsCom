@@ -1,10 +1,10 @@
-﻿# Container Sandbox with Minimized Image
+﻿# Container Sandbox with a Minimized Image
 
-Sandbox Tester running in a Docker container with resource limits is a proof of concept for a practical worry: an AI agent may not need to break out of a sandbox to cause trouble. Sometimes it only needs to consume too much of the machine it already has. So this version asks a simple question. What can the agent still do when Docker puts a tighter budget around its CPU, memory, process count, and open files?
+Sandbox Tester running in Docker is a small experiment in making an AI agent’s room smaller and then checking whether it notices. The agent probes its own environment: files, processes, network access, browser use, credentials, tools, and the OpenAI Responses API. The Docker harness runs those probes inside a disposable container and records what was allowed, denied, unavailable, or broken.
 
-The agent runs capability probes inside the container and reports what worked, failed, or did not apply. The `resource-limits` profile keeps the earlier Docker hardening: restricted files, controlled network access, fewer commands, fewer services, and a seccomp layer. It then adds explicit resource limits while still allowing Python, Playwright, Chromium, and the OpenAI API probe to run.
+The minimized-image profile asks a practical question: if the container already blocks risky tools at runtime, does it still matter whether those tools exist in the image? The answer is yes, but with nuance. In the latest comparison, the headline counts did not move: 255 probe paths were still allowed, 98 denied, 20 errored, and 305 not applicable. That is because the previous profile was already blocking many command families. But the minimized image changes the ground underneath: package managers, SSH/GPG tools, Git, Perl, service tools, and admin helpers are removed or purged where possible, not merely blocked after startup.
 
-The comparison result was calm, which is useful. No tested capability moved from allowed to denied. The agent still did its intended work. But the container now has clearer boundaries around how much of the host it can use. That points toward a sensible pattern: do not just ask what an agent can access. Ask how much damage it can do by being busy.
+This is a useful lesson for business users of AI agents. A sandbox should not rely only on “please do not touch that” signs. A minimized image removes needless handles from the room before the agent arrives.
 
 ::: SIDEBAR :::
 
