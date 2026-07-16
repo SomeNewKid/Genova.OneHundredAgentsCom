@@ -271,6 +271,18 @@
                 {
                     "name": "Container Sandbox with Fewer Commands",
                     "description": "Agent running in a tightened container."
+                },
+                {
+                    "name": "Container Sandbox with a Syscomp Profile",
+                    "description": "Agent running in a restricted container."
+                },
+                {
+                    "name": "Container Sandbox with Fewer Resources",
+                    "description": "Agent running in a restrained container."
+                },
+                {
+                    "name": "Container Sandbox with Browser Controls",
+                    "description": "Agent running in a container with browser controls."
                 }
             ]
         }
