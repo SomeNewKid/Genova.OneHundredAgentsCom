@@ -299,6 +299,10 @@
                 {
                     "name": "Container Sandbox with Hardware Control",
                     "description": "Agent running with hardware control."
+                },
+                {
+                    "name": "Container Sandbox with No Shell Access",
+                    "description": "Agent running with no shell access."
                 }
             ]
         }
