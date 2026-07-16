@@ -291,6 +291,10 @@
                 {
                     "name": "Container Sandbox with Network Socket Control",
                     "description": "Agent running with network socket control."
+                },
+                {
+                    "name": "Container Sandbox with No Desktop Automation",
+                    "description": "Agent running with no desktop automation channel."
                 }
             ]
         }
