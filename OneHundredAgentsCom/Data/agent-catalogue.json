@@ -305,6 +305,16 @@
                     "description": "Agent running with no shell access."
                 }
             ]
+        },
+        {
+            "title": "Docker sandboxed agents",
+            "description": "Agents deployed to Docker sandbox locations.",
+            "agents": [
+                {
+                    "name": "Sandbox Agent",
+                    "description": "First agent deployed to a Docker sandbox."
+                }
+            ]
         }
     ]
 }
