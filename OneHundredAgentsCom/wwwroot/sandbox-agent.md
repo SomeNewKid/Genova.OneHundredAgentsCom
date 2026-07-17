@@ -1,10 +1,10 @@
 ﻿# Sandbox Agent
 
-Sandbox Agent explores a simple but important question: where should an AI agent be allowed to work? In this experiment, the agent is asked to generate a basic HTML lesson, serve it as a web page, and capture a screenshot. That is a small task, but it has the right shape: create something, run it, inspect the result, and leave behind artifacts a human can review.
+Sandbox Agent explores a practical question: if an OpenAI Agents SDK agent is going to create files, run a local web server, and drive a browser, can we give it a purpose-built place to do that work instead of handing it the whole machine and hoping everyone behaves? The agent generates a simple HTML lesson page, serves it inside its container, and captures a screenshot with Chromium. The web page is not the point. The bounded workspace is.
 
-The interesting part is not the web page. The interesting part is the container around the agent. Sandbox Agent runs inside a purpose-built Docker environment, with its work directed into a disposable run folder. The host starts the job, but the agent itself is expected to do its work inside the sandbox. That keeps the experiment focused on a practical concern: giving an agent enough room to be useful without casually handing it the whole machine and a polite note saying “please behave.”
+The interesting part is the declarative sandbox. The workload declares the capabilities it needs, such as network access, OpenAI access, the Agents SDK, and Playwright with Chromium. The sandbox then builds the matching Docker image and container policy. Empty capability lists stay small and tightly closed. Extra capabilities soften the container only where the workload needs it. That is a much calmer model than one giant “AI can do stuff” environment.
 
-For a business reader, this sketches a safer pattern for agentic work. An agent could draft, render, test, or package content in an isolated workspace, then return outputs for review. It is not a finished security model, but it is a concrete step toward treating AI work areas as bounded places.
+As a proof of concept, Sandbox Agent sketches how a business could let an agent produce and inspect a web artifact while keeping the blast radius visible. It is not a finished security product. But it shows a useful pattern: make the agent’s room before inviting the agent in.
 
 ::: SIDEBAR :::
 

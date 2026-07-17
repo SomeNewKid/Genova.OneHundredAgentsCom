@@ -312,7 +312,7 @@
             "agents": [
                 {
                     "name": "Sandbox Agent",
-                    "description": "First agent deployed to a Docker sandbox."
+                    "description": "OpenAI agent deployed to a Docker sandbox."
                 }
             ]
         }
