@@ -303,16 +303,10 @@
                 {
                     "name": "Container Sandbox with No Shell Access",
                     "description": "Agent running with no shell access."
-                }
-            ]
-        },
-        {
-            "title": "Docker sandboxed agents",
-            "description": "Agents deployed to Docker sandbox locations.",
-            "agents": [
+                },
                 {
                     "name": "Sandbox Agent",
-                    "description": "OpenAI agent deployed to a Docker sandbox."
+                    "description": "Agent running with minimal, declarative sandbox."
                 }
             ]
         }

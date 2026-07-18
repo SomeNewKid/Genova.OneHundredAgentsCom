@@ -27,7 +27,7 @@ namespace Genova.OneHundredAgentsCom.IntegrationTests.Hello
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "Hello", "Get Hello Error402", "  Verify that the Hello Error-402 page works", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "Hello", "Get Hello Error402", "  Verify that the Hello Error-402 page works ", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
 #line 1 "GetHelloError402.feature"
 #line hidden

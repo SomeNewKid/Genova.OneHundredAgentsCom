@@ -1,6 +1,6 @@
 ﻿Feature: Get Hello Error402
 
-  Verify that the Hello Error-402 page works
+  Verify that the Hello Error-402 page works 
 
   Scenario: Access the Hello Error-402 page
     Given I am a visitor to "www.100agentsin100days.com"

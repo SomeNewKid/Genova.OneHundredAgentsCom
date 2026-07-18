@@ -18,3 +18,6 @@ Model: [GPT-5 mini](https://developers.openai.com/api/docs/models/gpt-5-mini)
 Repository: [GitHub](https://github.com/SomeNewKid/SandboxAgent)
 
 ::: /SIDEBAR :::
+
+::: SANDBOX-REPORT name="sandbox-container-declaractive" title="Sandbox Report - Local Minimal, Declarative Container" :::
+
