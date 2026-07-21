@@ -100,6 +100,15 @@ internal sealed class SandboxReportModifier : IHtmlModifier
 
             Dictionary<string, string> attributes = InstructionHelper.ParseAttributes(normalized);
 
+            // If visible="false" (case-insensitive) remove the placeholder and do not insert a table.
+            if (attributes.TryGetValue("visible", out string? visible) &&
+                string.Equals(visible?.Trim(), "false", StringComparison.OrdinalIgnoreCase))
+            {
+                p.ParentElement?.RemoveChild(p);
+                // Consistent with existing behavior: stop after handling the first matching marker.
+                break;
+            }
+
             if (!attributes.TryGetValue("name", out string? name) || string.IsNullOrWhiteSpace(name))
             {
                 // Nothing to replace with; skip.

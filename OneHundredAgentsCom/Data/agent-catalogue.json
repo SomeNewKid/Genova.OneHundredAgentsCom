@@ -303,10 +303,20 @@
                 {
                     "name": "Container Sandbox with No Shell Access",
                     "description": "Agent running with no shell access."
-                },
+                }
+            ]
+        },
+        {
+            "title": "Docker Sandboxed agents",
+            "description": "Agents deployed to a Docker sandboxed location.",
+            "agents": [
                 {
                     "name": "Sandbox Agent",
                     "description": "Agent running with minimal, declarative sandbox."
+                },
+                {
+                    "name": "MCP Sidecar",
+                    "description": "Agent using a simple MCP Server sidecar."
                 }
             ]
         }

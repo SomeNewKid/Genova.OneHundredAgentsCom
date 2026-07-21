@@ -11,7 +11,7 @@ As a proof of concept, Sandbox Agent sketches how a business could let an agent 
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 Pattern: Single agent
-Sandbox: Ubuntu container, Docker
+Sandbox: Docker localnet | AI Agent container | Squid proxy sidecar
 Model: [GPT-5 mini](https://developers.openai.com/api/docs/models/gpt-5-mini)
 ---
 
@@ -19,5 +19,5 @@ Repository: [GitHub](https://github.com/SomeNewKid/SandboxAgent)
 
 ::: /SIDEBAR :::
 
-::: SANDBOX-REPORT name="sandbox-container-declaractive" title="Sandbox Report - Local Minimal, Declarative Container" :::
+::: SANDBOX-REPORT visible="false" name="sandbox-container-declaractive" title="Sandbox Report - Local Minimal, Declarative Container" :::
 
