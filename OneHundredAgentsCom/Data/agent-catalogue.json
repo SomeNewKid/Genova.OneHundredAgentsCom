@@ -317,6 +317,10 @@
                 {
                     "name": "MCP Sidecar",
                     "description": "Agent using a simple MCP Server sidecar."
+                },
+                {
+                    "name": "Jina Reader Sidecar",
+                    "description": "Agent using a Jina Reader sidecar."
                 }
             ]
         }
