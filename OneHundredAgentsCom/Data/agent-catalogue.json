@@ -329,6 +329,10 @@
                 {
                     "name": "Ollama Model Sidecar",
                     "description": "Agent using an Ollama model sidecar."
+                },
+                {
+                    "name": "HAProxy Sidecar",
+                    "description": "Agent using an HAProxy sidecar."
                 }
             ]
         }
