@@ -325,6 +325,10 @@
                 {
                     "name": "Code Execution Sidecar",
                     "description": "Agent using a code execution sidecar."
+                },
+                {
+                    "name": "Ollama Model Sidecar",
+                    "description": "Agent using an Ollama model sidecar."
                 }
             ]
         }
