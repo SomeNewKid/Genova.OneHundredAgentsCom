@@ -321,6 +321,10 @@
                 {
                     "name": "Jina Reader Sidecar",
                     "description": "Agent using a Jina Reader sidecar."
+                },
+                {
+                    "name": "Code Execution Sidecar",
+                    "description": "Agent using a code execution sidecar."
                 }
             ]
         }
