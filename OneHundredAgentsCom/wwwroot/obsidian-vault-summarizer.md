@@ -1,6 +1,6 @@
-﻿# Obsidian Vault Summarizer
+# Obsidian vault summarizer
 
-Obsidian Vault Summarizer is a small proof of concept built to test guardrails in the Otto Agent framework. The business task is simple: read a collection of notes and produce a short summary of the knowledge inside them. The more interesting question is what happens when the agent is allowed to use tools, but not trusted to use every tool result without supervision.
+**Obsidian vault summarizer** is a small proof of concept built to test guardrails in the Otto Agent framework. The business task is simple: read a collection of notes and produce a short summary of the knowledge inside them. The more interesting question is what happens when the agent is allowed to use tools, but not trusted to use every tool result without supervision.
 
 This version adds guardrails before and after the agent run, and before and after tool calls. In the sample vault, the agent can list and read notes, but a guardrail blocks access to a secret file. Instead of crashing the whole run, the agent records that the attempted tool call was blocked and continues with the knowledge it is allowed to use. That is the useful pattern: the agent can keep working without pretending it saw something it did not.
 

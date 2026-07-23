@@ -1,4 +1,4 @@
-﻿# Container Sandbox with Fewer Commands
+# Container sandbox with fewer commands
 
 Sandbox Tester running in a Docker container with fewer available command families is a proof of concept for a very practical question: if an AI agent is put in a container, what can it still do? The agent runs a broad set of capability checks and reports which actions are allowed, denied, unavailable, or broken. That makes the sandbox less of a comforting diagram and more of a receipt.
 

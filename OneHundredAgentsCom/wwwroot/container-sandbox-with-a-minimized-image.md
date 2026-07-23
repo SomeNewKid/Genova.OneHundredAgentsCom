@@ -1,4 +1,4 @@
-﻿# Container Sandbox with a Minimized Image
+# Container sandbox with a minimized image
 
 Sandbox Tester running in Docker is a small experiment in making an AI agent’s room smaller and then checking whether it notices. The agent probes its own environment: files, processes, network access, browser use, credentials, tools, and the OpenAI Responses API. The Docker harness runs those probes inside a disposable container and records what was allowed, denied, unavailable, or broken.
 

@@ -1,4 +1,4 @@
-﻿# Ollama Model Sidecar
+# Ollama model sidecar
 
 Ollama Sidecar explores a practical question: can an AI agent running in a hardened Docker environment call on a small local language model without sending every task to a hosted model? The answer is yes, at least for modest work. The agent runs in its own sandbox, asks a local Ollama model to generate a simple HTML page, and keeps the model service in a separate container on the same private Docker network.
 
@@ -11,7 +11,7 @@ This proof of concept points toward a sensible split. Larger hosted models may s
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 Pattern: Single agent
-Sandbox: Docker localnet | AI Agent container | Squid proxy sidecar | MCP Server sidecar | Jina Reader sidecar | Code execution sidecar | Ollama model sidecar
+Sandbox: Docker localnet | AI agent container | Squid proxy sidecar | MCP Server sidecar | Jina Reader sidecar | Code execution sidecar | Ollama model sidecar
 Model: [Gwen3:0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 ---
 

@@ -1,6 +1,6 @@
-﻿# Software Project Summarizer
+# Software project summarizer
 
-Software Project Summarizer was built as a small test of LangChain’s DeepAgents framework: give an agent a local source-code directory and ask it to work out what the software does. That is a familiar business problem in miniature. A useful agent would not replace engineering judgment, but it could create a first briefing before a human digs in.
+**Software project summarizer** was built as a small test of LangChain’s DeepAgents framework: give an agent a local source-code directory and ask it to work out what the software does. That is a familiar business problem in miniature. A useful agent would not replace engineering judgment, but it could create a first briefing before a human digs in.
 
 The agent starts with the project structure, then chooses which visible source and metadata files to inspect. It uses controlled local tools for directory listing and file reading, so the model can explore without being handed the whole machine. DeepAgents handles the longer-running agent loop: planning what to inspect, calling tools, keeping context, and producing a final Markdown summary of purpose, language, frameworks, important files, and execution flow.
 

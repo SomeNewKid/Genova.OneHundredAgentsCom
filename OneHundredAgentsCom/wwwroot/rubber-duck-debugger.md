@@ -1,6 +1,6 @@
-﻿# Rubber Duck Debugger
+# Rubber duck debugger
 
-Rubber Duck Debugger is a small proof of concept built to test human-in-the-loop approvals with the OpenAI Agents SDK. The business sketch is familiar enough: a developer describes a bug, the agent asks a few clarifying questions, and a structured bug report takes shape. The important part is not that the agent can chat. Chatbots are not exactly an endangered species. The important part is that the agent stops before taking the action that matters.
+**Rubber duck debugger** is a small proof of concept built to test human-in-the-loop approvals with the OpenAI Agents SDK. The business sketch is familiar enough: a developer describes a bug, the agent asks a few clarifying questions, and a structured bug report takes shape. The important part is not that the agent can chat. Chatbots are not exactly an endangered species. The important part is that the agent stops before taking the action that matters.
 
 In this case, that action is creating the bug report. Once the agent has enough detail, it prepares the report and tries to call a tool that saves it. The OpenAI Agents SDK pauses that tool call and waits for the human to approve or reject it. If the report needs changes, the agent revises it and asks again. If the human approves, the report is saved and the session ends.
 

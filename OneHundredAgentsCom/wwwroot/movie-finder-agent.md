@@ -1,6 +1,6 @@
-﻿# Movie Finder Agent
+# Movie finder agent
 
-Movie Finder Agent tests a small but useful idea: what happens when an agent can look things up semantically instead of relying only on what the language model already carries around in its head. It uses IBM’s BeeAI framework to wrap a movie-search task in an agent, then gives that agent a retrieval tool backed by embeddings and a vector store.
+**Movie finder agent** tests a small but useful idea: what happens when an agent can look things up semantically instead of relying only on what the language model already carries around in its head. It uses IBM’s BeeAI framework to wrap a movie-search task in an agent, then gives that agent a retrieval tool backed by embeddings and a vector store.
 
 The user can ask a loose question such as, “In what movie does a slacker get mixed up in a kidnapping plot?” The agent does not need the exact title. It turns the question into a semantic search, finds the closest matching movie record, and uses that result to answer in plain language. That is the interesting part: the search is based on meaning, not just matching specific words.
 

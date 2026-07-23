@@ -1,6 +1,6 @@
-﻿# Office Fridge Labeler
+# Office fridge labeler
 
-Office Fridge Labeler is a small agent built to test a very practical question: can an agent use shared business rules and tools without having all of them baked into its own code? The scenario is deliberately ordinary. Someone describes a food item in plain language, and the agent generates a label for the office fridge.
+**Office fridge labeler** is a small agent built to test a very practical question: can an agent use shared business rules and tools without having all of them baked into its own code? The scenario is deliberately ordinary. Someone describes a food item in plain language, and the agent generates a label for the office fridge.
 
 The agent uses the OpenAI Agents SDK, and gets its fridge rules and label-making tool from a real Model Context Protocol server. That means the policy and the action live outside the agent itself. The agent can discover and use them, while the MCP server becomes the place where shared resources and approved tools can be managed.
 

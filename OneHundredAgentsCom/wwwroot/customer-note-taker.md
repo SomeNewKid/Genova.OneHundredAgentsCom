@@ -1,6 +1,6 @@
-﻿# Customer Note Taker
+# Customer note taker
 
-Customer Note Taker is a small proof of concept for a very ordinary business problem: turning a customer email into a structured note that another system can handle later.
+**Customer note taker** is a small proof of concept for a very ordinary business problem: turning a customer email into a structured note that another system can handle later.
 
 The interesting part is not the note itself. It is the set of gates around the work. The agent uses LangChain to test how guardrails can sit before and after the agent, before and after model calls, and around tool use. That makes the project less about “can an LLM summarize an email?” and more about “can we stop the wrong email from going through the normal path?”
 

@@ -1,6 +1,6 @@
-﻿# Leave Request Checker
+# Leave request checker
 
-Leave Request Checker is a small proof of concept for using LangChain to shape an artificial intelligence (AI) workflow. It lets an employee type a request in ordinary language, such as asking for leave on the last Friday of next month, and turns that into a structured leave request which is then verified.
+**Leave request checker** is a small proof of concept for using LangChain to shape an artificial intelligence (AI) workflow. It lets an employee type a request in ordinary language, such as asking for leave on the last Friday of next month, and turns that into a structured leave request which is then verified.
 
 The workflow uses the model where language is messy: interpreting the employee’s request. Once the requested day is identified, the rest of the process behaves more like a normal business rule check. It verifies whether the employee appears eligible and whether enough notice has been provided, then reports the result in plain language.
 

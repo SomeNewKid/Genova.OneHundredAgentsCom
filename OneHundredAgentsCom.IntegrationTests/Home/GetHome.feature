@@ -10,4 +10,4 @@
     And I should see "This project is what happens" in the response
     And I should see "Here they are" in the response
     And I should see "/travel-landmark-agent" as a hyperlink location
-    And I should see "Travel Landmark Agent" in the response
+    And I should see "Travel landmark agent" in the response

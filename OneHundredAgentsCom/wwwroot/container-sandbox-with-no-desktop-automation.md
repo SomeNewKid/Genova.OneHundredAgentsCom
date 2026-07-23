@@ -1,4 +1,4 @@
-﻿# Container Sandbox with No Desktop Automation
+# Container sandbox with no desktop automation
 
 Sandbox Tester running in a Docker container with a disabled desktop automation channel asks a practical question: if an AI agent is boxed in, what can it still touch? It runs inside the container and checks the environment around it. The result is a capability report, because “sandboxed” can mean anything from “carefully confined” to “we put it in a container and hoped for the best.”
 

@@ -1,6 +1,6 @@
-﻿# Greeting Card Writer
+# Greeting card writer
 
-Greeting Card Writer explores a small but useful pattern: one manager agent deciding which specialist agent should handle a customer-style request. The user describes the reason for sending a card, and the main agent routes the job to a birthday, get-well, or sympathy writer. That specialist then drafts the message and returns a finished card with the recipient, sender, and note in place.
+**Greeting card writer** explores a small but useful pattern: one manager agent deciding which specialist agent should handle a customer-style request. The user describes the reason for sending a card, and the main agent routes the job to a birthday, get-well, or sympathy writer. That specialist then drafts the message and returns a finished card with the recipient, sender, and note in place.
 
 The business shape is easy to recognise. A company might receive many requests that sound similar on the surface, but need different tone, wording, and judgement once you look closer. “Happy birthday” and “I’m sorry for your loss” should not be handled by the same cheerful blob of text generation. That is where the manager-worker structure matters.
 

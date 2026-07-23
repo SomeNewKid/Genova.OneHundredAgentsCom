@@ -1,4 +1,4 @@
-﻿# Container Sandbox with Network Socket Control
+# Container sandbox with network socket control
 
 Sandbox Tester running on a Docker container with network socket control is a proof of concept for a simple question: what can an AI agent actually do once it is placed inside a hardened sandbox? The tester runs capability probes from inside the container and records whether actions are allowed, denied, unavailable, or broken. The point is not to admire the container. The point is to catch the awkward truth before a real agent does.
 

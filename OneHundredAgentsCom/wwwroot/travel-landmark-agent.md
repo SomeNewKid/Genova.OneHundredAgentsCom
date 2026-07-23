@@ -1,6 +1,6 @@
-﻿# Travel Landmark Agent
+# Travel landmark agent
 
-The Travel Landmark Agent was built as a first practical test of IBM’s BeeAI Framework, not as an attempt to replace a travel desk. It sketches a small business travel assistant that can take a structured travel request, identify the destination and travel context, and bring back the kinds of information a travelling employee might need: expected weather, a landmark worth knowing about, and any relevant company travel policies.
+The **travel landmark agent** was built as a first practical test of IBM’s BeeAI Framework, not as an attempt to replace a travel desk. It sketches a small business travel assistant that can take a structured travel request, identify the destination and travel context, and bring back the kinds of information a travelling employee might need: expected weather, a landmark worth knowing about, and any relevant company travel policies.
 
 The useful part is not the travel advice itself. The useful part is the shape of the agent. BeeAI gives the build a way to connect tools, resources, and narrower helper capabilities so the agent can assemble an answer rather than simply improvise one. That matters for business agents, because real work usually means checking more than one thing before giving a response. “Can I go there, what should I expect, and what rules apply?” is a better test than asking the model to write another cheerful paragraph about Rome.
 

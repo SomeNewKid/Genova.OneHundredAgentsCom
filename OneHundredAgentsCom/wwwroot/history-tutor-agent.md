@@ -1,6 +1,6 @@
-﻿# History Tutor Agent
+# History tutor agent
 
-The History Tutor Agent is a small experiment in using the OpenAI Agents SDK to coordinate a few simple teaching assistants. A child asks one question, and a manager-style agent decides whether it belongs with a history, mathematics, or geography tutor. If the history tutor is asked for a fun fact, it can use a tool to provide one. It is a deliberately modest use of the SDK.
+The **history tutor agent** is a small experiment in using the OpenAI Agents SDK to coordinate a few simple teaching assistants. A child asks one question, and a manager-style agent decides whether it belongs with a history, mathematics, or geography tutor. If the history tutor is asked for a fun fact, it can use a tool to provide one. It is a deliberately modest use of the SDK.
 
 The useful lesson is how quickly the SDK gets from an idea to a working agent shape. Agents, handoffs, and tools are easy to combine, and the same sketch can be tested with the OpenAI Responses API or with local Ollama-hosted models. That matters for business readers because model choice is rarely just a technical preference. Cost, latency, privacy, and quality all tug in different directions.
 

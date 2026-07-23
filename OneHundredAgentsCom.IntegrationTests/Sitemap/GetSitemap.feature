@@ -7,6 +7,6 @@ Feature: Get Sitemap
     When I request "/sitemap"
     Then the response status code should be 200
     And I should see "<h1>Sitemap</h1>" in the response
-    And I should see "<h2>IBM BeeAI Framework</h2>" in the response
+    And I should see "<h2>IBM BeeAI framework</h2>" in the response
     And I should see "/travel-landmark-agent" as a hyperlink location
-    And I should see "Travel Landmark Agent" in the response
+    And I should see "Travel landmark agent" in the response

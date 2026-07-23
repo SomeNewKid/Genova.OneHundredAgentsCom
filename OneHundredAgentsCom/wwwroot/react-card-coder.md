@@ -1,6 +1,6 @@
-﻿# React Card Coder
+# React card coder
 
-React Card Coder was built to test a simple but important question: can a coding agent check its work by looking at the webpage the way a user would? Not by reading source code and hoping for the best, but by opening the page, moving the mouse, taking screenshots, and using those images as evidence. That is the interesting bit here. The card flip is just the test subject; the real experiment is visual feedback inside the agent loop.
+**React card coder** was built to test a simple but important question: can a coding agent check its work by looking at the webpage the way a user would? Not by reading source code and hoping for the best, but by opening the page, moving the mouse, taking screenshots, and using those images as evidence. That is the interesting bit here. The card flip is just the test subject; the real experiment is visual feedback inside the agent loop.
 
 The agent uses Anthropic’s Claude Agent SDK to work with a constrained local webpage. It can capture the normal state, hover over the card, capture the changed state, and ask the model to evaluate whether the result matches the requirement. When the page does not behave correctly, the agent can update the React script and try again. This sketches a practical business pattern: given a visual requirement for a webpage or component, an agent can make a change, interact with the UI, and compare the result against the intended behaviour.
 

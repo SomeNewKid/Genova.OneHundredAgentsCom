@@ -1,4 +1,4 @@
-﻿# Container Sandbox with a Syscomp Profile
+# Container sandbox with a Syscomp profile
 
 Sandbox Tester running in a Docker container with a custom seccomp (Secure Computing Mode) profile is a proof of concept for a less glamorous but important question: what happens when an AI agent is allowed to keep doing its job, but loses access to some deeper operating system machinery? The agent runs inside the container and checks what the environment permits. It then reports which actions worked, failed, or did not apply.
 

@@ -1,4 +1,4 @@
-﻿# Container Sandbox with Fewer Resources
+# Container sandbox with fewer resources
 
 Sandbox Tester running in a Docker container with resource limits is a proof of concept for a practical worry: an AI agent may not need to break out of a sandbox to cause trouble. Sometimes it only needs to consume too much of the machine it already has. So this version asks a simple question. What can the agent still do when Docker puts a tighter budget around its CPU, memory, process count, and open files?
 

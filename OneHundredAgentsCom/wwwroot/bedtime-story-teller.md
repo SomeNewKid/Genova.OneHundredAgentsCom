@@ -1,6 +1,6 @@
-﻿# Bedtime Story Teller
+# Bedtime story teller
 
-Bedtime Story Teller is a small proof of concept built to test guardrails in the OpenAI Agents SDK. It takes a child's story request, asks a tool for story ingredients, and returns a short tale in plain language.
+**Bedtime story teller** is a small proof of concept built to test guardrails in the OpenAI Agents SDK. It takes a child's story request, asks a tool for story ingredients, and returns a short tale in plain language.
 
 The project explores guardrails before the agent responds, after it drafts an answer, before it calls a tool, and after the tool returns information. Those checks can shape what happens next, or stop the run entirely when the request or intermediate result is outside the intended use. That matters for business systems because the risky moment is not always the first user message. Sometimes it appears when the agent chooses how to use supporting tools.
 

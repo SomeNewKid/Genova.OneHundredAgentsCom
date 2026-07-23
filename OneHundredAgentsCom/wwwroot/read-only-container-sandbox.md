@@ -1,4 +1,4 @@
-﻿# Read-only Container Sandbox
+# Read-only container sandbox
 
 Sandbox Tester running in Docker is a small proof of concept built to answer a very plain question: when an AI agent runs in a container, what can it actually do? It does not trust the brochure version of sandboxing. It runs capability checks from inside the agent’s own environment and reports what is allowed, denied, unavailable, or broken.
 

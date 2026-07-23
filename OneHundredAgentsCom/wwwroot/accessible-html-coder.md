@@ -1,6 +1,6 @@
-﻿# Accessible HTML Coder
+# Accessible HTML coder
 
-Accessible HTML Coder explores a practical question: can LangGraph guide a model through a task where “write the thing” is not enough? The agent starts with a simple requirement for a web page, asks GPT-4o to create the HTML, then sends the result through a reviewer. If the reviewer finds accessibility problems, the coder gets the feedback and tries again.
+**Accessible HTML coder** explores a practical question: can LangGraph guide a model through a task where “write the thing” is not enough? The agent starts with a simple requirement for a web page, asks GPT-4o to create the HTML, then sends the result through a reviewer. If the reviewer finds accessibility problems, the coder gets the feedback and tries again.
 
 The interesting part is the shape of the work. LangGraph gives the project a clear loop: generate, check, revise, stop. The model still produces the creative output, but the workflow around it is deterministic. That matters. It means the agent is not just asked nicely to do better; it is placed inside a process that keeps score.
 

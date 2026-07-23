@@ -1,4 +1,4 @@
-﻿# Container Sandbox with Squid Sidecar
+# Container sandbox with Squid sidecar
 
 Sandbox Tester running in Docker is a small experiment in making an AI agent less mysterious. It runs a battery of capability checks inside a container and asks a blunt question: what can this process actually do? Can it read files, write files, launch programs, use Chromium through Playwright, call the OpenAI Responses API, reach random websites, talk to package registries, or leak data over odd network paths?
 

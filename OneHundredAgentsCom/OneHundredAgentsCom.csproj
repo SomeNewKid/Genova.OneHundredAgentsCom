@@ -101,5 +101,6 @@
     <Content Remove="wwwroot\read-only-container-sandbox.md" />
     <Content Remove="wwwroot\sandbox-agent.md" />
     <Content Remove="wwwroot\stock-container-sandbox.md" />
+    <Content Remove="wwwroot\two-agent-sandbox.md" />
   </ItemGroup>
 </Project>

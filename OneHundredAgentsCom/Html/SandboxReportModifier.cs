@@ -105,6 +105,7 @@ internal sealed class SandboxReportModifier : IHtmlModifier
                 string.Equals(visible?.Trim(), "false", StringComparison.OrdinalIgnoreCase))
             {
                 p.ParentElement?.RemoveChild(p);
+
                 // Consistent with existing behavior: stop after handling the first matching marker.
                 break;
             }
@@ -203,7 +204,7 @@ internal sealed class SandboxReportModifier : IHtmlModifier
         return wrapper;
     }
 
-    private void PresentReport(IElement markerParagraph, List<CapabilityGroupResult> groups)
+    private static void PresentReport(IElement markerParagraph, List<CapabilityGroupResult> groups)
     {
         // Obtain the document to create elements from. If unavailable, remove the marker.
         IDocument? document = markerParagraph.Owner ?? markerParagraph.ParentElement?.Owner;

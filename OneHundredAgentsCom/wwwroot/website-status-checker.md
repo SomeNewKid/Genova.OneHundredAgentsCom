@@ -1,6 +1,6 @@
-﻿# Website Status Checker
+# Website status checker
 
-Website Status Checker was built to test a middle path for AI agents. Instead of starting from a large agent framework, it uses Otto, a small first-party framework that keeps the agent and the harness in separate lanes. The agent decides what should happen next. The harness controls the loop, validates decisions, runs tools, records evidence, and decides when the job is finished. That split is the main lesson here.
+**Website status checker** was built to test a middle path for AI agents. Instead of starting from a large agent framework, it uses Otto, a small first-party framework that keeps the agent and the harness in separate lanes. The agent decides what should happen next. The harness controls the loop, validates decisions, runs tools, records evidence, and decides when the job is finished. That split is the main lesson here.
 
 The business task is simple and familiar: check whether a known website looks healthy. The agent connects to a URL, gathers browser evidence, captures a screenshot, and returns a structured result such as healthy, unhealthy, or unknown. It sketches the kind of check a support, operations, or monitoring team might want before deciding whether a page needs attention. It is not trying to replace proper monitoring. It is more like a careful assistant with a browser and a clipboard.
 

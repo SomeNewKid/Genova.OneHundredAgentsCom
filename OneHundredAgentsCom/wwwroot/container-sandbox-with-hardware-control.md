@@ -1,4 +1,4 @@
-﻿# Container Sandbox with Hardware Control
+# Container sandbox with hardware control
 
 Sandbox Tester running in a Docker container with limited hardware access explores a very plain question: what can an AI agent see about the machine around it? Not what the sandbox claims. Not what the diagram promises. What it can actually probe. This version focuses on nearby hardware, because most agents do not need to know about cameras, microphones, USB devices, serial ports, Bluetooth devices, or printers.
 

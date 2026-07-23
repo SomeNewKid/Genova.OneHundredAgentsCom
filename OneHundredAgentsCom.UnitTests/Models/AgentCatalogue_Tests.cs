@@ -23,9 +23,9 @@ public class AgentCatalogue_Tests
         AgentCatalogue catalogue = new();
 
         AgentGroup group = catalogue.Groups.Should()
-            .ContainSingle(group => group.Title == "IBM BeeAI Framework")
+            .ContainSingle(group => group.Title == "IBM BeeAI framework")
             .Subject;
 
-        group.Agents.Should().Contain(agent => agent.Name == "Travel Landmark Agent");
+        group.Agents.Should().Contain(agent => agent.Name == "Travel landmark agent");
     }
 }

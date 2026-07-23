@@ -1,4 +1,4 @@
-﻿# Container Sandbox with No Shell Access
+# Container sandbox with no shell access
 
 Sandbox Tester running in a Docker container with no shell access tests a blunt but useful idea: what happens when an AI agent can still use Python tools, but cannot casually ask the operating system to run commands? This matters because shell access is often the side door. If an agent can call `sh`, `curl`, `ps`, package managers, or helper commands, the sandbox may be doing less work than the diagram suggests.
 

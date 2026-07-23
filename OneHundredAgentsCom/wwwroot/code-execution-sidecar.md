@@ -1,4 +1,4 @@
-﻿# Code Execution Sidecar
+# Code execution sidecar
 
 Code Sidecar explores a narrow but important question: what happens when an AI agent needs to calculate something exactly, rather than confidently wave at the answer from memory? The agent uses the OpenAI Agents SDK, but the interesting part is the extra capability around it. When the task needs real computation, the agent can ask for a small Python script to be run through a code execution tool exposed by an MCP server.
 
@@ -11,7 +11,7 @@ The point is not the sample calculation. The point is the boundary. Code executi
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 Pattern: Single agent
-Sandbox: Docker localnet | AI Agent container | Squid proxy sidecar | MCP Server sidecar | Jina Reader sidecar | Code execution sidecar
+Sandbox: Docker localnet | AI agent container | Squid proxy sidecar | MCP Server sidecar | Jina Reader sidecar | Code execution sidecar
 Model: [GPT-5 mini](https://developers.openai.com/api/docs/models/gpt-5-mini)
 ---
 

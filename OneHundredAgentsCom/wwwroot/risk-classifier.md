@@ -1,6 +1,6 @@
-﻿# Risk Classifier
+# Risk classifier
 
-Risk Classifier explores a simple but useful question: can a chatbot help someone turn a messy security conversation into a risk classification? The user describes a discovered vulnerability in ordinary language. The agent asks follow-up questions about exploitability and impact, then settles on two scores: likelihood and severity. Once those are clear, it checks them against a risk matrix and returns a final risk level with a short explanation.
+**Risk classifier** explores a simple but useful question: can a chatbot help someone turn a messy security conversation into a risk classification? The user describes a discovered vulnerability in ordinary language. The agent asks follow-up questions about exploitability and impact, then settles on two scores: likelihood and severity. Once those are clear, it checks them against a risk matrix and returns a final risk level with a short explanation.
 
 The business shape is familiar. Security and product teams often need to discuss a vulnerability before they can rank it. That discussion is rarely as neat as a form. People add context, correct assumptions, and remember awkward details halfway through. A chat-based agent is a decent fit for that kind of work, provided everyone remembers it is assisting the judgement, not replacing it with magic spreadsheet incense.
 

@@ -1,6 +1,6 @@
-﻿# Webpage Image Repairer
+# Webpage image repairer
 
-Webpage Image Repairer is a small proof of concept built to test how tool use feels in the OpenAI Agents SDK. The business task is deliberately plain: check an HTML page, find an image, and make sure it has the accessibility attribute it needs. Not glamorous work, but exactly the kind of small compliance chore that tends to hide in a backlog until someone has a bad afternoon.
+**Webpage image repairer** is a small proof of concept built to test how tool use feels in the OpenAI Agents SDK. The business task is deliberately plain: check an HTML page, find an image, and make sure it has the accessibility attribute it needs. Not glamorous work, but exactly the kind of small compliance chore that tends to hide in a backlog until someone has a bad afternoon.
 
 The agent uses different kinds of tools for different parts of the job. It asks a hosted web search tool what accessibility requires. It checks the page with local functions. It resolves the image file locally. It asks a smaller image-description agent to produce concise alt text. Then it applies a controlled edit to the page. The point is not that this one page needed heroic automation. The point is that an agent can move between outside knowledge, local files, specialist helpers, and edits without that feeling conceptually exotic.
 

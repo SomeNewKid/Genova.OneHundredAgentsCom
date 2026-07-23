@@ -1,4 +1,4 @@
-﻿# Stock Container Sandbox
+# Stock container sandbox
 
 Sandbox Tester running in a stock Docker container is a small attempt to answer a practical question: what can an AI agent actually do when we give it a controlled runtime, but do not harden it yet? It runs a broad set of checks against its own environment and records what was allowed, blocked, irrelevant, or failed. The point is not to admire the machinery. The point is to stop guessing.
 

@@ -1,4 +1,4 @@
-﻿# Container Sandbox with Fewer Services
+# Container sandbox with fewer services
 
 Sandbox Tester running in a Docker container with fewer ambient services is a proof of concept for a simple question: what can an AI agent actually touch when we stop giving it the usual background machinery of a normal machine? It runs capability probes inside the container, then reports what was allowed, denied, or not available. The point is not to admire the plumbing. The point is to make invisible risk visible.
 

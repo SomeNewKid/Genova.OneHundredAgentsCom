@@ -1,4 +1,4 @@
-﻿# Container Sandbox with Runtime Control
+# Container sandbox with runtime control
 
 Sandbox Tester running in Docker is a small proof of concept for a very practical question: if an AI agent can run Python, browse with Chromium, use Playwright, and call the OpenAI Responses API, what else can it do while it is in there? The agent probes its own container and records which actions are allowed, denied, errored, or not relevant.
 

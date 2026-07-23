@@ -1,6 +1,6 @@
-﻿# White Belt Hacker
+# White belt hacker
 
-White Belt Hacker is a small experiment with the Claude Agent SDK, built to see how much control a developer can place around an agent that is trying to complete a goal. The scenario is deliberately plain: the agent is asked to find information it should not be able to access. That modest setup keeps the interesting part visible: how the agent changes tactics when its obvious tools are taken away.
+**White belt hacker** is a small experiment with the Claude Agent SDK, built to see how much control a developer can place around an agent that is trying to complete a goal. The scenario is deliberately plain: the agent is asked to find information it should not be able to access. That modest setup keeps the interesting part visible: how the agent changes tactics when its obvious tools are taken away.
 
 The useful business lesson is not about protecting one text file. It is about capability management. By default, an agent can be surprisingly resourceful. If it cannot use one route, it may look for another: search tools, helper agents, workflow tools, or other indirect paths. The SDK makes those attempts observable and configurable, so a team can start turning broad autonomy into a narrower, more intentional operating space.
 

@@ -1,4 +1,4 @@
-﻿# Model Recommender
+# Model recommender
 
 **Model Recommender** explores a practical first step with Anthropic’s Claude Agent SDK: giving an agent useful abilities without handing it the keys to the shed. The user describes the kind of local AI program they want to run, such as an agent that helps write Python applications. The agent checks the machine profile it is given, researches current local models, and recommends options that are likely to fit the available hardware.
 
