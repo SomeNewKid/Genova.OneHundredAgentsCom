@@ -82,6 +82,7 @@
     <EmbeddedResource Include="Data\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="wwwroot\bug-report-team.md" />
     <Content Remove="wwwroot\code-execution-sidecar.md" />
     <Content Remove="wwwroot\container-sandbox-with-a-minimized-image.md" />
     <Content Remove="wwwroot\container-sandbox-with-a-syscomp-profile.md" />

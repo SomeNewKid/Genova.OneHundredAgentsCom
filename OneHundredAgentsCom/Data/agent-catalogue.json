@@ -346,7 +346,11 @@
                 },
                 {
                     "name": "Movie poster team",
-                    "description": "Using multiple agent-to-agent (ACA) tasks."
+                    "description": "Using sequential agent-to-agent (ACA) tasks."
+                },
+                {
+                    "name": "Bug report team",
+                    "description": "Using parallel agent-to-agent (ACA) tasks."
                 }
             ]
         }
