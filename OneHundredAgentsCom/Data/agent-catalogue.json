@@ -337,12 +337,16 @@
             ]
         },
         {
-            "title": "Multiple sandboxed agents",
+            "title": "Docker sandboxed agent teams",
             "description": "Multiple agents deployed to a Docker sandboxed location.",
             "agents": [
                 {
                     "name": "Two-agent sandbox",
-                    "description": "Implement the agent-to-agent (ACA) protocol."
+                    "description": "Using simple agent-to-agent (ACA) messages."
+                },
+                {
+                    "name": "Movie poster team",
+                    "description": "Using multiple agent-to-agent (ACA) tasks."
                 }
             ]
         }
