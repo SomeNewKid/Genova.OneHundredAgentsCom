@@ -351,6 +351,10 @@
                 {
                     "name": "Bug report team",
                     "description": "Using parallel agent-to-agent (ACA) tasks."
+                },
+                {
+                    "name": "Red green team",
+                    "description": "Using iterative agent-to-agent (ACA) tasks."
                 }
             ]
         }
