@@ -10,7 +10,7 @@ This proof of concept does not pretend to be a finished tutor. It shows the shap
 
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
-Pattern: Multi-agent
+Pattern: Multiple agents
 Integration: [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses)
 Models: [GPT-5.4 mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini) | [Granite 3.3](https://www.ibm.com/granite) | [Gwen 3-4b](https://huggingface.co/Qwen/Qwen3-4B)
 ---

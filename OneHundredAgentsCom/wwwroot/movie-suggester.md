@@ -10,7 +10,7 @@ For a business reader, this sketches a useful pattern: agents can be guided at s
 
 Language: Python
 Framework: [CrewAI](https://crewai.com/)
-Pattern: Multi-agent
+Pattern: Multiple agents
 Model: [GPT-4.1-mini](https://developers.openai.com/api/docs/models/gpt-4.1-mini)
 ---
 

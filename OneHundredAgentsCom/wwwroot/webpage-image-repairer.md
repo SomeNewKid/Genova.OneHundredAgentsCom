@@ -10,7 +10,7 @@ What this sketch shows is modest but useful: “tool” is not a magic word. It 
 
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
-Pattern: Multi-agent
+Pattern: Multiple agents
 Integration: [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses)
 Model: [GPT-5.4 mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini)
 ---

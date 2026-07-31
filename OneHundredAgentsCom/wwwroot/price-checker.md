@@ -10,7 +10,7 @@ That makes the project a good first test of CrewAI tools. It shows the shape of 
 
 Language: Python
 Framework: [CrewAI](https://crewai.com/)
-Pattern: Multi-agent
+Pattern: Multiple agents
 Model: [GPT-4o](https://developers.openai.com/api/docs/models/gpt-4o)
 ---
 

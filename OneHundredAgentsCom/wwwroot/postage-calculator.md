@@ -10,7 +10,7 @@ This sketches a useful pattern for business agents. Skills can bundle focused kn
 
 Language: C#
 Framework: [Agent Framework](https://learn.microsoft.com/agent-framework/)
-Pattern: Multi-agent
+Pattern: Multiple agents
 Model: [GPT-4o-mini](https://developers.openai.com/api/docs/models/gpt-4o-mini)
 ---
 

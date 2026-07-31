@@ -10,7 +10,7 @@ The project shows where agent workflows can fit among multi-agent patterns. Some
 
 Language: Python
 Framework: [IBM BeeAI Framework](https://framework.beeai.dev)
-Pattern: Multi-agent workflow
+Pattern: Multiple agents workflow
 Models: [GPT-4o](https://developers.openai.com/api/docs/models/gpt-4o)
 ---
 

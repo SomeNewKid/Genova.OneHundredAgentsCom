@@ -10,7 +10,7 @@ This build stays deliberately small. It shows the outline of a business agent: o
 
 Language: Python
 Framework: [IBM BeeAI Framework](https://framework.beeai.dev)
-Pattern: Multi-agent
+Pattern: Multiple agents
 Integrations: [MediaWiki API](https://www.mediawiki.org/wiki/API:Main_page) | [Open-Meteo Geocoding API](https://open-meteo.com/) | [Open-Meteo Forecast API](https://open-meteo.com/)
 Model: [Granite 3.3](https://www.ibm.com/granite)
 ---

@@ -171,6 +171,7 @@ public sealed class Website : WebsiteBase
             new SidebarModifier(),
             new WrapperModifier(),
             new SandboxReportModifier(),
+            new ModelEvaluationModifier(),
         };
 
         return baseModifiers.Concat(websiteModifiers);

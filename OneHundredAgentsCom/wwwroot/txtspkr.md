@@ -10,7 +10,7 @@ That makes **TxtSpkr** a modest workbench for testing where CrewAI skills fit. T
 
 Language: Python
 Framework: [CrewAI](https://crewai.com/)
-Pattern: Multi-agent
+Pattern: Multiple agents
 Model: [GPT-4.1-mini](https://developers.openai.com/api/docs/models/gpt-4.1-mini)
 ---
 

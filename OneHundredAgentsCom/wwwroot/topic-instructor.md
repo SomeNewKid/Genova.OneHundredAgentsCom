@@ -10,7 +10,7 @@ As a proof of concept, **topic instructor** sketches a content workflow that cou
 
 Language: Python
 Framework: [CrewAI](https://crewai.com/)
-Pattern: Multi-agent
+Pattern: Multiple agents
 Model: [GPT-4o](https://developers.openai.com/api/docs/models/gpt-4o)
 ---
 
