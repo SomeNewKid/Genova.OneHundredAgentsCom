@@ -18,4 +18,4 @@ Repository: [GitHub](https://github.com/SomeNewKid/LocalModelEvaluation)
 
 ::: /SIDEBAR :::
 
-::: EVALUATION-REPORT name="local-model-evaluation" title="Local Model Evaluation" :::
+::: EVALUATION-REPORT name="local-model-evaluation" title="Local model evaluation" :::

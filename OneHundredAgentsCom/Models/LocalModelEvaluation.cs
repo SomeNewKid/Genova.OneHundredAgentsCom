@@ -9,7 +9,7 @@ namespace Genova.OneHundredAgentsCom.Models;
 /// Represents a single row from the embedded local model evaluation JSON.
 /// Property names are mapped to the JSON keys (some of which contain spaces).
 /// </summary>
-internal sealed class LocalModelEvalution
+internal sealed class LocalModelEvaluation
 {
     /// <summary>
     /// Gets or sets the name of the model.

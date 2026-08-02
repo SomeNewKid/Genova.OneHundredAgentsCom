@@ -14,13 +14,11 @@ using Genova.OneHundredAgentsCom.Utilities;
 namespace Genova.OneHundredAgentsCom.Html;
 
 /// <summary>
-/// Replaces a markdown-style evaluation report placeholder with a simple DOM fragment
+/// Replaces a markdown-style coding evaluation report placeholder with a simple DOM fragment
 /// while we implement full deserialization later.
 /// </summary>
-internal sealed class ModelEvaluationModifier : IHtmlModifier
+internal sealed class CodingEvaluationModifier : IHtmlModifier
 {
-    private const string FrontierModel = "gpt-5";
-
     [SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "Conflicting naming rules.")]
     private static readonly JsonSerializerOptions _serializer_options = new()
     {
@@ -43,7 +41,7 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
             string text = p.TextContent.Trim();
 
             if (!text.StartsWith(":::", StringComparison.Ordinal) ||
-                !text.Contains(" EVALUATION-REPORT ", StringComparison.OrdinalIgnoreCase) ||
+                !text.Contains(" CODING-REPORT ", StringComparison.OrdinalIgnoreCase) ||
                 !text.EndsWith(":::", StringComparison.Ordinal))
             {
                 continue;
@@ -60,7 +58,7 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
                 continue;
             }
 
-            // Build resource path like "Data/local-model-evaluation.json"
+            // Build resource path like "Data/local-coding-evaluation.json"
             string resourcePath = $"Data/{name}.json";
 
             // Load embedded JSON (must exist); if not present remove the marker.
@@ -77,11 +75,11 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
                 json = reader.ReadToEnd();
             }
 
-            // Deserialize into List<LocalModelEvalution>.
-            List<LocalModelEvaluation>? models = null;
+            // Deserialize into List<LocalCodeEvaluation>.
+            List<LocalCodeEvaluation>? models = null;
             try
             {
-                models = JsonSerializer.Deserialize<List<LocalModelEvaluation>>(json, _serializer_options);
+                models = JsonSerializer.Deserialize<List<LocalCodeEvaluation>>(json, _serializer_options);
             }
             catch (JsonException)
             {
@@ -106,15 +104,6 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
             // Sort by Score descending.
             models = models.OrderByDescending(m => m.Score).ToList();
 
-            // Ensure item with Name "gpt-5" appears first (case-insensitive) if present.
-            int gptIndex = models.FindIndex(m => string.Equals(m.Name, FrontierModel, StringComparison.OrdinalIgnoreCase));
-            if (gptIndex > 0)
-            {
-                LocalModelEvaluation gptItem = models[gptIndex];
-                models.RemoveAt(gptIndex);
-                models.Insert(0, gptItem);
-            }
-
             // Create table to present the list.
             IDocument? doc = p.Owner ?? p.ParentElement?.Owner;
             if (doc is null)
@@ -124,7 +113,7 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
             }
 
             IElement table = doc.CreateElement("table");
-            table.ClassName = "model-evaluation";
+            table.ClassName = "coding-evaluation";
 
             // Optional caption from attributes.title
             if (attributes.TryGetValue("title", out string? title) && !string.IsNullOrWhiteSpace(title))
@@ -150,38 +139,38 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
             thScore.TextContent = "Score";
             headerRow.AppendChild(thScore);
 
-            // Columns 4..9 get hidden-if-narrow class on headers
+            // Sub-metrics get hidden-if-narrow class on headers
             string hiddenClass = "hidden-if-narrow";
 
-            IElement thExtraction = doc.CreateElement("th");
-            thExtraction.ClassName = hiddenClass;
-            thExtraction.TextContent = "Extraction";
-            headerRow.AppendChild(thExtraction);
+            IElement thCodeGen = doc.CreateElement("th");
+            thCodeGen.ClassName = hiddenClass;
+            thCodeGen.TextContent = "Code Generation";
+            headerRow.AppendChild(thCodeGen);
 
-            IElement thSchema = doc.CreateElement("th");
-            thSchema.ClassName = hiddenClass;
-            thSchema.TextContent = "Schema";
-            headerRow.AppendChild(thSchema);
+            IElement thBugRepair = doc.CreateElement("th");
+            thBugRepair.ClassName = hiddenClass;
+            thBugRepair.TextContent = "Bug Repair";
+            headerRow.AppendChild(thBugRepair);
 
-            IElement thReportAccuracy = doc.CreateElement("th");
-            thReportAccuracy.ClassName = hiddenClass;
-            thReportAccuracy.TextContent = "Report Accuracy";
-            headerRow.AppendChild(thReportAccuracy);
+            IElement thCodeCompletion = doc.CreateElement("th");
+            thCodeCompletion.ClassName = hiddenClass;
+            thCodeCompletion.TextContent = "Code Completion";
+            headerRow.AppendChild(thCodeCompletion);
 
-            IElement thReportStyle = doc.CreateElement("th");
-            thReportStyle.ClassName = hiddenClass;
-            thReportStyle.TextContent = "Report Style";
-            headerRow.AppendChild(thReportStyle);
+            IElement thRefactoring = doc.CreateElement("th");
+            thRefactoring.ClassName = hiddenClass;
+            thRefactoring.TextContent = "Refactoring";
+            headerRow.AppendChild(thRefactoring);
 
-            IElement thIDTool = doc.CreateElement("th");
-            thIDTool.ClassName = hiddenClass;
-            thIDTool.TextContent = "ID Tool";
-            headerRow.AppendChild(thIDTool);
+            IElement thTestGen = doc.CreateElement("th");
+            thTestGen.ClassName = hiddenClass;
+            thTestGen.TextContent = "Test Generation";
+            headerRow.AppendChild(thTestGen);
 
-            IElement thCreditTool = doc.CreateElement("th");
-            thCreditTool.ClassName = hiddenClass;
-            thCreditTool.TextContent = "Credit Tool";
-            headerRow.AppendChild(thCreditTool);
+            IElement thCodeExplanation = doc.CreateElement("th");
+            thCodeExplanation.ClassName = hiddenClass;
+            thCodeExplanation.TextContent = "Code Explanation";
+            headerRow.AppendChild(thCodeExplanation);
 
             thead.AppendChild(headerRow);
             table.AppendChild(thead);
@@ -189,11 +178,9 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
             // Create tbody and rows
             IElement tbody = doc.CreateElement("tbody");
 
-            foreach (LocalModelEvaluation model in models)
+            foreach (LocalCodeEvaluation model in models)
             {
-                if (model is null ||
-                    model.Name!.Equals(FrontierModel, StringComparison.OrdinalIgnoreCase) ||
-                    model.Score <= 0)
+                if (model is null || model.Score <= 0)
                 {
                     continue;
                 }
@@ -238,71 +225,47 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
                 scoreCell.AppendChild(scoreScale);
                 row.AppendChild(scoreCell);
 
-                // Extraction (hidden-if-narrow) (/5)
-                IElement extractionCell = doc.CreateElement("td");
-                extractionCell.ClassName = hiddenClass;
-                IText extractionText = doc.CreateTextNode(model.Extraction.ToString(CultureInfo.InvariantCulture));
-                extractionCell.AppendChild(extractionText);
-                IElement extractionScale = doc.CreateElement("span");
-                extractionScale.ClassName = "scale";
-                extractionScale.TextContent = "/5";
-                extractionCell.AppendChild(extractionScale);
-                row.AppendChild(extractionCell);
+                // Code Generation (hidden-if-narrow)
+                IElement codeGenCell = doc.CreateElement("td");
+                codeGenCell.ClassName = hiddenClass;
+                IText codeGenText = doc.CreateTextNode(model.CodeGeneration.ToString(CultureInfo.InvariantCulture));
+                codeGenCell.AppendChild(codeGenText);
+                row.AppendChild(codeGenCell);
 
-                // Schema (hidden-if-narrow) (/5)
-                IElement schemaCell = doc.CreateElement("td");
-                schemaCell.ClassName = hiddenClass;
-                IText schemaText = doc.CreateTextNode(model.Schema.ToString(CultureInfo.InvariantCulture));
-                schemaCell.AppendChild(schemaText);
-                IElement schemaScale = doc.CreateElement("span");
-                schemaScale.ClassName = "scale";
-                schemaScale.TextContent = "/5";
-                schemaCell.AppendChild(schemaScale);
-                row.AppendChild(schemaCell);
+                // Bug Repair (hidden-if-narrow)
+                IElement bugRepairCell = doc.CreateElement("td");
+                bugRepairCell.ClassName = hiddenClass;
+                IText bugRepairText = doc.CreateTextNode(model.BugRepair.ToString(CultureInfo.InvariantCulture));
+                bugRepairCell.AppendChild(bugRepairText);
+                row.AppendChild(bugRepairCell);
 
-                // ReportAccuracy (hidden-if-narrow) (/5)
-                IElement reportAccuracyCell = doc.CreateElement("td");
-                reportAccuracyCell.ClassName = hiddenClass;
-                IText reportAccuracyText = doc.CreateTextNode(model.ReportAccuracy.ToString(CultureInfo.InvariantCulture));
-                reportAccuracyCell.AppendChild(reportAccuracyText);
-                IElement reportAccuracyScale = doc.CreateElement("span");
-                reportAccuracyScale.ClassName = "scale";
-                reportAccuracyScale.TextContent = "/5";
-                reportAccuracyCell.AppendChild(reportAccuracyScale);
-                row.AppendChild(reportAccuracyCell);
+                // Code Completion (hidden-if-narrow)
+                IElement codeCompletionCell = doc.CreateElement("td");
+                codeCompletionCell.ClassName = hiddenClass;
+                IText codeCompletionText = doc.CreateTextNode(model.CodeCompletion.ToString(CultureInfo.InvariantCulture));
+                codeCompletionCell.AppendChild(codeCompletionText);
+                row.AppendChild(codeCompletionCell);
 
-                // ReportStyle (hidden-if-narrow) (/5)
-                IElement reportStyleCell = doc.CreateElement("td");
-                reportStyleCell.ClassName = hiddenClass;
-                IText reportStyleText = doc.CreateTextNode(model.ReportStyle.ToString(CultureInfo.InvariantCulture));
-                reportStyleCell.AppendChild(reportStyleText);
-                IElement reportStyleScale = doc.CreateElement("span");
-                reportStyleScale.ClassName = "scale";
-                reportStyleScale.TextContent = "/5";
-                reportStyleCell.AppendChild(reportStyleScale);
-                row.AppendChild(reportStyleCell);
+                // Refactoring (hidden-if-narrow)
+                IElement refactoringCell = doc.CreateElement("td");
+                refactoringCell.ClassName = hiddenClass;
+                IText refactoringText = doc.CreateTextNode(model.Refactoring.ToString(CultureInfo.InvariantCulture));
+                refactoringCell.AppendChild(refactoringText);
+                row.AppendChild(refactoringCell);
 
-                // IDTool (hidden-if-narrow) (/5)
-                IElement idToolCell = doc.CreateElement("td");
-                idToolCell.ClassName = hiddenClass;
-                IText idToolText = doc.CreateTextNode(model.IDTool.ToString(CultureInfo.InvariantCulture));
-                idToolCell.AppendChild(idToolText);
-                IElement idToolScale = doc.CreateElement("span");
-                idToolScale.ClassName = "scale";
-                idToolScale.TextContent = "/5";
-                idToolCell.AppendChild(idToolScale);
-                row.AppendChild(idToolCell);
+                // Test Generation (hidden-if-narrow)
+                IElement testGenCell = doc.CreateElement("td");
+                testGenCell.ClassName = hiddenClass;
+                IText testGenText = doc.CreateTextNode(model.TestGeneration.ToString(CultureInfo.InvariantCulture));
+                testGenCell.AppendChild(testGenText);
+                row.AppendChild(testGenCell);
 
-                // CreditTool (hidden-if-narrow) (/5)
-                IElement creditToolCell = doc.CreateElement("td");
-                creditToolCell.ClassName = hiddenClass;
-                IText creditToolText = doc.CreateTextNode(model.CreditTool.ToString(CultureInfo.InvariantCulture));
-                creditToolCell.AppendChild(creditToolText);
-                IElement creditToolScale = doc.CreateElement("span");
-                creditToolScale.ClassName = "scale";
-                creditToolScale.TextContent = "/5";
-                creditToolCell.AppendChild(creditToolScale);
-                row.AppendChild(creditToolCell);
+                // Code Explanation (hidden-if-narrow)
+                IElement codeExplanationCell = doc.CreateElement("td");
+                codeExplanationCell.ClassName = hiddenClass;
+                IText codeExplanationText = doc.CreateTextNode(model.CodeExplanation.ToString(CultureInfo.InvariantCulture));
+                codeExplanationCell.AppendChild(codeExplanationText);
+                row.AppendChild(codeExplanationCell);
 
                 tbody.AppendChild(row);
             }

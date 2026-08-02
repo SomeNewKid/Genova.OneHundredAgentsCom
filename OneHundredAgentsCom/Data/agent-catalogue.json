@@ -365,6 +365,10 @@
                 {
                     "name": "Local model evaluation",
                     "description": "Evaluating models for language and reasoning."
+                },
+                {
+                    "name": "Local model coding",
+                    "description": "Evaluating models for coding tasks."
                 }
             ]
         }

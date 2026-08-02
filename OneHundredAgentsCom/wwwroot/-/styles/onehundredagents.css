@@ -20,6 +20,12 @@ figure.hero {
 @media (max-width: 639px) {
     .sandbox-report span.group-id {
         display: none;
+    }    
+}
+
+@media (max-width: 900px) {
+    .hidden-if-narrow {
+        display: none;
     }
 }
 
