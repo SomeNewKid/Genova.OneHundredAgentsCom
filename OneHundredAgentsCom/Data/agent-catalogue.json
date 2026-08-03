@@ -369,6 +369,10 @@
                 {
                     "name": "Local model coding",
                     "description": "Evaluating models for coding tasks."
+                },
+                {
+                    "name": "Local stable diffusion",
+                    "description": "Evaluating models for image generation tasks."
                 }
             ]
         }
