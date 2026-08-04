@@ -371,8 +371,12 @@
                     "description": "Evaluating models for coding tasks."
                 },
                 {
-                    "name": "Local stable diffusion",
-                    "description": "Evaluating models for image generation tasks."
+                    "name": "Local Stable Diffusion",
+                    "description": "Evaluating the SD model for image generation."
+                },
+                {
+                    "name": "Local Stable Diffusion XL",
+                    "description": "Evaluating the SDXL model for image generation."
                 }
             ]
         }
