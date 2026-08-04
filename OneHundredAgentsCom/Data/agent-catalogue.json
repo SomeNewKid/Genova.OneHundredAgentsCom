@@ -364,11 +364,11 @@
             "agents": [
                 {
                     "name": "Local model evaluation",
-                    "description": "Evaluating models for language and reasoning."
+                    "description": "Evaluating local models for language and reasoning."
                 },
                 {
                     "name": "Local model coding",
-                    "description": "Evaluating models for coding tasks."
+                    "description": "Evaluating local models for coding tasks."
                 },
                 {
                     "name": "Local Stable Diffusion",
@@ -377,6 +377,10 @@
                 {
                     "name": "Local Stable Diffusion XL",
                     "description": "Evaluating the SDXL model for image generation."
+                },
+                {
+                    "name": "Local image understanding",
+                    "description": "Evaluating local models for image understanding."
                 }
             ]
         }
