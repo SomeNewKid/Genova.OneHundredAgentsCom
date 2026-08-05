@@ -381,6 +381,10 @@
                 {
                     "name": "Local image understanding",
                     "description": "Evaluating local models for image understanding."
+                },
+                {
+                    "name": "Local OCR",
+                    "description": "Evaluating local models for optical character recognition."
                 }
             ]
         }

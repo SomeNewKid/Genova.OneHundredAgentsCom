@@ -100,6 +100,7 @@
     <Content Remove="wwwroot\local-image-understanding.md" />
     <Content Remove="wwwroot\local-model-coding.md" />
     <Content Remove="wwwroot\local-model-evaluation.md" />
+    <Content Remove="wwwroot\local-ocr.md" />
     <Content Remove="wwwroot\local-stable-diffusion-xl.md" />
     <Content Remove="wwwroot\local-stable-diffusion.md" />
     <Content Remove="wwwroot\mcp-sidecar.md" />

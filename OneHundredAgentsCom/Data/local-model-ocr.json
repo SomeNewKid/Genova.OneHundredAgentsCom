@@ -1,0 +1,182 @@
+[
+  {
+    "name": "deepseek-ocr",
+    "size": 6.70,
+    "average_score": 33.0,
+    "speed_score": 20.42,
+    "final_score": 28.81,
+    "total_duration": "03m 25s",
+    "article": {
+      "score": 0,
+      "duration": "01m 11s"
+    },
+    "hardwriting": {
+      "score": 99,
+      "duration": "00m 54s"
+    },
+    "poster": {
+      "score": 0,
+      "duration": "01m 20s"
+    }
+  },
+  {
+    "name": "gemma4:12b",
+    "size": 7.60,
+    "average_score": 74.0,
+    "speed_score": 0.0,
+    "final_score": 49.33,
+    "total_duration": "01h 41m 20s",
+    "article": {
+      "score": 88,
+      "duration": "45m 34s"
+    },
+    "hardwriting": {
+      "score": 43,
+      "duration": "48m 47s"
+    },
+    "poster": {
+      "score": 91,
+      "duration": "06m 59s"
+    }
+  },
+  {
+    "name": "glm-ocr",
+    "size": 2.20,
+    "average_score": 96.33,
+    "speed_score": 35.87,
+    "final_score": 76.18,
+    "total_duration": "02m 00s",
+    "article": {
+      "score": 95,
+      "duration": "01m 00s"
+    },
+    "hardwriting": {
+      "score": 99,
+      "duration": "00m 29s"
+    },
+    "poster": {
+      "score": 95,
+      "duration": "00m 31s"
+    }
+  },
+  {
+    "name": "glm-ocr:bf16",
+    "size": 2.20,
+    "average_score": 96.33,
+    "speed_score": 39.45,
+    "final_score": 77.37,
+    "total_duration": "01m 46s",
+    "article": {
+      "score": 95,
+      "duration": "00m 54s"
+    },
+    "hardwriting": {
+      "score": 99,
+      "duration": "00m 23s"
+    },
+    "poster": {
+      "score": 95,
+      "duration": "00m 29s"
+    }
+  },
+  {
+    "name": "gpt-5",
+    "size": 0.00,
+    "average_score": 99.67,
+    "speed_score": 54.92,
+    "final_score": 84.75,
+    "total_duration": "01m 02s",
+    "article": {
+      "score": 100,
+      "duration": "00m 37s"
+    },
+    "hardwriting": {
+      "score": 100,
+      "duration": "00m 14s"
+    },
+    "poster": {
+      "score": 99,
+      "duration": "00m 11s"
+    }
+  },
+  {
+    "name": "granite3.2-vision",
+    "size": 2.40,
+    "average_score": 57.67,
+    "speed_score": 24.98,
+    "final_score": 46.77,
+    "total_duration": "02m 55s",
+    "article": {
+      "score": 60,
+      "duration": "01m 43s"
+    },
+    "hardwriting": {
+      "score": 94,
+      "duration": "00m 33s"
+    },
+    "poster": {
+      "score": 19,
+      "duration": "00m 39s"
+    }
+  },
+  {
+    "name": "llama3.2-vision",
+    "size": 7.80,
+    "average_score": 0.0,
+    "speed_score": 100.0,
+    "final_score": 33.33,
+    "total_duration": "00m 13s",
+    "article": {
+      "score": 0,
+      "duration": "00m 05s"
+    },
+    "hardwriting": {
+      "score": 0,
+      "duration": "00m 04s"
+    },
+    "poster": {
+      "score": 0,
+      "duration": "00m 04s"
+    }
+  },
+  {
+    "name": "llava:13b",
+    "size": 8.00,
+    "average_score": 13.33,
+    "speed_score": 0.0,
+    "final_score": 8.89,
+    "total_duration": "07m 48s",
+    "article": {
+      "score": 9,
+      "duration": "02m 30s"
+    },
+    "hardwriting": {
+      "score": 10,
+      "duration": "03m 37s"
+    },
+    "poster": {
+      "score": 21,
+      "duration": "01m 41s"
+    }
+  },
+  {
+    "name": "minicpm-v",
+    "size": 5.50,
+    "average_score": 92.67,
+    "speed_score": 14.92,
+    "final_score": 66.75,
+    "total_duration": "04m 08s",
+    "article": {
+      "score": 85,
+      "duration": "01m 57s"
+    },
+    "hardwriting": {
+      "score": 99,
+      "duration": "01m 05s"
+    },
+    "poster": {
+      "score": 94,
+      "duration": "01m 06s"
+    }
+  }
+]
