@@ -385,6 +385,10 @@
                 {
                     "name": "Local OCR",
                     "description": "Evaluating local models for optical character recognition."
+                },
+                {
+                    "name": "Local text moderation",
+                    "description": "Evaluating local models for text moderation."
                 }
             ]
         }
