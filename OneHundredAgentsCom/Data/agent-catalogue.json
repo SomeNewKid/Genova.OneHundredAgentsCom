@@ -389,6 +389,10 @@
                 {
                     "name": "Local text moderation",
                     "description": "Evaluating local models for text moderation."
+                },
+                {
+                    "name": "Local image moderation",
+                    "description": "Evaluating local models for image moderation."
                 }
             ]
         }
