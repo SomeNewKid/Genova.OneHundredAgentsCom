@@ -411,6 +411,10 @@
                 {
                     "name": "Takeaway agent Catherine",
                     "description": "An agent which uses long-term semantic memory."
+                },
+                {
+                    "name": "Takeaway agent Diane",
+                    "description": "An agent which uses long-term procedural memory."
                 }
             ]
         }

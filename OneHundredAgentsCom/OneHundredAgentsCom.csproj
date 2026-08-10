@@ -115,6 +115,7 @@
     <Content Remove="wwwroot\takeaway-agent-alison.md" />
     <Content Remove="wwwroot\takeaway-agent-beverly.md" />
     <Content Remove="wwwroot\takeaway-agent-catherine.md" />
+    <Content Remove="wwwroot\takeaway-agent-diane.md" />
     <Content Remove="wwwroot\two-agent-sandbox.md" />
   </ItemGroup>
 </Project>

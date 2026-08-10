@@ -1,10 +1,10 @@
 # Takeaway agent Cathernine
 
-**Takeaway agent Cathernine** is a small proof of concept for testing long-term semantic memory, following ideas from the CoALA paper. The user gives a simple dinner hint, such as wanting a spicy pizza or a vegetarian curry, and the agent recommends a takeaway meal. Afterward, feedback from the user becomes part of the agent’s memory.
+**Takeaway agent Cathernine** is the third experiment in a small CoALA-inspired series about memory in AI agents. Alison worked only with the current dinner request. Beverly added episodic memory, so previous recommendations and feedback could be recalled. Catherine adds long-term semantic memory: not just remembering what happened, but distilling repeated episodes into simple facts about the user.
 
-The interesting bit is not the meal itself. It is how Catherine turns repeated episodes into more durable facts about the user. One good pizza recommendation is just an episode. Two or more positive pizza experiences can become a semantic memory: the user likes pizza. That fact can then help shape future recommendations, even when the exact earlier meals are no longer the focus. Episodic memory supplies the evidence; semantic memory keeps the reusable lesson.
+The user gives a short dinner hint, such as wanting a spicy pizza or a vegetarian curry, and Catherine recommends a takeaway meal. After the user gives feedback, that interaction becomes part of the agent’s remembered history. If the pattern repeats, Catherine can turn those episodes into durable preferences, such as the user liking pizza, spicy meals, or a particular restaurant. One happy dinner does not become a personality profile. Two or more related signals start to look like a fact.
 
-This sketches a practical business capability: a recommendation assistant that gets a little less blank each time someone uses it. It does not need a grand customer profile or a sprawling personalization platform to be useful. It tests a modest idea: remembered feedback can become simple, portable facts that make later suggestions feel more personal.
+This sketches a useful business capability: recommendations that become more personal without needing a giant customer-data machine humming ominously in the corner. The agent still makes a fresh recommendation each time, but semantic memory gives it a small, reusable sense of what has mattered before.
 
 ::: SIDEBAR :::
 
