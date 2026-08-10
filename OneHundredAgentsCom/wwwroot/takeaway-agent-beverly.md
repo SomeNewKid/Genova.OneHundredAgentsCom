@@ -14,6 +14,7 @@ Pattern: Single agent
 Model: [Granite 4.1](https://www.ibm.com/granite)
 ---
 
+Reference: [CoALA paper](https://arxiv.org/html/2309.02427v3)
 Repository: [GitHub](https://github.com/SomeNewKid/TakeawayAgentBeverly)
 
 ::: /SIDEBAR :::

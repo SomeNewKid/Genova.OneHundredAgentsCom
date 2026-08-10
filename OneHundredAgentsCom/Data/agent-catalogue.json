@@ -407,6 +407,10 @@
                 {
                     "name": "Takeaway agent Beverly",
                     "description": "An agent which uses long-term episodic memory."
+                },
+                {
+                    "name": "Takeaway agent Catherine",
+                    "description": "An agent which uses long-term semantic memory."
                 }
             ]
         }
