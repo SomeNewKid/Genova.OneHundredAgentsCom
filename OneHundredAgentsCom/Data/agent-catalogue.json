@@ -395,6 +395,16 @@
                     "description": "Evaluating local models for image moderation."
                 }
             ]
+        },
+        {
+            "title": "Agents with memory",
+            "description": "Agents using memory, following the CoALA paper.",
+            "agents": [
+                {
+                    "name": "Takeaway Agent Alison",
+                    "description": "An agent which uses only short-term working memory."
+                }
+            ]
         }
     ]
 }
