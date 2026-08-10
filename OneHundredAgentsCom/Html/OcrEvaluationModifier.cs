@@ -18,7 +18,7 @@ namespace Genova.OneHundredAgentsCom.Html;
 /// Replaces a markdown-style OCR report placeholder with a simple DOM fragment
 /// backed by the embedded local-model-ocr.json data.
 /// </summary>
-internal sealed class OcrEvaluationModifier : IHtmlModifier
+internal sealed partial class OcrEvaluationModifier : IHtmlModifier
 {
     [SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "Conflicting naming rules.")]
     private static readonly JsonSerializerOptions _serializer_options = new()
@@ -203,6 +203,7 @@ internal sealed class OcrEvaluationModifier : IHtmlModifier
                 // Size cell (GB scale) - model-size class
                 IElement sizeCell = doc.CreateElement("td");
                 sizeCell.ClassName = "model-size";
+
                 // Special-case gpt-5 with size 0.00 -> render non-breaking space
                 if (string.Equals(model.Name, "gpt-5", StringComparison.OrdinalIgnoreCase) &&
                     Math.Abs(model.Size) < float.Epsilon)
@@ -218,6 +219,7 @@ internal sealed class OcrEvaluationModifier : IHtmlModifier
                     sizeScale.TextContent = "GB";
                     sizeCell.AppendChild(sizeScale);
                 }
+
                 row.AppendChild(sizeCell);
 
                 // Speed cell (format TotalDuration as hh:mm:ss or mm:ss)
@@ -275,7 +277,7 @@ internal sealed class OcrEvaluationModifier : IHtmlModifier
 
     /// <summary>
     /// Parse duration strings like "01h 41m 20s" or "01m 02s" into a formatted
-    /// "hh:mm:ss" (for >= 1 hour) or "mm:ss" (for < 1 hour) string. Returns
+    /// "hh:mm:ss" (for &gt;= 1 hour) or "mm:ss" (for &lt; 1 hour) string. Returns
     /// an empty string when input is null/empty or cannot be parsed.
     /// </summary>
     private static string FormatDuration(string? duration)
@@ -287,7 +289,7 @@ internal sealed class OcrEvaluationModifier : IHtmlModifier
 
         // Accept patterns with optional hours/minutes/seconds, allowing spaces:
         // e.g. "01h 41m 20s", "01m 02s", "00m 13s"
-        var match = Regex.Match(duration, @"^\s*(?:(\d+)\s*h)?\s*(?:(\d+)\s*m)?\s*(?:(\d+)\s*s)?\s*$", RegexOptions.IgnoreCase);
+        Match match = TimeFormatRegex().Match(duration);
         if (!match.Success)
         {
             return duration.Trim();
@@ -324,4 +326,7 @@ internal sealed class OcrEvaluationModifier : IHtmlModifier
             return string.Format(CultureInfo.InvariantCulture, "{0:00}:{1:00}", ts.Minutes, ts.Seconds);
         }
     }
+
+    [GeneratedRegex(@"^\s*(?:(\d+)\s*h)?\s*(?:(\d+)\s*m)?\s*(?:(\d+)\s*s)?\s*$", RegexOptions.IgnoreCase, "en-AU")]
+    private static partial Regex TimeFormatRegex();
 }

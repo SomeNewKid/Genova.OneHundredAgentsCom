@@ -1,4 +1,4 @@
-# Takeaway Agent Alison
+# Takeaway agent Alison
 
 **Takeaway agent Alison** is a small proof of concept for exploring memory in AI agents, following the CoALA paper. The business task is deliberately familiar: a user gives a loose dinner hint, such as “a vegetarian pizza” or “a spicy curry with paneer,” and Alison recommends a nearby takeaway meal. It uses LangGraph to keep the current request, menu observations, candidate meals, and final choice in working memory for one run.
 

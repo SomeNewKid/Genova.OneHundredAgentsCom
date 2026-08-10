@@ -401,8 +401,12 @@
             "description": "Agents using memory, following the CoALA paper.",
             "agents": [
                 {
-                    "name": "Takeaway Agent Alison",
+                    "name": "Takeaway agent Alison",
                     "description": "An agent which uses only short-term working memory."
+                },
+                {
+                    "name": "Takeaway agent Beverly",
+                    "description": "An agent which uses long-term episodic memory."
                 }
             ]
         }
