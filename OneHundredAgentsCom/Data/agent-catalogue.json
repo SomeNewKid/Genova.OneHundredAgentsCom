@@ -437,6 +437,10 @@
                 {
                     "name": "Caesar cipher",
                     "description": "Foundry prompt agent using MCP server tools."
+                },
+                {
+                    "name": "Mysterious Island",
+                    "description": "Foundry code-first agent using built-in RAG tools."
                 }
             ]
         }
