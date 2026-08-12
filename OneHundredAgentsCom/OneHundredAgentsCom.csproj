@@ -82,6 +82,7 @@
     <EmbeddedResource Include="Data\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="wwwroot\bakery-analyst.md" />
     <Content Remove="wwwroot\bug-report-team.md" />
     <Content Remove="wwwroot\chinese-idiom-explainer.md" />
     <Content Remove="wwwroot\code-execution-sidecar.md" />

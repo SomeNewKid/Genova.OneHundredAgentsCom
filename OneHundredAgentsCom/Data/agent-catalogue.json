@@ -429,6 +429,10 @@
                 {
                     "name": "Haunted hotel concierge",
                     "description": "Foundry prompt agent using text resources."
+                },
+                {
+                    "name": "Bakery analyst",
+                    "description": "Foundry prompt agent using data resources."
                 }
             ]
         }
