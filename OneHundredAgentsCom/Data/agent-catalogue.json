@@ -417,6 +417,16 @@
                     "description": "An agent which uses long-term procedural memory."
                 }
             ]
+        },
+        {
+            "title": "Microsoft Foundry agents",
+            "description": "Agents deployed to Microsoft Foundry.",
+            "agents": [
+                {
+                    "name": "Chinese Idiom Explainer",
+                    "description": "First prompt agent with Microsoft Foundry."
+                }
+            ]
         }
     ]
 }
