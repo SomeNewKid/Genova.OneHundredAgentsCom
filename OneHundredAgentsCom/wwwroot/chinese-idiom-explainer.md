@@ -14,6 +14,6 @@ Pattern: Prompt agent
 Model: [GPT 5 mini](https://developers.openai.com/api/docs/models/gpt-5-mini)
 ---
 
-Repository: [GitHub](https://github.com/SomeNewKid/WhiteBeltHacker)
+Repository: [GitHub](https://github.com/SomeNewKid/ChineseIdiomExplainer)
 
 ::: /SIDEBAR :::

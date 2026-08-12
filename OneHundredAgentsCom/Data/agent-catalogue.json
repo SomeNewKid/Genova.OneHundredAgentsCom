@@ -424,7 +424,11 @@
             "agents": [
                 {
                     "name": "Chinese Idiom Explainer",
-                    "description": "First prompt agent with Microsoft Foundry."
+                    "description": "Foundry prompt agent using web search."
+                },
+                {
+                    "name": "Haunted hotel concierge",
+                    "description": "Foundry prompt agent using text resources."
                 }
             ]
         }
