@@ -433,6 +433,10 @@
                 {
                     "name": "Bakery analyst",
                     "description": "Foundry prompt agent using data resources."
+                },
+                {
+                    "name": "Caesar cipher",
+                    "description": "Foundry prompt agent using MCP server tools."
                 }
             ]
         }
