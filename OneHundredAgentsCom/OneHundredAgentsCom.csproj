@@ -98,6 +98,7 @@
     <Content Remove="wwwroot\container-sandbox-with-no-shell-access.md" />
     <Content Remove="wwwroot\container-sandbox-with-runtime-control.md" />
     <Content Remove="wwwroot\container-sandbox-with-squid-sidecar.md" />
+    <Content Remove="wwwroot\customs-team.md" />
     <Content Remove="wwwroot\haproxy-sidecar.md" />
     <Content Remove="wwwroot\haunted-hotel-concierge.md" />
     <Content Remove="wwwroot\jina-reader-sidecar.md" />

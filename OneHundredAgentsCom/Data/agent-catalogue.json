@@ -71,7 +71,7 @@
             ]
         },
         {
-            "title": "IBM BeeAI framework",
+            "title": "IBM's' BeeAI framework",
             "description": "Agents built using IBM's open-source BeeAI framework.",
             "agents": [
                 {
@@ -215,7 +215,7 @@
             ]
         },
         {
-            "title": "Miscellaneous agents",
+            "title": "Other framework agents",
             "description": "Agents based on other frameworks.",
             "agents": [
                 {
@@ -441,6 +441,10 @@
                 {
                     "name": "Mysterious Island",
                     "description": "Foundry code-first agent using built-in RAG tools."
+                },
+                {
+                    "name": "Customs team",
+                    "description": "Multiple Foundry agents working as a team."
                 }
             ]
         }
