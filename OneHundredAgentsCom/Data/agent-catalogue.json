@@ -451,6 +451,16 @@
                     "description": "Multiple Foundry agents working as an A2A team."
                 }
             ]
+        },
+        {
+            "title": "AWS Bedrock agents",
+            "description": "Agents deployed to AWS Bedrock.",
+            "agents": [
+                {
+                    "name": "Nutshell summarizer",
+                    "description": "First steps with AWS Bedrock and a Strands agent."
+                }
+            ]
         }
     ]
 }
