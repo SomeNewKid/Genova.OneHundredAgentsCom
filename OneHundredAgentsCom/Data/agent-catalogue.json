@@ -459,6 +459,10 @@
                 {
                     "name": "Nutshell summarizer",
                     "description": "First steps with AWS Bedrock and a Strands agent."
+                },
+                {
+                    "name": "Maths helper",
+                    "description": "AWS Bedrock code interpreter tool with a Strands agent."
                 }
             ]
         }
