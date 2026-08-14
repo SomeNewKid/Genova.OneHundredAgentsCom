@@ -219,6 +219,10 @@
             "description": "Agents based on other frameworks.",
             "agents": [
                 {
+                    "name": "Ghost story raconteur",
+                    "description": "First steps with the LlamaIndex framework."
+                },
+                {
                     "name": "Vehicle trip analyst",
                     "description": "First steps with Hugging Face's smolagents."
                 },
@@ -444,7 +448,7 @@
                 },
                 {
                     "name": "Customs team",
-                    "description": "Multiple Foundry agents working as a team."
+                    "description": "Multiple Foundry agents working as an A2A team."
                 }
             ]
         }
