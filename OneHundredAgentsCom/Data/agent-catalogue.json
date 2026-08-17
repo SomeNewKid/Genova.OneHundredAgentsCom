@@ -465,6 +465,36 @@
                     "description": "AWS Bedrock code interpreter tool with a Strands agent."
                 }
             ]
+        },
+        {
+            "title": "Observed Agents",
+            "description": "Adding tracing and observability to agent.",
+            "agents": [
+                {
+                    "name": "Adventurer Oliver",
+                    "description": "Observability with OpenAI's Agents SDK."
+                },
+                {
+                    "name": "Adventurer Adrian",
+                    "description": "Observability with Anthropic's Claude Agent SDK."
+                },
+                {
+                    "name": "Adventurer Makenzie",
+                    "description": "Observability with Microsoft's Agent Framework."
+                },
+                {
+                    "name": "Adventurer Ivan",
+                    "description": "Observability with IBM's BeeAI framework."
+                },
+                {
+                    "name": "Adventurer Langdon",
+                    "description": "Observability with the LangGraph framework."
+                },
+                {
+                    "name": "Adventurer LLoyd",
+                    "description": "Observability with the LLamaIndex framework."
+                }
+            ]
         }
     ]
 }

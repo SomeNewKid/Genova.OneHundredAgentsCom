@@ -82,6 +82,12 @@
     <EmbeddedResource Include="Data\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="wwwroot\adventurer-adrian.md" />
+    <Content Remove="wwwroot\adventurer-ivan.md" />
+    <Content Remove="wwwroot\adventurer-langdon.md" />
+    <Content Remove="wwwroot\adventurer-lloyd.md" />
+    <Content Remove="wwwroot\adventurer-makenzie.md" />
+    <Content Remove="wwwroot\adventurer-oliver.md" />
     <Content Remove="wwwroot\bakery-analyst.md" />
     <Content Remove="wwwroot\bug-report-team.md" />
     <Content Remove="wwwroot\caesar-cipher.md" />
@@ -111,6 +117,7 @@
     <Content Remove="wwwroot\local-stable-diffusion-xl.md" />
     <Content Remove="wwwroot\local-stable-diffusion.md" />
     <Content Remove="wwwroot\local-text-moderation.md" />
+    <Content Remove="wwwroot\maths-helper.md" />
     <Content Remove="wwwroot\mcp-sidecar.md" />
     <Content Remove="wwwroot\movie-poster-team.md" />
     <Content Remove="wwwroot\mysterious-island.md" />
