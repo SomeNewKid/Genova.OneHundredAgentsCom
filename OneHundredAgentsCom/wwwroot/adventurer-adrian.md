@@ -10,6 +10,7 @@ What the experiment shows is mixed. The Claude Agent SDK does provide built-in t
 
 Language: Python
 Framework: [Claude Agent SDK](https://claude.com/blog/building-agents-with-the-claude-agent-sdk)
+Observability: [OpenTelemetry](https://opentelemetry.io/)
 Pattern: Single agent
 Model: [Claude Opus 5](https://www.anthropic.com/claude/opus)
 ---
