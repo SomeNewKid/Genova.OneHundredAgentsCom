@@ -503,6 +503,10 @@
                 {
                     "name": "Designer Addison",
                     "description": "Design using an OpenAI agent and model."
+                },
+                {
+                    "name": "Designer Blake",
+                    "description": "Design using an Anthropic agent and model."
                 }
             ]
         }
