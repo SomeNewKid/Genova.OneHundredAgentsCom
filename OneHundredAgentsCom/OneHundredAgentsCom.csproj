@@ -107,6 +107,7 @@
     <Content Remove="wwwroot\customs-team.md" />
     <Content Remove="wwwroot\designer-addison.md" />
     <Content Remove="wwwroot\designer-blake.md" />
+    <Content Remove="wwwroot\designer-chase.md" />
     <Content Remove="wwwroot\ghost-story-raconteur.md" />
     <Content Remove="wwwroot\haproxy-sidecar.md" />
     <Content Remove="wwwroot\haunted-hotel-concierge.md" />

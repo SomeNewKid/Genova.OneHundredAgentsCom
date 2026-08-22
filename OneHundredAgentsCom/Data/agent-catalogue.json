@@ -507,6 +507,10 @@
                 {
                     "name": "Designer Blake",
                     "description": "Design using an Anthropic agent and model."
+                },
+                {
+                    "name": "Designer Chase",
+                    "description": "Design using a Google agent and model."
                 }
             ]
         }
