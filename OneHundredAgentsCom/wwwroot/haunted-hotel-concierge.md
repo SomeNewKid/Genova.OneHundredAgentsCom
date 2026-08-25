@@ -1,4 +1,4 @@
-﻿# Haunted hotel concierge
+# Haunted hotel concierge
 
 **Haunted hotel concierge** was built to test a very small but useful idea in Microsoft Foundry: can a prompt agent answer from a supplied text resource without needing custom code? The setting is deliberately theatrical. A guest reports something odd, such as knocking inside the wardrobe in Room 14, and the agent checks its haunted-hotel handbook before replying. That makes the test easy to run. If the answer mentions the right room, the right ghost, and the right precaution, the setup is working.
 

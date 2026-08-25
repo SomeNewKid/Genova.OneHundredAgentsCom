@@ -4,7 +4,7 @@
 
 The point is not that every benchmark prompt is heroic. It is that coding is a different skill from general language fluency. A model that writes a polished paragraph may still miss a boundary case, mutate input data, or produce tests that politely test nothing. This workbench separates those abilities and makes the failures visible.
 
-The most useful result was practical: OpenAI’s smaller open-weight model performed best on a mid-level laptop with 16GB RAM, with scores approaching frontier online models. It was much slower, and speed was recorded rather than treated as a fair score, because Ollama performance was not heavily tuned.
+The most useful result was practical: OpenAI's smaller open-weight model performed best on a mid-level laptop with 16GB RAM, with scores approaching frontier online models. It was much slower, and speed was recorded rather than treated as a fair score, because Ollama performance was not heavily tuned.
 
 ::: SIDEBAR :::
 

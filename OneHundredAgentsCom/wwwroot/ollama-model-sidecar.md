@@ -11,7 +11,7 @@ This proof of concept points toward a sensible split. Larger hosted models may s
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 Pattern: Single agent
-Sandbox: Docker localnet | AI agent container | Squid proxy sidecar | MCP Server sidecar | Jina Reader sidecar | Code execution sidecar | Ollama model sidecar
+Sandbox: Docker localnet | AI agent container | Squid proxy sidecar | Ollama model sidecar
 Model: [Gwen3:0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 ---
 

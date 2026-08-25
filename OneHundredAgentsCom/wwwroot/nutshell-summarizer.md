@@ -1,4 +1,4 @@
-﻿# Nutshell summarizer
+# Nutshell summarizer
 
 **Nutshell summarizer** was built to test a very specific question: what does it feel like to create a first agent with AWS Strands Agents and then run it on AWS Bedrock AgentCore? The business scenario is deliberately narrow. A user asks for a summary of a known story, and the agent checks its small collection before asking a Bedrock-hosted model to produce an "in a nutshell" summary.
 

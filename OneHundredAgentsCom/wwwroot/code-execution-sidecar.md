@@ -11,7 +11,7 @@ The point is not the sample calculation. The point is the boundary. Code executi
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 Pattern: Single agent
-Sandbox: Docker localnet | AI agent container | Squid proxy sidecar | MCP Server sidecar | Jina Reader sidecar | Code execution sidecar
+Sandbox: Docker localnet | AI agent container | Squid proxy sidecar | MCP Server sidecar | Code execution sidecar
 Model: [GPT-5 mini](https://developers.openai.com/api/docs/models/gpt-5-mini)
 ---
 

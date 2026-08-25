@@ -5,6 +5,227 @@ figure.hero {
   margin:0
 }
 
+/* Home cards */
+
+.agent-group,
+.article-navigation-links > nav {
+    border-top: 1px solid #b6c6bd;
+}
+
+.agent-group {
+    margin: 4em 0 3em;
+}
+
+.agent-group h2 {
+    margin-bottom: .333em;
+}
+
+.agent-group > p {
+    margin-top: .389em
+}
+
+.agent-cards {
+    display: grid;
+    grid-template-columns: minmax(0, 319px);
+    column-gap: 1rem;
+    row-gap: 1.3rem;
+    margin: 1.5em 0;
+    padding: 0;
+    list-style: none;
+}
+
+.article-sidebar,
+.article-card,
+.agent-card {
+    border: 1px solid #aabdb2;
+    border-radius: 6px;
+    background-color: #d8e3dc;
+    box-shadow: 0 1px 1px rgba(30, 40, 35, .06), 0 8px 22px rgba(30, 40, 35, .07);
+}
+
+.article-card img,
+.agent-card img {
+    max-width: 319px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    opacity: .8;
+}
+
+.article-card.is-clickable:focus-within img,
+.article-card.is-clickable:hover img,
+.agent-card.is-clickable:focus-within img,
+.agent-card.is-clickable:hover img {
+    opacity: 1;
+}
+
+@media (min-width: 601px) {
+    .agent-cards {
+        grid-template-columns: repeat(2, minmax(0, 319px))
+    }
+}
+
+@media (min-width: 901px) {
+    .agent-cards {
+        grid-template-columns: repeat(3, minmax(0, 319px));
+    }
+}
+
+.agent-card h3 {
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-size: 1.111em;
+    margin: .85em .5em .4em;
+}
+
+.article-card p,
+.agent-card p {
+    font-size: 0.889em;
+    line-height: 1.6;
+    margin: .5em;
+}
+
+/* Agent article */
+
+.article-header {
+    margin: 2em 0 0;
+    padding: 0 0 1em 0;
+}
+
+.article-header::after {
+    content: "";
+    display: block;
+    width: 3.2rem;
+    height: 4px;
+    margin-top: .9rem;
+    border-radius: 2px;
+    background-color: #aabdb2;
+}
+
+.article-sidebar dt,
+.article-header .agent-number,
+.article-header .agent-description {
+    color: #4c5a53;
+    font-size: .7222em;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+.article-header h1 {
+    margin: 0;
+}
+
+.article-body {
+    padding-right: 1em;
+}
+
+.sidebar {
+  font-size: 0.944em; 
+}
+
+.article-sidebar {
+  border-left-width: 3px;
+  padding: 0 0.5em;
+}
+
+@media (max-width: 900px) {
+    .article-body {
+        padding-right: 0;
+    }
+
+    .sidebar {
+        margin: 0 auto;
+    }
+}
+
+.article-sidebar h2 {
+    margin-top: .5em;
+    color: #4c5a53;
+    font-size: 1.111rem;
+}
+
+.article-sidebar dl {
+    border-top: 1px dashed #929e97;
+}
+
+.article-sidebar dl:first-of-type {
+    border-top: none;
+}
+
+.article-sidebar dd {
+  margin-left: 0;
+}
+
+.article-sidebar dd ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.article-sidebar {
+  position: relative;
+}
+
+.article-sidebar::after {
+  content: "";
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  width: 2rem;
+  height: 2rem;
+  mask: url("/-/images/github-logo.svg") no-repeat center / contain;
+  -webkit-mask: url("/-/images/github-logo.svg") no-repeat center / contain;
+  background-color: #a0aca5;
+}
+
+/* Article navigation */
+
+.article-navigation-links nav {
+    margin-top: 2em;
+    padding-top: 2em;
+    max-width: 64ch;
+}
+
+.article-nav .article-card.no-article {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.article-card {
+    width: 100%;
+    max-width: 319px;
+    min-width: 0;
+    line-height: 1.4;
+}
+
+.article-card img {
+  width: 100%;
+  height: auto;
+}
+
+.article-card span {
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: anywhere;
+  color: #4c5a53;
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+.article-nav {
+  display: grid;
+  --gap: clamp(1em, 5vw, 3rem);
+  column-gap: var(--gap);
+  grid-template-columns: repeat(2, min(319px, calc((100% - var(--gap)) / 2)));
+  align-items: start;
+  list-style: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
 /* Sandbox report styles */
 
 .sandbox-report {
@@ -98,10 +319,10 @@ figure.hero {
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' fill-rule='evenodd' d='M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z M7 10.8h10v2.4H7z'/%3E%3C/svg%3E");
 }
 
-
 /* Back to the top */
+
 .scroll-links .layout-container {
-    margin-top: 3em;
+    margin-top: 2em;
     text-align: center;
 }
 
@@ -133,6 +354,16 @@ figure.hero {
 .back-to-top:focus .label,
 .back-to-top:active .label {
     border-bottom: none;
+}
+
+/* Miscellaneous */
+
+.is-clickable:hover {
+    cursor: pointer;
+}
+
+.is-clickable:hover a {
+    border-bottom: 3px solid currentColor;
 }
 
 /* Theme toggle */
@@ -169,4 +400,84 @@ figure.hero {
 #theme-toggle-btn.theme-is-light::before {
     mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='5'/><line x1='12' y1='1' x2='12' y2='3'/><line x1='12' y1='21' x2='12' y2='23'/><line x1='4.22' y1='4.22' x2='5.64' y2='5.64'/><line x1='18.36' y1='18.36' x2='19.78' y2='19.78'/><line x1='1' y1='12' x2='3' y2='12'/><line x1='21' y1='12' x2='23' y2='12'/><line x1='4.22' y1='19.78' x2='5.64' y2='18.36'/><line x1='18.36' y1='5.64' x2='19.78' y2='4.22'/></svg>") no-repeat center;
     -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='5'/><line x1='12' y1='1' x2='12' y2='3'/><line x1='12' y1='21' x2='12' y2='23'/><line x1='4.22' y1='4.22' x2='5.64' y2='5.64'/><line x1='18.36' y1='18.36' x2='19.78' y2='19.78'/><line x1='1' y1='12' x2='3' y2='12'/><line x1='21' y1='12' x2='23' y2='12'/><line x1='4.22' y1='19.78' x2='5.64' y2='18.36'/><line x1='18.36' y1='5.64' x2='19.78' y2='4.22'/></svg>") no-repeat center;
+}
+
+
+
+/* Dark theme overrides */
+
+html[data-theme="dark"] .agent-group,
+html[data-theme="dark"] .article-navigation-links > nav {
+    border-top-color: #48524f;
+}
+
+html[data-theme="dark"] .article-header::after {
+    background-color: #47504f;
+}
+
+html[data-theme="dark"] .article-sidebar dl {
+    border-top-color: #6e7c78;
+}
+
+html[data-theme="dark"] .article-sidebar,
+html[data-theme="dark"] .article-card,
+html[data-theme="dark"] .agent-card {
+    border-color: #47504f;
+    background-color: #323a3d;
+}
+
+html[data-theme="dark"] .article-card img,
+html[data-theme="dark"] .agent-card img {
+    opacity: .7;
+}
+
+html[data-theme="dark"] .article-sidebar h2,
+html[data-theme="dark"] .article-sidebar dt,
+html[data-theme="dark"] .article-card span,
+html[data-theme="dark"] .article-header .agent-number,
+html[data-theme="dark"] .article-header .agent-description {
+    color: #aabdb2;
+}
+
+html[data-theme="dark"] .article-sidebar::after {
+    background-color: #626e6c;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme]) .agent-group,
+    html:not([data-theme]) .article-navigation-links > nav {
+        border-top-color: #48524f;
+    }
+
+    html:not([data-theme]) .article-header::after {
+        background-color: #47504f;
+    }
+
+    html:not([data-theme]) .article-sidebar dl {
+        border-top-color: #6e7c78;
+    }
+
+    html:not([data-theme]) .article-sidebar,
+    html:not([data-theme]) .article-card,
+    html:not([data-theme]) .agent-card {
+        border-color: #47504f;
+        background-color: #323a3d;
+    }
+
+    html:not([data-theme]) .article-card img
+    html:not([data-theme]) .agent-card img {
+        opacity: .7;
+    }
+
+    html:not([data-theme]) .article-sidebar h2,
+    html:not([data-theme]) .article-sidebar dt,
+    html:not([data-theme]) .article-card span,
+    html:not([data-theme]) .article-header .agent-number,
+    html:not([data-theme]) .article-header .agent-description {
+        color: #aabdb2;
+    }
+
+    html:not([data-theme]) .article-sidebar::after {
+        background-color: #626e6c;
+    }
 }

@@ -1,4 +1,4 @@
-﻿# Maths helper
+# Maths helper
 
 **Maths helper** is a small proof of concept for testing how far AWS Strands Agents and Bedrock AgentCore can take a practical calculation task. The user asks a plain-language question, such as the total cost of six books after a discount, and the agent works out the answer without asking the user to translate the problem into a formula. That is a modest task, but a useful one: many business questions start as messy words before they become tidy numbers.
 

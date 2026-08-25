@@ -1,4 +1,4 @@
-﻿# Mysterious Island
+# Mysterious Island
 
 **Mysterious Island** is a small experiment in using Microsoft Foundry as a managed home for a code-first agent. The agent lets a user discuss Jules Verne’s *The Mysterious Island*, but it is not meant to show that a model has read a famous old novel. The point is to test whether Foundry can host custom agent code while also providing built-in retrieval, so the agent can look up the uploaded book text and private reading notes before answering.
 

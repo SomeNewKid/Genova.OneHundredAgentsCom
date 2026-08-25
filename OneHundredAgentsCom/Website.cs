@@ -174,6 +174,8 @@ public sealed class Website : WebsiteBase
             new ModelEvaluationModifier(),
             new CodingEvaluationModifier(),
             new OcrEvaluationModifier(),
+            new AgentArticleModifier(),
+            new GeneralArticleModifier(),
         };
 
         return baseModifiers.Concat(websiteModifiers);

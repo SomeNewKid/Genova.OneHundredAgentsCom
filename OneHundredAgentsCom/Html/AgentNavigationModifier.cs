@@ -44,7 +44,7 @@ internal sealed class AgentNavigationModifier : IHtmlModifier
 
     private static void AddBodyClass(IDocument document)
     {
-        document.Body!.ClassList.Add("has-agent-navigation");
+        document.Body!.ClassList.Add("has-article-navigation");
     }
 
     private static AgentLinkPair FindPreviousAndNextAgent(string currentAgentPath)
@@ -80,30 +80,30 @@ internal sealed class AgentNavigationModifier : IHtmlModifier
     private static void BuildAgentNavigation(IDocument document, AgentEntry? previous, AgentEntry? next)
     {
         IElement wrapper = document.CreateElement("div");
-        wrapper.ClassList.Add("agent-navigation-links");
+        wrapper.ClassList.Add("article-navigation-links");
 
         IElement nav = document.CreateElement("nav");
-        nav.SetAttribute("aria-label", "Agent navigation");
+        nav.SetAttribute("aria-label", "Article navigation");
         nav.ClassList.Add("layout-container");
 
         IElement agentNav = document.CreateElement("div");
-        agentNav.ClassList.Add("agent-nav");
+        agentNav.ClassList.Add("article-nav");
 
         IElement previousCard = BuildAgentCard(
             document,
-            "previous-agent",
-            "agent-card",
+            "previous-article",
+            "article-card",
             previous,
             directionLabel: "Previous",
-            linkClass: "prev-agent");
+            linkClass: "prev-article");
 
         IElement nextCard = BuildAgentCard(
             document,
-            "next-agent",
-            "agent-card",
+            "next-article",
+            "article-card",
             next,
             directionLabel: "Next",
-            linkClass: "next-agent");
+            linkClass: "next-article");
 
         agentNav.AppendChild(previousCard);
         agentNav.AppendChild(nextCard);
@@ -139,40 +139,54 @@ internal sealed class AgentNavigationModifier : IHtmlModifier
         IElement card = document.CreateElement("div");
         card.ClassList.Add(positionClass);
         card.ClassList.Add(cardClass);
+        card.ClassList.Add("make-clickable");
 
         if (agent is null)
         {
+            // Mark explicitly as having no article so CSS can target the empty state.
+            card.ClassList.Add("no-article");
             card.InnerHtml = "&nbsp;";
             return card;
         }
 
-        IElement link = BuildAgentLink(document, agent, directionLabel, linkClass);
+        // Image wrapper
+        IElement imgWrapper = document.CreateElement("div");
 
-        card.AppendChild(link);
+        IElement img = document.CreateElement("img");
+        img.SetAttribute("src", $"/-/images/thumbnails/{agent.Slug}.jpg");
+        img.SetAttribute("alt", "");
+        img.SetAttribute("role", "presentation");
+
+        imgWrapper.AppendChild(img);
+
+        // Paragraph with label and link
+        IElement p = document.CreateElement("p");
+
+        IElement label = document.CreateElement("span");
+        label.TextContent = $"{directionLabel}:";
+        p.AppendChild(label);
+
+        // space between label and link
+        p.AppendChild(document.CreateTextNode(" "));
+
+        IElement link = BuildAgentLink(document, agent, linkClass);
+        p.AppendChild(link);
+
+        card.AppendChild(imgWrapper);
+        card.AppendChild(p);
+
         return card;
     }
 
     private static IElement BuildAgentLink(
         IDocument document,
         AgentEntry agent,
-        string directionLabel,
         string linkClass)
     {
         IElement a = document.CreateElement("a");
         a.SetAttribute("href", $"/{agent.Slug}");
-        a.ClassName = linkClass;
-
-        IElement img = document.CreateElement("img");
-        img.SetAttribute("src", $"/-/images/thumbnails/{agent.Slug}.jpg");
-        img.SetAttribute("alt", "");
-        img.SetAttribute("role", "presentation");
-        a.AppendChild(img);
-
-        IElement label = document.CreateElement("span");
-        label.TextContent = $"{directionLabel}:";
-        a.AppendChild(label);
-
-        a.AppendChild(document.CreateTextNode($" {agent.Name}"));
+        a.ClassName = linkClass + " naked";
+        a.TextContent = agent.Name;
 
         return a;
     }

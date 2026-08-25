@@ -1,4 +1,4 @@
-﻿# Customs team
+# Customs team
 
 **Customs team** is a small proof of concept built to test the next step with Microsoft Foundry: three prompt agents coordinating through the agent-to-agent (A2A) protocol. The user asks a customs official a plain question, such as whether juggling balls with seeds inside can be brought into Australia. The customs official does not answer alone. It asks a dangerous goods official, then asks a food stuffs official, and combines their decisions into one response.
 

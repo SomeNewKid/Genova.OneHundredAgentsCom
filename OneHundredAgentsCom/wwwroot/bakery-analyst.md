@@ -1,4 +1,4 @@
-﻿# Bakery analyst
+# Bakery analyst
 
 **Bakery analyst** was built to test a very specific next step with Microsoft Foundry: can a no-code prompt agent use provided business data and do useful arithmetic over it? The business setting is deliberately familiar. A bakery has one week of production and sales data. Someone can ask plain questions like whether donuts made a profit, which products sold best, or when muffins lost the most money. The agent checks the supplied data, applies the basic calculations, and answers in business language.
 

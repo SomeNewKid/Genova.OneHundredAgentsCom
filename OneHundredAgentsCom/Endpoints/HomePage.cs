@@ -53,8 +53,6 @@ internal static class HomePage
 
     private static void AppendAgentGroupsHtml(StringBuilder builder, AgentCatalogue catalogue)
     {
-        int agentCount = catalogue.Groups.Sum(g => g.Agents.Count);
-        builder.AppendLine("<p><strong><em>There are currently " + agentCount + " agents in the catalogue.</em></strong></p>");
         foreach (AgentGroup group in catalogue.Groups)
         {
             if (group.Agents.Count == 0)
@@ -62,26 +60,34 @@ internal static class HomePage
                 continue;
             }
 
-            builder.AppendLine("<div class=\"agent-group\">");
-            builder.AppendLine($"<h2>{group.Title}</h2>");
+            string groupId = CreateAgentGroupID(group.Title);
+
+            builder.AppendLine($"<section class=\"agent-group\" aria-labelledby=\"{groupId}\">");
+            builder.AppendLine($"<h2 id=\"{groupId}\">{group.Title}</h2>");
             builder.AppendLine($"<p>{group.Description}</p>");
-            builder.AppendLine("<ul>");
+            builder.AppendLine("<ul class=\"agent-cards\">");
 
             foreach (AgentEntry agent in group.Agents)
             {
-                builder.Append("<li>");
-                builder.Append($"<a href=\"/{agent.Slug}\">");
-                builder.Append($"<img src=\"/-/images/thumbnails/{agent.Slug}.jpg\" alt=\"\" role=\"presentation\">");
-                builder.Append($"<span>{agent.Name}</span>");
-                builder.Append("</a>");
+                builder.Append("<li class=\"agent-card make-clickable\">");
                 builder.Append("<div>");
-                builder.Append($"<p>{agent.Description}</p>");
+                builder.Append($"<img src=\"/-/images/thumbnails/{agent.Slug}.jpg\" alt=\"\" role=\"presentation\">");
                 builder.Append("</div>");
+                builder.Append($"<h3><a class=\"naked\" href=\"/{agent.Slug}\">{agent.Name}</a></h3>");
+                builder.Append($"<p>{agent.Description}</p>");
                 builder.AppendLine("</li>");
             }
 
             builder.AppendLine("</ul>");
-            builder.AppendLine("</div>");
+            builder.AppendLine("</section>");
         }
+    }
+
+    private static string CreateAgentGroupID(string title)
+    {
+        string id = title.ToLowerInvariant();
+        id = id.Replace(" ", "-");
+        id = id.Replace("&", "and");
+        return "group-" + id;
     }
 }

@@ -16,6 +16,11 @@ internal sealed class AgentEntry
     public string Name { get; set; } = string.Empty;
 
     /// <summary>
+    /// Gets or sets the number of the agent.
+    /// </summary>
+    public string Number { get; set; } = string.Empty;
+
+    /// <summary>
     /// Gets or sets the description of the agent.
     /// </summary>
     public string Description { get; set; } = string.Empty;

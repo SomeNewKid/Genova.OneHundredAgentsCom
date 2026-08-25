@@ -30,9 +30,6 @@ internal static class WwwFiles
         MapImagesEndpoints(endpoints, "svg");
         MapStylesEndpoints(endpoints, "css");
         MapScriptsEndpoints(endpoints, "js");
-        MapVideosEndpoints(endpoints, "mp4");
-        MapAudioEndpoints(endpoints, "mp3");
-        MapModelEndpoints(endpoints, "json");
     }
 
     /// <summary>
@@ -190,63 +187,12 @@ internal static class WwwFiles
         endpoints.MapGet($"/-/scripts/bundled.{extension}", (HttpContext httpContext) =>
         {
             string global = GetGlobalScript();
-            string website = GetFileFromTemplate(pathTemplate, "onehundredagents_disabled", extension) ?? string.Empty;
+            string website = GetFileFromTemplate(pathTemplate, "onehundredagents", extension) ?? string.Empty;
             string contentType = FileHelper.GetContentType("bundled." + extension);
 
             return Results.Content($"{global}\n{website}", contentType);
         })
         .CacheOutput(Website.CachePolicyName).WithTags(Website.CachePolicyTag)
-        .WithMetadata(new WebsiteRouteInfo(Website.Identifier));
-    }
-
-    /// <summary>
-    /// Maps video-related endpoints for MP4 files in the /-/videos directory.
-    /// </summary>
-    /// <param name="endpoints">The <see cref="IEndpointRouteBuilder"/> to which to add the endpoint.</param>
-    /// <param name="extension">The file extension to map (expected "mp4").</param>
-    private static void MapVideosEndpoints(IEndpointRouteBuilder endpoints, string extension)
-    {
-        // Serve videos only from /-/videos/{filename}.mp4
-        endpoints.MapGet($"/-/videos/{{filename}}.{extension}", (HttpContext httpContext) =>
-        {
-            string? filename = GetFilenameRouteParameter(httpContext);
-            string pathTemplate = "wwwroot/-/videos/{0}.{1}";
-            return ServeFileFromTemplate(httpContext, pathTemplate, filename, extension);
-        })
-        .WithMetadata(new WebsiteRouteInfo(Website.Identifier));
-    }
-
-    /// <summary>
-    /// Maps audio-related endpoints for MP3 files in the /-/audios directory.
-    /// </summary>
-    /// <param name="endpoints">The <see cref="IEndpointRouteBuilder"/> to which to add the endpoint.</param>
-    /// <param name="extension">The file extension to map (expected "mp3").</param>
-    private static void MapAudioEndpoints(IEndpointRouteBuilder endpoints, string extension)
-    {
-        // Serve audio only from /-/audios/{filename}.mp3
-        endpoints.MapGet($"/-/audios/{{filename}}.{extension}", (HttpContext httpContext) =>
-        {
-            string? filename = GetFilenameRouteParameter(httpContext);
-            string pathTemplate = "wwwroot/-/audios/{0}.{1}";
-            return ServeFileFromTemplate(httpContext, pathTemplate, filename, extension);
-        })
-        .WithMetadata(new WebsiteRouteInfo(Website.Identifier));
-    }
-
-    /// <summary>
-    /// Maps model-related endpoints for JSON files in the /-/models directory.
-    /// </summary>
-    /// <param name="endpoints">The <see cref="IEndpointRouteBuilder"/> to which to add the endpoint.</param>
-    /// <param name="extension">The file extension to map (expected "mp3").</param>
-    private static void MapModelEndpoints(IEndpointRouteBuilder endpoints, string extension)
-    {
-        // Serve model only from /-/models/{filename}.mp3
-        endpoints.MapGet($"/-/models/{{filename}}.{extension}", (HttpContext httpContext) =>
-        {
-            string? filename = GetFilenameRouteParameter(httpContext);
-            string pathTemplate = "wwwroot/-/models/{0}.{1}";
-            return ServeFileFromTemplate(httpContext, pathTemplate, filename, extension);
-        })
         .WithMetadata(new WebsiteRouteInfo(Website.Identifier));
     }
 
@@ -357,6 +303,7 @@ internal static class WwwFiles
             UseHeaderMenuButton = true,
             UseStickyFooter = true,
             UseBumping = true,
+            UseSmoothScrolling = true,
 
             BodyFontStack = FontStack.SystemUI,
             HeadingFontStack = FontStack.SystemUI,
@@ -369,16 +316,16 @@ internal static class WwwFiles
 
             LightTheme = new StyleTheme
             {
-                Foreground = "#292726",
-                Background = "#f2dac1",
-                LinkColor = "#416a95",
+                Foreground = "#282e31",
+                Background = "#e2ede7",
+                LinkColor = "#9c4a26",
             },
 
             DarkTheme = new StyleTheme
             {
-                Foreground = "#f2dac1",
-                Background = "#292726",
-                LinkColor = "#73a2d3",
+                Foreground = "#d6e6dd",
+                Background = "#282e31",
+                LinkColor = "#e8a077",
             },
         };
 

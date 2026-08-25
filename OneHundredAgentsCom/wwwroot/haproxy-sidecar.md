@@ -11,7 +11,7 @@ This proof of concept sketches a common business shape: agents that work in rest
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 Pattern: Single agent
-Sandbox: Docker localnet | AI agent container | Squid proxy sidecar | MCP Server sidecar | Jina Reader sidecar | Code execution sidecar | HAProxy sidecar
+Sandbox: Docker localnet | AI agent container | Squid proxy sidecar | MCP Server sidecar | HAProxy sidecar
 Model: [GPT-4.1 mini](https://developers.openai.com/api/docs/models/gpt-4.1-mini)
 ---
 

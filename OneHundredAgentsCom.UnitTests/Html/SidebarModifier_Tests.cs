@@ -206,6 +206,13 @@ public class SidebarModifier_Tests : Modifier_Tests
 
         IElement? sidebar = document.QuerySelector("article > div.sidebar");
         sidebar.Should().NotBeNull();
+        sidebar!.Children.Should().ContainSingle(element =>
+            element.TagName == "DIV" && element.ClassList.Contains("article-sidebar"));
+
+        IElement articleSidebar = sidebar.QuerySelector(".article-sidebar")!;
+        articleSidebar.Children[0].TagName.Should().Be("H2");
+        articleSidebar.Children[0].TextContent.Should().Be("At a glance");
+
         return sidebar!;
     }
 

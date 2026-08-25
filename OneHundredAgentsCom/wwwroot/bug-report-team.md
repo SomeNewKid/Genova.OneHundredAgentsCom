@@ -11,7 +11,7 @@ This sketches a useful business shape: a manager agent can broadcast work to spe
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 Pattern: Multiple agents
-Sandbox: Docker localnet | AI agent containers | Squid proxy sidecar | MCP Server sidecar | Jina Reader sidecar | Code execution sidecar | HAProxy sidecar
+Sandbox: Docker localnet | AI agent containers | Squid proxy sidecar
 Model: [GPT-4.1 mini](https://developers.openai.com/api/docs/models/gpt-4.1-mini)
 ---
 

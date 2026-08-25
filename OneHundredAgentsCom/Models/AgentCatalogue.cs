@@ -42,7 +42,24 @@ internal sealed class AgentCatalogue
         }
 
         AgentCatalogueData? data = JsonSerializer.Deserialize<AgentCatalogueData>(json, JsonSerializerOptions);
-        return data?.Groups ?? [];
+        List<AgentGroup> groups = data?.Groups ?? [];
+        PopulateAgentNumbers(groups);
+
+        return groups;
+    }
+
+    private static void PopulateAgentNumbers(List<AgentGroup> groups)
+    {
+        int number = 1;
+
+        foreach (AgentGroup group in groups)
+        {
+            foreach (AgentEntry agent in group.Agents)
+            {
+                agent.Number = number.ToString("D3");
+                number++;
+            }
+        }
     }
 
     private static string? GetEmbeddedText(string filename)

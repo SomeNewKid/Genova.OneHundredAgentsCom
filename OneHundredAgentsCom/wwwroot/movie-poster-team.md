@@ -4,14 +4,14 @@
 
 Image generation takes time, so this project uses agent-to-agent tasks rather than treating every request as a quick chat message. The artist and poster agents can accept work, run it separately, and return results when the task is complete. That is a more honest shape for many business workflows, where one agent may need to wait on a model, a tool, or another system before the next step can begin.
 
-The agents also run in separate Docker containers with declared capabilities. That makes the experiment less hand-wavy. It shows how A2A can support a coordinated team of agents while keeping each agent’s role and permissions visible.
+The agents also run in separate Docker containers with declared capabilities. That makes the experiment less hand-wavy. It shows how A2A can support a coordinated team of agents while keeping each agent's role and permissions visible.
 
 ::: SIDEBAR :::
 
 Language: Python
 Framework: [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 Pattern: Multiple agents
-Sandbox: Docker localnet | AI agent containers | Squid proxy sidecar | MCP Server sidecar | Jina Reader sidecar | Code execution sidecar | HAProxy sidecar
+Sandbox: Docker localnet | AI agent containers | Squid proxy sidecar
 Model: [GPT-4.1 mini](https://developers.openai.com/api/docs/models/gpt-4.1-mini)
 ---
 

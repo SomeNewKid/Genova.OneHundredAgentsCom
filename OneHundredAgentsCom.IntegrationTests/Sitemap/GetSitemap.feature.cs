@@ -154,12 +154,15 @@ namespace Genova.OneHundredAgentsCom.IntegrationTests.Sitemap
     await testRunner.AndAsync("I should see \"<h1>Sitemap</h1>\" in the response", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 10
-    await testRunner.AndAsync("I should see \"<h2>IBM BeeAI framework</h2>\" in the response", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+    await testRunner.AndAsync("I should see \"<h2>IBM\" in the response", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 11
-    await testRunner.AndAsync("I should see \"/travel-landmark-agent\" as a hyperlink location", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+    await testRunner.AndAsync("I should see \"BeeAI framework</h2>\" in the response", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 12
+    await testRunner.AndAsync("I should see \"/travel-landmark-agent\" as a hyperlink location", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 13
     await testRunner.AndAsync("I should see \"Travel landmark agent\" in the response", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
             }

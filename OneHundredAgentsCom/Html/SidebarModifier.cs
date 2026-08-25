@@ -66,7 +66,15 @@ internal sealed class SidebarModifier : IHtmlModifier
     private static IElement BuildSidebar(IDocument document, List<INode> nodes)
     {
         IElement sidebar = document.CreateElement("div");
-        sidebar.SetAttribute("class", "sidebar");
+        sidebar.SetAttribute("class", "sidebar reading-area");
+
+        IElement articleSidebar = document.CreateElement("div");
+        articleSidebar.SetAttribute("class", "article-sidebar");
+        sidebar.AppendChild(articleSidebar);
+
+        IElement heading = document.CreateElement("h2");
+        heading.TextContent = "At a glance";
+        articleSidebar.AppendChild(heading);
 
         IElement? definitionList = null;
 
@@ -94,17 +102,17 @@ internal sealed class SidebarModifier : IHtmlModifier
                 continue;
             }
 
-            definitionList ??= CreateDefinitionList(document, sidebar);
+            definitionList ??= CreateDefinitionList(document, articleSidebar);
             AppendDefinitionEntry(document, definitionList, entry.Value);
         }
 
         return sidebar;
     }
 
-    private static IElement CreateDefinitionList(IDocument document, IElement sidebar)
+    private static IElement CreateDefinitionList(IDocument document, IElement articleSidebar)
     {
         IElement definitionList = document.CreateElement("dl");
-        sidebar.AppendChild(definitionList);
+        articleSidebar.AppendChild(definitionList);
         return definitionList;
     }
 

@@ -71,7 +71,7 @@
             ]
         },
         {
-            "title": "IBM's' BeeAI framework",
+            "title": "IBM's BeeAI framework",
             "description": "Agents built using IBM's open-source BeeAI framework.",
             "agents": [
                 {
@@ -427,7 +427,7 @@
             "description": "Agents deployed to Microsoft Foundry.",
             "agents": [
                 {
-                    "name": "Chinese Idiom Explainer",
+                    "name": "Chinese idiom explainer",
                     "description": "Foundry prompt agent using web search."
                 },
                 {
