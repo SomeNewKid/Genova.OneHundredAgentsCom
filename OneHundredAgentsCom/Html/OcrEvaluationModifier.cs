@@ -133,19 +133,19 @@ internal sealed partial class OcrEvaluationModifier : IHtmlModifier
 
             // Column 2: Size
             IElement thSize = doc.CreateElement("th");
-            thSize.ClassName = "model-size";
+            thSize.ClassName = "model-size size-column";
             thSize.TextContent = "Size";
             headerRow.AppendChild(thSize);
 
             // Column 3: Speed
             IElement thSpeed = doc.CreateElement("th");
-            thSpeed.ClassName = "model-speed";
+            thSpeed.ClassName = "model-speed speed-column";
             thSpeed.TextContent = "Speed";
             headerRow.AppendChild(thSpeed);
 
             // Column 4: Score
             IElement thScore = doc.CreateElement("th");
-            thScore.ClassName = "model-score";
+            thScore.ClassName = "model-score score-column";
             thScore.TextContent = "Score";
             headerRow.AppendChild(thScore);
 
@@ -202,7 +202,7 @@ internal sealed partial class OcrEvaluationModifier : IHtmlModifier
 
                 // Size cell (GB scale) - model-size class
                 IElement sizeCell = doc.CreateElement("td");
-                sizeCell.ClassName = "model-size";
+                sizeCell.ClassName = "model-size size-column";
 
                 // Special-case gpt-5 with size 0.00 -> render non-breaking space
                 if (string.Equals(model.Name, "gpt-5", StringComparison.OrdinalIgnoreCase) &&
@@ -224,7 +224,7 @@ internal sealed partial class OcrEvaluationModifier : IHtmlModifier
 
                 // Speed cell (format TotalDuration as hh:mm:ss or mm:ss)
                 IElement speedCell = doc.CreateElement("td");
-                speedCell.ClassName = "model-speed";
+                speedCell.ClassName = "model-speed speed-column";
                 string formattedDuration = FormatDuration(model.TotalDuration);
                 IText speedText = doc.CreateTextNode(formattedDuration);
                 speedCell.AppendChild(speedText);
@@ -232,9 +232,13 @@ internal sealed partial class OcrEvaluationModifier : IHtmlModifier
 
                 // Score cell (AverageScore formatted with a single decimal place)
                 IElement scoreCell = doc.CreateElement("td");
-                scoreCell.ClassName = "model-score";
+                scoreCell.ClassName = "model-score score-column";
                 IText scoreText = doc.CreateTextNode(model.AverageScore.ToString("0.0", CultureInfo.InvariantCulture));
                 scoreCell.AppendChild(scoreText);
+                IElement scoreScale = doc.CreateElement("span");
+                scoreScale.ClassName = "scale";
+                scoreScale.TextContent = "%";
+                scoreCell.AppendChild(scoreScale);
                 row.AppendChild(scoreCell);
 
                 // Article (hidden-if-narrow)
@@ -242,6 +246,10 @@ internal sealed partial class OcrEvaluationModifier : IHtmlModifier
                 articleCell.ClassName = hiddenClass;
                 IText articleText = doc.CreateTextNode(model.Article.Score.ToString(CultureInfo.InvariantCulture));
                 articleCell.AppendChild(articleText);
+                IElement articleScale = doc.CreateElement("span");
+                articleScale.ClassName = "scale";
+                articleScale.TextContent = "%";
+                articleCell.AppendChild(articleScale);
                 row.AppendChild(articleCell);
 
                 // Handwriting (hidden-if-narrow) -- property name in model is 'Hardwriting' per LocalOcrEvaluation
@@ -249,6 +257,10 @@ internal sealed partial class OcrEvaluationModifier : IHtmlModifier
                 handwritingCell.ClassName = hiddenClass;
                 IText handwritingText = doc.CreateTextNode(model.Hardwriting.Score.ToString(CultureInfo.InvariantCulture));
                 handwritingCell.AppendChild(handwritingText);
+                IElement handwritingScale = doc.CreateElement("span");
+                handwritingScale.ClassName = "scale";
+                handwritingScale.TextContent = "%";
+                handwritingCell.AppendChild(handwritingScale);
                 row.AppendChild(handwritingCell);
 
                 // Poster (hidden-if-narrow)
@@ -256,6 +268,10 @@ internal sealed partial class OcrEvaluationModifier : IHtmlModifier
                 posterCell.ClassName = hiddenClass;
                 IText posterText = doc.CreateTextNode(model.Poster.Score.ToString(CultureInfo.InvariantCulture));
                 posterCell.AppendChild(posterText);
+                IElement posterScale = doc.CreateElement("span");
+                posterScale.ClassName = "scale";
+                posterScale.TextContent = "%";
+                posterCell.AppendChild(posterScale);
                 row.AppendChild(posterCell);
 
                 tbody.AppendChild(row);

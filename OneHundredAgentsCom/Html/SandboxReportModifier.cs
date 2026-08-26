@@ -236,22 +236,27 @@ internal sealed class SandboxReportModifier : IHtmlModifier
         IElement headerRow = document.CreateElement("tr");
 
         IElement thTest = document.CreateElement("th");
+        thTest.ClassName = "test-head";
         thTest.TextContent = "Test";
         headerRow.AppendChild(thTest);
 
         IElement thDescription = document.CreateElement("th");
+        thDescription.ClassName = "description-head";
         thDescription.TextContent = "Description";
         headerRow.AppendChild(thDescription);
 
         IElement thTool = document.CreateElement("th");
+        thTool.ClassName = "outcome-head";
         thTool.TextContent = "Tool";
         headerRow.AppendChild(thTool);
 
         IElement thShell = document.CreateElement("th");
+        thShell.ClassName = "outcome-head";
         thShell.TextContent = "Shell";
         headerRow.AppendChild(thShell);
 
         IElement thAlternates = document.CreateElement("th");
+        thAlternates.ClassName = "outcome-head";
         thAlternates.TextContent = "Alt";
         headerRow.AppendChild(thAlternates);
 
@@ -320,18 +325,21 @@ internal sealed class SandboxReportModifier : IHtmlModifier
 
                 // Tool outcome
                 IElement toolCell = document.CreateElement("td");
+                toolCell.ClassName = "outcome-cell";
                 IElement toolOutcomeElement = CreateOutcomeElement(document, capability.Tool?.Outcome ?? string.Empty);
                 toolCell.AppendChild(toolOutcomeElement);
                 capRow.AppendChild(toolCell);
 
                 // Shell outcome
                 IElement shellCell = document.CreateElement("td");
+                shellCell.ClassName = "outcome-cell";
                 IElement shellOutcomeElement = CreateOutcomeElement(document, capability.Shell?.Outcome ?? string.Empty);
                 shellCell.AppendChild(shellOutcomeElement);
                 capRow.AppendChild(shellCell);
 
                 // Alternates outcome
                 IElement altCell = document.CreateElement("td");
+                altCell.ClassName = "outcome-cell";
                 IElement altOutcomeElement = CreateOutcomeElement(document, capability.Alternates?.Outcome ?? string.Empty);
                 altCell.AppendChild(altOutcomeElement);
                 capRow.AppendChild(altCell);

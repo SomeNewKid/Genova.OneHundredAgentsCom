@@ -300,9 +300,7 @@ internal static class WwwFiles
         {
             Commentary = false,
             UseExternalLinkIcon = true,
-            UseHeaderMenuButton = true,
             UseStickyFooter = true,
-            UseBumping = true,
             UseSmoothScrolling = true,
 
             BodyFontStack = FontStack.SystemUI,

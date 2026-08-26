@@ -6,19 +6,19 @@
             "agents": [
                 {
                     "name": "Customer complaint agent",
-                    "description": "Initial version of a bespoke agent."
+                    "description": "Initial version of a bespoke agent"
                 },
                 {
                     "name": "Website status checker",
-                    "description": "Introduction of a bespoke Otto agent framework."
+                    "description": "Introduction of a bespoke Otto agent framework"
                 },
                 {
                     "name": "Birthday card helper",
-                    "description": "Improving the bespoke Otto agent framework."
+                    "description": "Improving the bespoke Otto agent framework"
                 },
                 {
                     "name": "Obsidian vault summarizer",
-                    "description": "Adding guardrails to the bespoke Otto agent framework."
+                    "description": "Adding guardrails to the bespoke Otto agent framework"
                 }
             ]
         },
@@ -28,23 +28,23 @@
             "agents": [
                 {
                     "name": "History tutor agent",
-                    "description": "First steps with the OpenAI Agents SDK."
+                    "description": "First steps with the OpenAI Agents SDK"
                 },
                 {
                     "name": "Webpage image repairer",
-                    "description": "Using tools with the OpenAI Agents SDK."
+                    "description": "Using tools with the OpenAI Agents SDK"
                 },
                 {
                     "name": "Bedtime story teller",
-                    "description": "Using guardrails with the OpenAI Agents SDK."
+                    "description": "Using guardrails with the OpenAI Agents SDK"
                 },
                 {
                     "name": "Rubber duck debugger",
-                    "description": "Human approvals with the OpenAI Agents SDK."
+                    "description": "Human approvals with the OpenAI Agents SDK"
                 },
                 {
                     "name": "Office fridge labeler",
-                    "description": "Using an MCP server with the OpenAI Agents SDK."
+                    "description": "Using an MCP server with the OpenAI Agents SDK"
                 }
             ]
         },
@@ -54,19 +54,19 @@
             "agents": [
                 {
                     "name": "New York guide",
-                    "description": "First steps with Google's Agent Development Kit."
+                    "description": "First steps with Google's Agent Development Kit"
                 },
                 {
                     "name": "Greeting card writer",
-                    "description": "Creating an agent team with Google's ADK."
+                    "description": "Creating an agent team with Google's ADK"
                 },
                 {
                     "name": "Internal acronym explainer",
-                    "description": "Using guardrails with Google's ADK."
+                    "description": "Using guardrails with Google's ADK"
                 },
                 {
                     "name": "Color style agent",
-                    "description": "Using plugins with Google's ADK."
+                    "description": "Using plugins with Google's ADK"
                 }
             ]
         },
@@ -76,23 +76,23 @@
             "agents": [
                 {
                     "name": "Travel landmark agent",
-                    "description": "First steps with the BeeAI framework."
+                    "description": "First steps with the BeeAI framework"
                 },
                 {
                     "name": "Document summarizer",
-                    "description": "Using guardrails with the BeeAI framework."
+                    "description": "Using guardrails with the BeeAI framework"
                 },
                 {
                     "name": "Movie finder agent",
-                    "description": "Retrieval-augmented generation with BeeAI."
+                    "description": "Retrieval-augmented generation with BeeAI"
                 },
                 {
                     "name": "Gherkin test checker",
-                    "description": "Non-agent workflow with the BeeAI framework."
+                    "description": "Non-agent workflow with the BeeAI framework"
                 },
                 {
                     "name": "Gherkin test writer",
-                    "description": "Multi-agent workflow with the BeeAI framework."
+                    "description": "Multi-agent workflow with the BeeAI framework"
                 }
             ]
         },
@@ -102,27 +102,27 @@
             "agents": [
                 {
                     "name": "Marcie chatbot agent",
-                    "description": "First steps with LangChain."
+                    "description": "First steps with LangChain"
                 },
                 {
                     "name": "Leave request checker",
-                    "description": "Non-agent workflow with LangChain."
+                    "description": "Non-agent workflow with LangChain"
                 },
                 {
                     "name": "Customer note taker",
-                    "description": "Using guardrails with LangChain."
+                    "description": "Using guardrails with LangChain"
                 },
                 {
                     "name": "Accessible HTML coder",
-                    "description": "First steps with LangGraph."
+                    "description": "First steps with LangGraph"
                 },
                 {
                     "name": "Meeting room finder",
-                    "description": "Using tools with a LangGraph agent."
+                    "description": "Using tools with a LangGraph agent"
                 },
                 {
                     "name": "Software project summarizer",
-                    "description": "First steps with DeepAgents."
+                    "description": "First steps with DeepAgents"
                 }
             ]
         },
@@ -132,23 +132,23 @@
             "agents": [
                 {
                     "name": "Refactoring coder",
-                    "description": "First steps with Anthropic's Python SDK."
+                    "description": "First steps with Anthropic's Python SDK"
                 },
                 {
                     "name": "Model recommender",
-                    "description": "First steps with the Claude Agent SDK."
+                    "description": "First steps with the Claude Agent SDK"
                 },
                 {
                     "name": "React card coder",
-                    "description": "Using screenshots with the Claude Agent SDK."
+                    "description": "Using screenshots with the Claude Agent SDK"
                 },
                 {
                     "name": "White belt hacker",
-                    "description": "Using tool governance with the Claude Agent SDK."
+                    "description": "Using tool governance with the Claude Agent SDK"
                 },
                 {
                     "name": "Web resource checker",
-                    "description": "Using skills with the Claude Agent SDK."
+                    "description": "Using skills with the Claude Agent SDK"
                 }
             ]
         },
@@ -158,19 +158,19 @@
             "agents": [
                 {
                     "name": "Risk classifier",
-                    "description": "First steps with Microsoft's Agent Framework."
+                    "description": "First steps with Microsoft's Agent Framework"
                 },
                 {
                     "name": "Scribble sorter",
-                    "description": "First steps with workflows in the Agent Framework."
+                    "description": "First steps with workflows in the Agent Framework"
                 },
                 {
                     "name": "Postage calculator",
-                    "description": "Using skills with the Agent Framework."
+                    "description": "Using skills with the Agent Framework"
                 },
                 {
                     "name": "Slimy car salesman",
-                    "description": "Using guardrails with the Agent Framework."
+                    "description": "Using guardrails with the Agent Framework"
                 }
             ]
         },
@@ -180,19 +180,19 @@
             "agents": [
                 {
                     "name": "Topic instructor",
-                    "description": "First steps with CrewAI."
+                    "description": "First steps with CrewAI"
                 },
                 {
                     "name": "Price checker",
-                    "description": "Using tools with CrewAI."
+                    "description": "Using tools with CrewAI"
                 },
                 {
                     "name": "Movie suggester",
-                    "description": "Using guardrails with CrewAI."
+                    "description": "Using guardrails with CrewAI"
                 },
                 {
                     "name": "TxtSpkr",
-                    "description": "Using skills with CrewAI."
+                    "description": "Using skills with CrewAI"
                 }
             ]
         },
@@ -202,15 +202,15 @@
             "agents": [
                 {
                     "name": "Broken link checker",
-                    "description": "Evaluating Cline CLI."
+                    "description": "Evaluating Cline CLI"
                 },
                 {
                     "name": "Security headers auditor",
-                    "description": "Evaluating Codex CLI."
+                    "description": "Evaluating Codex CLI"
                 },
                 {
                     "name": "Webpage content checker",
-                    "description": "Evaluating Google's Jules."
+                    "description": "Evaluating Google's Jules"
                 }
             ]
         },
@@ -220,23 +220,23 @@
             "agents": [
                 {
                     "name": "Ghost story raconteur",
-                    "description": "First steps with the LlamaIndex framework."
+                    "description": "First steps with the LlamaIndex framework"
                 },
                 {
                     "name": "Vehicle trip analyst",
-                    "description": "First steps with Hugging Face's smolagents."
+                    "description": "First steps with Hugging Face's smolagents"
                 },
                 {
                     "name": "Bank support officer",
-                    "description": "First steps with the Pydantic AI framework."
+                    "description": "First steps with the Pydantic AI framework"
                 },
                 {
                     "name": "Contact assistant",
-                    "description": "First steps with the Haystack AI framework."
+                    "description": "First steps with the Haystack AI framework"
                 },
                 {
                     "name": "Note router",
-                    "description": "First steps with OpenClaw."
+                    "description": "First steps with OpenClaw"
                 }
             ]
         },
@@ -246,67 +246,67 @@
             "agents": [
                 {
                     "name": "Stock local machine sandbox",
-                    "description": "Agent running in a stock local machine."
+                    "description": "Agent running in a stock local machine"
                 },
                 {
                     "name": "Stock virtual machine sandbox",
-                    "description": "Agent running in a stock virtual machine."
+                    "description": "Agent running in a stock virtual machine"
                 },
                 {
                     "name": "Stock micro virtual machine sandbox",
-                    "description": "Agent running in a stock micro virtual machine."
+                    "description": "Agent running in a stock micro virtual machine"
                 },
                 {
                     "name": "Stock container sandbox",
-                    "description": "Agent running in a stock container."
+                    "description": "Agent running in a stock container"
                 },
                 {
                     "name": "Read-only container sandbox",
-                    "description": "Agent running in a read-only container."
+                    "description": "Agent running in a read-only container"
                 },
                 {
                     "name": "Container sandbox with Squid sidecar",
-                    "description": "Agent running with a Squid sidecar container."
+                    "description": "Agent running with a Squid sidecar container"
                 },
                 {
                     "name": "Container sandbox with fewer services",
-                    "description": "Agent running in a lightweight container."
+                    "description": "Agent running in a lightweight container"
                 },
                 {
                     "name": "Container sandbox with fewer commands",
-                    "description": "Agent running in a tightened container."
+                    "description": "Agent running in a tightened container"
                 },
                 {
                     "name": "Container sandbox with a Syscomp profile",
-                    "description": "Agent running in a restricted container."
+                    "description": "Agent running in a restricted container"
                 },
                 {
                     "name": "Container sandbox with fewer resources",
-                    "description": "Agent running in a restrained container."
+                    "description": "Agent running in a restrained container"
                 },
                 {
                     "name": "Container sandbox with a minimized image",
-                    "description": "Agent running in a minimized container."
+                    "description": "Agent running in a minimized container"
                 },
                 {
                     "name": "Container sandbox with runtime control",
-                    "description": "Agent running with runtime control."
+                    "description": "Agent running with runtime control"
                 },
                 {
                     "name": "Container sandbox with network socket control",
-                    "description": "Agent running with network socket control."
+                    "description": "Agent running with network socket control"
                 },
                 {
                     "name": "Container sandbox with no desktop automation",
-                    "description": "Agent running with no desktop automation channel."
+                    "description": "Agent running with no desktop automation channel"
                 },
                 {
                     "name": "Container sandbox with hardware control",
-                    "description": "Agent running with hardware control."
+                    "description": "Agent running with hardware control"
                 },
                 {
                     "name": "Container sandbox with no shell access",
-                    "description": "Agent running with no shell access."
+                    "description": "Agent running with no shell access"
                 }
             ]
         },
@@ -316,27 +316,27 @@
             "agents": [
                 {
                     "name": "Sandbox agent",
-                    "description": "Agent running with minimal, declarative sandbox."
+                    "description": "Agent running with minimal, declarative sandbox"
                 },
                 {
                     "name": "MCP sidecar",
-                    "description": "Agent using a simple MCP Server sidecar."
+                    "description": "Agent using a simple MCP Server sidecar"
                 },
                 {
                     "name": "Jina Reader sidecar",
-                    "description": "Agent using a Jina Reader sidecar."
+                    "description": "Agent using a Jina Reader sidecar"
                 },
                 {
                     "name": "Code execution sidecar",
-                    "description": "Agent using a code execution sidecar."
+                    "description": "Agent using a code execution sidecar"
                 },
                 {
                     "name": "Ollama model sidecar",
-                    "description": "Agent using an Ollama model sidecar."
+                    "description": "Agent using an Ollama model sidecar"
                 },
                 {
                     "name": "HAProxy sidecar",
-                    "description": "Agent using an HAProxy sidecar."
+                    "description": "Agent using an HAProxy sidecar"
                 }
             ]
         },
@@ -346,19 +346,19 @@
             "agents": [
                 {
                     "name": "Two-agent sandbox",
-                    "description": "Using simple agent-to-agent (ACA) messages."
+                    "description": "Using simple agent-to-agent (ACA) messages"
                 },
                 {
                     "name": "Movie poster team",
-                    "description": "Using sequential agent-to-agent (ACA) tasks."
+                    "description": "Using sequential agent-to-agent (ACA) tasks"
                 },
                 {
                     "name": "Bug report team",
-                    "description": "Using parallel agent-to-agent (ACA) tasks."
+                    "description": "Using parallel agent-to-agent (ACA) tasks"
                 },
                 {
                     "name": "Red green team",
-                    "description": "Using iterative agent-to-agent (ACA) tasks."
+                    "description": "Using iterative agent-to-agent (ACA) tasks"
                 }
             ]
         },
@@ -368,35 +368,35 @@
             "agents": [
                 {
                     "name": "Local model evaluation",
-                    "description": "Evaluating local models for language and reasoning."
+                    "description": "Evaluating local models for language and reasoning"
                 },
                 {
                     "name": "Local model coding",
-                    "description": "Evaluating local models for coding tasks."
+                    "description": "Evaluating local models for coding tasks"
                 },
                 {
                     "name": "Local Stable Diffusion",
-                    "description": "Evaluating the SD model for image generation."
+                    "description": "Evaluating the SD model for image generation"
                 },
                 {
                     "name": "Local Stable Diffusion XL",
-                    "description": "Evaluating the SDXL model for image generation."
+                    "description": "Evaluating the SDXL model for image generation"
                 },
                 {
                     "name": "Local image understanding",
-                    "description": "Evaluating local models for image understanding."
+                    "description": "Evaluating local models for image understanding"
                 },
                 {
                     "name": "Local OCR",
-                    "description": "Evaluating local models for optical character recognition."
+                    "description": "Evaluating local models for optical character recognition"
                 },
                 {
                     "name": "Local text moderation",
-                    "description": "Evaluating local models for text moderation."
+                    "description": "Evaluating local models for text moderation"
                 },
                 {
                     "name": "Local image moderation",
-                    "description": "Evaluating local models for image moderation."
+                    "description": "Evaluating local models for image moderation"
                 }
             ]
         },
@@ -406,19 +406,19 @@
             "agents": [
                 {
                     "name": "Takeaway agent Alison",
-                    "description": "An agent which uses only short-term working memory."
+                    "description": "An agent which uses only short-term working memory"
                 },
                 {
                     "name": "Takeaway agent Beverly",
-                    "description": "An agent which uses long-term episodic memory."
+                    "description": "An agent which uses long-term episodic memory"
                 },
                 {
                     "name": "Takeaway agent Catherine",
-                    "description": "An agent which uses long-term semantic memory."
+                    "description": "An agent which uses long-term semantic memory"
                 },
                 {
                     "name": "Takeaway agent Diane",
-                    "description": "An agent which uses long-term procedural memory."
+                    "description": "An agent which uses long-term procedural memory"
                 }
             ]
         },
@@ -428,27 +428,27 @@
             "agents": [
                 {
                     "name": "Chinese idiom explainer",
-                    "description": "Foundry prompt agent using web search."
+                    "description": "Foundry prompt agent using web search"
                 },
                 {
                     "name": "Haunted hotel concierge",
-                    "description": "Foundry prompt agent using text resources."
+                    "description": "Foundry prompt agent using text resources"
                 },
                 {
                     "name": "Bakery analyst",
-                    "description": "Foundry prompt agent using data resources."
+                    "description": "Foundry prompt agent using data resources"
                 },
                 {
                     "name": "Caesar cipher",
-                    "description": "Foundry prompt agent using MCP server tools."
+                    "description": "Foundry prompt agent using MCP server tools"
                 },
                 {
                     "name": "Mysterious Island",
-                    "description": "Foundry code-first agent using built-in RAG tools."
+                    "description": "Foundry code-first agent using built-in RAG tools"
                 },
                 {
                     "name": "Customs team",
-                    "description": "Multiple Foundry agents working as an A2A team."
+                    "description": "Multiple Foundry agents working as an A2A team"
                 }
             ]
         },
@@ -458,11 +458,11 @@
             "agents": [
                 {
                     "name": "Nutshell summarizer",
-                    "description": "First steps with AWS Bedrock and a Strands agent."
+                    "description": "First steps with AWS Bedrock and a Strands agent"
                 },
                 {
                     "name": "Maths helper",
-                    "description": "AWS Bedrock code interpreter tool with a Strands agent."
+                    "description": "AWS Bedrock code interpreter tool with a Strands agent"
                 }
             ]
         },
@@ -472,27 +472,27 @@
             "agents": [
                 {
                     "name": "Adventurer Oliver",
-                    "description": "Observability with OpenAI's Agents SDK."
+                    "description": "Observability with OpenAI's Agents SDK"
                 },
                 {
                     "name": "Adventurer Adrian",
-                    "description": "Observability with Anthropic's Claude Agent SDK."
+                    "description": "Observability with Anthropic's Claude Agent SDK"
                 },
                 {
                     "name": "Adventurer Makenzie",
-                    "description": "Observability with Microsoft's Agent Framework."
+                    "description": "Observability with Microsoft's Agent Framework"
                 },
                 {
                     "name": "Adventurer Ivan",
-                    "description": "Observability with IBM's BeeAI framework."
+                    "description": "Observability with IBM's BeeAI framework"
                 },
                 {
                     "name": "Adventurer Langdon",
-                    "description": "Observability with the LangGraph framework."
+                    "description": "Observability with the LangGraph framework"
                 },
                 {
                     "name": "Adventurer LLoyd",
-                    "description": "Observability with the LLamaIndex framework."
+                    "description": "Observability with the LLamaIndex framework"
                 }
             ]
         },
@@ -502,15 +502,15 @@
             "agents": [
                 {
                     "name": "Designer Addison",
-                    "description": "Design using an OpenAI agent and model."
+                    "description": "Design using an OpenAI agent and model"
                 },
                 {
                     "name": "Designer Blake",
-                    "description": "Design using an Anthropic agent and model."
+                    "description": "Design using an Anthropic agent and model"
                 },
                 {
                     "name": "Designer Chase",
-                    "description": "Design using a Google agent and model."
+                    "description": "Design using a Google agent and model"
                 }
             ]
         }

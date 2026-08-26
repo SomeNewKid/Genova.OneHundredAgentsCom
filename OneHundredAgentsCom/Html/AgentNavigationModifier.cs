@@ -185,7 +185,7 @@ internal sealed class AgentNavigationModifier : IHtmlModifier
     {
         IElement a = document.CreateElement("a");
         a.SetAttribute("href", $"/{agent.Slug}");
-        a.ClassName = linkClass + " naked";
+        a.ClassName = linkClass;
         a.TextContent = agent.Name;
 
         return a;

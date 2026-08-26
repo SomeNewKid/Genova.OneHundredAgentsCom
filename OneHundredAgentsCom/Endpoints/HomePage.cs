@@ -73,7 +73,7 @@ internal static class HomePage
                 builder.Append("<div>");
                 builder.Append($"<img src=\"/-/images/thumbnails/{agent.Slug}.jpg\" alt=\"\" role=\"presentation\">");
                 builder.Append("</div>");
-                builder.Append($"<h3><a class=\"naked\" href=\"/{agent.Slug}\">{agent.Name}</a></h3>");
+                builder.Append($"<h3><a href=\"/{agent.Slug}\">{agent.Name}</a></h3>");
                 builder.Append($"<p>{agent.Description}</p>");
                 builder.AppendLine("</li>");
             }

@@ -147,6 +147,7 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
             headerRow.AppendChild(thSize);
 
             IElement thScore = doc.CreateElement("th");
+            thScore.ClassName = "score-column";
             thScore.TextContent = "Score";
             headerRow.AppendChild(thScore);
 
@@ -208,6 +209,7 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
 
                 // Size cell (GB scale)
                 IElement sizeCell = doc.CreateElement("td");
+                sizeCell.ClassName = "size-column";
                 if (Math.Abs(model.Size) < double.Epsilon)
                 {
                     // If Size is 0 -> inner HTML is a non-breaking space only.
@@ -230,6 +232,7 @@ internal sealed class ModelEvaluationModifier : IHtmlModifier
 
                 // Score cell (% scale)
                 IElement scoreCell = doc.CreateElement("td");
+                scoreCell.ClassName = "score-column";
                 IText scoreText = doc.CreateTextNode(model.Score.ToString(CultureInfo.InvariantCulture));
                 scoreCell.AppendChild(scoreText);
                 IElement scoreScale = doc.CreateElement("span");
