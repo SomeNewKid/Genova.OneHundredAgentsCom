@@ -1,9 +1,49 @@
 /***** One Hundred Agents
  */
 
+/* Masthead */
+
+#header .site-title {
+  margin: 3px auto 1.5em;
+}
+
+.masthead .site-title a {
+    font-size: 1.3333em;
+    border-bottom-width: 3px;
+}
+
+.site-title a {
+  display: block;
+  width: 240px;
+  height: 53.25px;
+  margin: 0 auto;
+  background-image: url("/-/images/100-agents-sprite.svg");
+  background-repeat: no-repeat;
+  background-size: 840px 128.25px;
+  background-position: -300px 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom-color: transparent;
+}
+
+.site-title a:hover {
+  background-position: -300px -75px;
+}
+
+header .masthead .site-title a:active,
+header .masthead .site-title a:focus,
+header .masthead .site-title a:focus-visible {
+    background-position: 0 -75px;
+}
+
 picture.hero {
     width: 100%;
     height: clamp(256px, 50vw, 329px);
+    border: 1px solid #aabdb2;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(30, 40, 35, .1), 0 6px 10px rgba(30, 40, 35, .2);
+    overflow: hidden;
 }
 
 picture.hero > img {
@@ -81,6 +121,7 @@ picture.hero > img {
 .agent-card h3 {
     font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
     font-size: 1.111em;
+    line-height: 1.5;
     margin: .85em .5em .4em;
 }
 
@@ -603,6 +644,20 @@ nav .is-clickable:hover a {
 
 /* Dark theme overrides */
 
+html[data-theme="dark"] .site-title a {
+    background-position: -600px 0;
+}
+
+html[data-theme="dark"] .site-title a:hover {
+    background-position: -600px -75px;
+}
+
+html[data-theme="dark"] header .masthead .site-title a:active,
+html[data-theme="dark"] header .masthead .site-title a:focus,
+html[data-theme="dark"] header .masthead .site-title a:focus-visible {
+    background-position: 0 -75px;
+}
+
 html[data-theme="dark"] .agent-card a {
     border-bottom-color: #9f7760;
 }
@@ -622,7 +677,8 @@ html[data-theme="dark"] .article-sidebar dl {
 
 html[data-theme="dark"] .article-sidebar,
 html[data-theme="dark"] .article-card,
-html[data-theme="dark"] .agent-card {
+html[data-theme="dark"] .agent-card,
+html[data-theme="dark"] picture.hero {
     border-color: #47504f;
     background-color: #323a3d;
 }
@@ -666,7 +722,22 @@ html[data-theme="dark"] .article-artifact table td {
 }
 
 @media (prefers-color-scheme: dark) {
-    html: not([data-theme]) .agent-card a {
+
+    html:not([data-theme]) .site-title a {
+        background-position: -600px 0;
+    }
+
+    html:not([data-theme]) .site-title a:hover {
+        background-position: -600px -75px;
+    }
+
+    html:not([data-theme]) header .masthead .site-title a:active,
+    html:not([data-theme]) header .masthead .site-title a:focus,
+    html:not([data-theme]) header .masthead .site-title a:focus-visible {
+        background-position: 0 -75px;
+    }
+
+    html:not([data-theme]) .agent-card a {
         border-bottom-color: #9f7760;
     }
 
@@ -685,7 +756,8 @@ html[data-theme="dark"] .article-artifact table td {
 
     html:not([data-theme]) .article-sidebar,
     html:not([data-theme]) .article-card,
-    html:not([data-theme]) .agent-card {
+    html:not([data-theme]) .agent-card,
+    html:not([data-theme]) picture.hero {
         border-color: #47504f;
         background-color: #323a3d;
     }
