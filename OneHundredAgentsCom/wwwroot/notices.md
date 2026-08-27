@@ -36,4 +36,4 @@ Everything here is provided as-is. Do not assume an agent will do only what its 
 
 ## Thanks
 
-We used the [Hemgjord Lettering](https://www.dafont.com/hemgjord-lettering.font) font by Måns Grebäck in the website's header.
+The [Hemgjord Lettering](https://www.dafont.com/hemgjord-lettering.font) font by Måns Grebäck is used in the website's header.
