@@ -10,7 +10,7 @@ This proof of concept was built to test how simple that handoff can be in Google
 
 Language: Python
 Framework: [Agent Development Kit](https://adk.dev/)
-Pattern: Multiple agent
+Pattern: Multiple agents
 Model: [Gemini 3.5 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash)
 ---
 

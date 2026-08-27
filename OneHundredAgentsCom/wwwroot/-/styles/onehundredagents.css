@@ -14,12 +14,12 @@
 
 .site-title a {
   display: block;
-  width: 240px;
-  height: 53.25px;
+  width: 225px;
+  height: 60px;
   margin: 0 auto;
   background-image: url("/-/images/100-agents-sprite.svg");
   background-repeat: no-repeat;
-  background-size: 840px 128.25px;
+  background-size: 825px 135px;
   background-position: -300px 0;
   text-indent: -9999px;
   overflow: hidden;
@@ -135,15 +135,6 @@ picture.hero > img {
 .article-card a,
 .agent-card a {
     border-bottom-color: #b4876f;
-}
-
-.article-card a:hover,
-.article-card a:focus,
-.article-card a:active,
-.agent-card a:hover,
-.agent-card a:focus,
-.agent-card a:active {
-    border-bottom: 3px solid currentColor;
 }
 
 /* Agent article */
@@ -601,7 +592,8 @@ body > footer .reading-area {
     cursor: pointer;
 }
 
-main .is-clickable:hover a,
+
+main article .is-clickable:hover a,
 nav .is-clickable:hover a {
     border-bottom: 3px solid currentColor;
 }

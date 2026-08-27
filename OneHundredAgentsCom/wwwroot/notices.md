@@ -33,3 +33,7 @@ Third-party names, products, trademarks, and services belong to their respective
 ## No warranty
 
 Everything here is provided as-is. Do not assume an agent will do only what its description says. Agents can misunderstand, overreach, loop, hallucinate, or confidently press the wrong button.
+
+## Thanks
+
+We used the [Hemgjord Lettering](https://www.dafont.com/hemgjord-lettering.font) font by Måns Grebäck for our logo.
