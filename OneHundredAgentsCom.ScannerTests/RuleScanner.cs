@@ -88,6 +88,7 @@ public class RuleScanner : RuleScanner_Base<Host.Program>
             {
                 CorsPolicy = _website.GetCorsPolicy(),
                 Thoroughness = 0.5m,
+                CssNamePatterns = [ "layout-cols=*", "bump-*" ],
             };
         }
     }

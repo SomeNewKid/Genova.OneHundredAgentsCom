@@ -44,7 +44,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Genova.Common" Version="1.0.0-20260704-0925" />
-    <PackageReference Include="Genova.Testing" Version="1.0.0-20260823-0417" />
+    <PackageReference Include="Genova.Testing" Version="1.0.0-20260828-1153" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="3.6.4" />
     <PackageReference Include="MSTest.TestFramework" Version="3.6.4" />
