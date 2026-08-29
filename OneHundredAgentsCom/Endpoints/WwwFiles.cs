@@ -309,7 +309,7 @@ internal static class WwwFiles
             ArticleFontStack = FontStack.Transitional,
             ArticleFontSelectors = new[] { "main article", "main .content" },
 
-            UseLayoutColumns = false,
+            UseLayoutColumns = true,
             LargeBreakpoint = 1024,
 
             LightTheme = new StyleTheme

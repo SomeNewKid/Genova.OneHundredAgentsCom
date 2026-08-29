@@ -54,7 +54,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Genova.Common" Version="1.0.0-20260704-0925" />
-    <PackageReference Include="Genova.Theme" Version="1.0.0-20260828-1554" />
+    <PackageReference Include="Genova.Theme" Version="1.0.0-20260829-0002" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="11.0.100-preview.4.26230.115">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
